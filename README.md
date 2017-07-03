@@ -6,7 +6,7 @@
 
 The code in the tutorial has been written using Python 3; though it should also work with Python 2.7, it has not been tested extensively against that version.
 
-We strongly recommend using the Anaconda Python distribution. You can install either the full [anaconda distribution](https://www.continuum.io/downloads) (very extensive, but large) or [miniconda](https://conda.io/miniconda.html) (much smaller, only essential packages).
+We **strongly recommend** using the Anaconda Python distribution. You can install either the full [anaconda distribution](https://www.continuum.io/downloads) (very extensive, but large) or [miniconda](https://conda.io/miniconda.html) (much smaller, only essential packages).
 
 There are download instructions below for installation using pip, which should work with any Python distribution, and the script for checking your installation should run on any python.
 
@@ -51,15 +51,15 @@ jupyter nbextension enable --py ipyleaflet
 
 ## Testing your installation
 
-To check your installation, please download the script [install_script.py](https://raw.githubusercontent.com/mwcraig/scipy2017-jupyter-widgets-tutorial/master/install_check.py) and run it:
+To check your installation, please download the script [install_check.py](https://raw.githubusercontent.com/mwcraig/scipy2017-jupyter-widgets-tutorial/master/install_check.py) and run it:
 
 ```
 python install_check.py
 ```
 
-## tutorial materials
+## Tutorial materials
 
-To get the tutorial materials, clone this repository. Please plan to update the materials shortly before the tutorial.
+To get the tutorial materials, clone this repository. **Please plan to update the materials shortly before the tutorial.**
 
 ## Running into trouble?
 
