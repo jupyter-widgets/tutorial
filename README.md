@@ -2,7 +2,7 @@
 
 ## Tutorial, SciPy 2017
 
-# Installation -- last updated 27 June 2017
+# Installation -- last updated 4 July 2017, 17:53 CDT
 
 The code in the tutorial has been written using Python 3; though it should also work with Python 2.7, it has not been tested extensively against that version.
 
@@ -15,13 +15,15 @@ There are download instructions below for installation using pip, which should w
 The steps below will get you a working environment. Note that *the numpy version is important* as of the last update to the instructions because the numpy 1.13 package on anaconda appears to be broken.
 
 ```
-conda create -n widgets-2017 notebook numpy=1.12 python=3.6 scikit-image scipy traittypes
+conda create -n widgets-2017 notebook numpy=1.12 python=3.6 scikit-image scipy
 
 # Mac/Linux:
 source activate widgets-2017
 
 # Windows:
 activate widgets-2017
+
+conda install -c conda-forge traittypes
 
 conda install -c astropy ccdproc ginga
 
