@@ -23,6 +23,9 @@ source activate widgets-2017
 # Windows:
 activate widgets-2017
 
+# Create a kernel for this environment
+ipython kernel install --name widgets-2017 --display-name widgets-2017 --sys-prefix
+
 conda install -c conda-forge traittypes
 
 conda install -c astropy ccdproc ginga
