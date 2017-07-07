@@ -26,7 +26,8 @@ for package in requirements:
 success = all(import_result.values())
 
 version_check_packages = {'ipywidgets': '7',
-                          'bqplot': '0.10'}
+                          'bqplot': '0.10',
+                          'ipyleaflet': '0.4'}
 
 
 if success:
@@ -40,23 +41,43 @@ else:
 print('Checking version numbers of these packages: ',
       ', '.join(version_check_packages.keys()))
 
-import ipywidgets
-ipywidgets_version = ipywidgets.__version__.startswith('7')
 
-if not ipywidgets_version:
-    print('Please upgrade ipywidgets to version 7 by running:')
-    print('pip install --pre ipywidgets')
-    print('jupyter nbextension enable --py widgetsnbextension')
+def version_checker(package_name, version, nbextension=None):
+    good_version = version.startswith(version_check_packages[package_name])
+    if nbextension is None:
+        nbextension = package_name
+    if not good_version:
+        print('Please upgrade {} to version {} by running:'.format(package_name, version))
+        print('conda remove --force {} # if you use conda'.format(package_name))
+        print('pip install --pre {}}'.format(package_name))
+        print('jupyter nbextension enable --py {}'.format(nbextension))
+    else:
+        print('{} version is good!'.format(package_name))
+
+
+# Check as many packages as we can...
+
+
+try:
+    import ipywidgets
+except ImportError:
+    pass
 else:
-    print('ipywidgets version is good!')
-
-import bqplot
-bqplot_version = bqplot.__version__.startswith('0.10')
-
-if not bqplot_version:
-    print('Please upgrade bqplot to version 7 by running:')
-    print('conda remove --force bqplot # if you use conda')
-    print('pip install --pre bqplot')
-    print('jupyter nbextension enable --py bqplot')
+    ipywidgets_version = ipywidgets.__version__
+    version_checker('ipywidgets', ipywidgets_version,
+                    nbextension='widgetsnbextension')
+try:
+    import bqplot
+except ImportError:
+    pass
 else:
-    print('bqplot version is good!')
+    bqplot_version = bqplot.__version__
+    version_checker('bqplot', bqplot_version)
+
+try:
+    import ipyleaflet
+except ImportError:
+    pass
+else:
+    ipyleaflet_version = ipyleaflet.__version__
+    version_checker('ipyleaflet', ipyleaflet_version)
