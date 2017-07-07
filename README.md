@@ -2,7 +2,7 @@
 
 ## Tutorial, SciPy 2017
 
-# Installation -- last updated 4 July 2017, 18:24 CDT
+# Installation -- last updated 6 July 2017, 21:28 CDT
 
 The code in the tutorial has been written using Python 3; though it should also work with Python 2.7, it has not been tested extensively against that version.
 
@@ -30,10 +30,11 @@ conda install -c conda-forge traittypes
 
 conda install -c astropy ccdproc ginga
 
-pip install --pre ipywidgets bqplot
+pip install --pre ipywidgets bqplot ipyleaflet
 jupyter nbextension enable --py widgetsnbextension
 jupyter nbextension enable --py bqplot
-conda install -c conda-forge --force ipyleaflet ipyvolume pythreejs
+jupyter nbextension enable --py ipyleaflet
+conda install -c conda-forge --force ipyvolume pythreejs
 ```
 
 ## pip installation instructions
