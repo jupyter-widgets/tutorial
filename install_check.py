@@ -27,7 +27,8 @@ success = all(import_result.values())
 
 version_check_packages = {'ipywidgets': '7',
                           'bqplot': '0.10',
-                          'ipyleaflet': '0.4'}
+                          'ipyleaflet': '0.4',
+                          'ipyvolume': '0.4'}
 
 
 if success:
@@ -47,12 +48,12 @@ def version_checker(package_name, version, nbextension=None):
     if nbextension is None:
         nbextension = package_name
     if not good_version:
-        print('Please upgrade {} to version {} by running:'.format(package_name, version))
-        print('conda remove --force {} # if you use conda'.format(package_name))
-        print('pip install --pre {}}'.format(package_name))
-        print('jupyter nbextension enable --py {}'.format(nbextension))
+        print('\n**** Please upgrade {} to version {} by running:'.format(package_name, version))
+        print('        conda remove --force {} # if you use conda'.format(package_name))
+        print('        pip install --pre {}'.format(package_name))
+        print('        jupyter nbextension enable --py {}'.format(nbextension))
     else:
-        print('{} version is good!'.format(package_name))
+        print('\n{} version is good!'.format(package_name))
 
 
 # Check as many packages as we can...
@@ -81,3 +82,11 @@ except ImportError:
 else:
     ipyleaflet_version = ipyleaflet.__version__
     version_checker('ipyleaflet', ipyleaflet_version)
+
+try:
+    import ipyvolume
+except ImportError:
+    pass
+else:
+    ipyvolume_version = ipyvolume.__version__
+    version_checker('ipyvolume', ipyvolume_version)
