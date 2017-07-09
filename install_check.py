@@ -50,7 +50,7 @@ def version_checker(package_name, version, nbextension=None):
     if not good_version:
         print('\n**** Please upgrade {} to version {} by running:'.format(package_name, version))
         print('        conda remove --force {} # if you use conda'.format(package_name))
-        print('        pip install --pre {}'.format(package_name))
+        print('        pip install --pre --upgrade {}'.format(package_name))
         print('        jupyter nbextension enable --py {}'.format(nbextension))
     else:
         print('\n{} version is good!'.format(package_name))
