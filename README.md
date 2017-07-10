@@ -30,12 +30,12 @@ conda install -c conda-forge traittypes
 
 conda install -c astropy ccdproc ginga
 
-pip install --pre ipywidgets bqplot ipyleaflet ipyvolume
+pip install --pre ipywidgets bqplot ipyleaflet ipyvolume pythreejs
 jupyter nbextension enable --py widgetsnbextension
 jupyter nbextension enable --py bqplot
 jupyter nbextension enable --py ipyleaflet
 jupyter nbextension enable --py ipyvolume
-conda install -c conda-forge --force pythreejs
+jupyter nbextension enable --py pythreejs
 ```
 
 ## pip installation instructions
@@ -43,17 +43,14 @@ conda install -c conda-forge --force pythreejs
 If you are using the anaconda python distribution, please use the conda installation instructions above.
 
 ```
-pip install --pre ipywidgets
-jupyter nbextension enable --py widgetsnbextension
-
 pip install astropy ccdproc ginga
 
-pip install bqplot ipyleaflet ipyvolume pythreejs
-
+pip install --pre ipywidgets bqplot ipyleaflet ipyvolume pythreejs
+jupyter nbextension enable --py widgetsnbextension
 jupyter nbextension enable --py bqplot
+jupyter nbextension enable --py ipyleaflet
 jupyter nbextension enable --py ipyvolume
 jupyter nbextension enable --py pythreejs
-jupyter nbextension enable --py ipyleaflet
 ```
 
 ## Testing your installation
