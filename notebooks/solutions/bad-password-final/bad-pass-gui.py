@@ -1,6 +1,4 @@
 from ipywidgets import widgets
-from model import PassGen
-import traitlets
 
 class PassGenGUI(widgets.VBox):
     def __init__(self):

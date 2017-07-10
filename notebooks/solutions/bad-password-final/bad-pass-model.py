@@ -1,5 +1,3 @@
-from __future__ import print_function, division
-
 import string
 import random
 
@@ -57,4 +55,3 @@ class PassGen(traitlets.HasTraits):
                 new_pass[loc] = random.choice(string.digits)
 
         self.password = ''.join(new_pass)
-
