@@ -16,7 +16,6 @@ class PassGen(traitlets.HasTraits):
     length = traitlets.Integer()
     password = traitlets.Unicode("password")
 
-    # ↓↓↓↓↓↓↓↓ New traitlets ↓↓↓↓↓↓↓↓
     include_numbers = traitlets.Bool()
     special_character_groups = traitlets.Enum(SPECIAL_GROUPS,
                                               default_value=SPECIAL_GROUPS[0])
