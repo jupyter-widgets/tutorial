@@ -30,11 +30,12 @@ conda install -c conda-forge traittypes
 
 conda install -c astropy ccdproc ginga
 
-pip install --pre ipywidgets bqplot ipyleaflet
+pip install --pre ipywidgets bqplot ipyleaflet ipyvolume
 jupyter nbextension enable --py widgetsnbextension
 jupyter nbextension enable --py bqplot
 jupyter nbextension enable --py ipyleaflet
-conda install -c conda-forge --force ipyvolume pythreejs
+jupyter nbextension enable --py ipyvolume
+conda install -c conda-forge --force pythreejs
 ```
 
 ## pip installation instructions
