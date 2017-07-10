@@ -25,7 +25,7 @@ for package in requirements:
 
 success = all(import_result.values())
 
-version_check_packages = {'ipywidgets': '7',
+version_check_packages = {'ipywidgets': '7.0.0a10',
                           'bqplot': '0.10',
                           'ipyleaflet': '0.4',
                           'ipyvolume': '0.4'}
