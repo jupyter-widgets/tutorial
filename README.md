@@ -30,11 +30,12 @@ conda install -c conda-forge traittypes
 
 conda install -c astropy ccdproc ginga
 
-pip install --pre ipywidgets bqplot ipyleaflet
-jupyter nbextension enable --py widgetsnbextension
-jupyter nbextension enable --py bqplot
-jupyter nbextension enable --py ipyleaflet
-conda install -c conda-forge --force ipyvolume pythreejs
+pip install --pre ipywidgets bqplot ipyleaflet ipyvolume pythreejs
+jupyter nbextension enable --sys-prefix --py widgetsnbextension
+jupyter nbextension enable --sys-prefix --py bqplot
+jupyter nbextension enable --sys-prefix --py ipyleaflet
+jupyter nbextension enable --sys-prefix --py ipyvolume
+jupyter nbextension enable --sys-prefix --py pythreejs
 ```
 
 ## pip installation instructions
@@ -42,17 +43,14 @@ conda install -c conda-forge --force ipyvolume pythreejs
 If you are using the anaconda python distribution, please use the conda installation instructions above.
 
 ```
-pip install --pre ipywidgets
-jupyter nbextension enable --py widgetsnbextension
-
 pip install astropy ccdproc ginga
 
-pip install bqplot ipyleaflet ipyvolume pythreejs
-
-jupyter nbextension enable --py bqplot
-jupyter nbextension enable --py ipyvolume
-jupyter nbextension enable --py pythreejs
-jupyter nbextension enable --py ipyleaflet
+pip install --pre ipywidgets bqplot ipyleaflet ipyvolume pythreejs
+jupyter nbextension enable --sys-prefix --py widgetsnbextension
+jupyter nbextension enable --sys-prefix --py bqplot
+jupyter nbextension enable --sys-prefix --py ipyleaflet
+jupyter nbextension enable --sys-prefix --py ipyvolume
+jupyter nbextension enable --sys-prefix --py pythreejs
 ```
 
 ## Testing your installation
