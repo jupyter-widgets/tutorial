@@ -26,12 +26,11 @@ activate widgets-2017
 # Create a kernel for this environment
 ipython kernel install --name widgets-2017 --display-name widgets-2017 --sys-prefix
 
-conda install -c conda-forge traittypes
+conda install -c conda-forge traittypes ipywidgets
 
 conda install -c astropy ccdproc ginga
 
-pip install --pre ipywidgets bqplot ipyleaflet ipyvolume pythreejs
-jupyter nbextension enable --sys-prefix --py widgetsnbextension
+pip install --pre bqplot ipyleaflet ipyvolume pythreejs
 jupyter nbextension enable --sys-prefix --py bqplot
 jupyter nbextension enable --sys-prefix --py ipyleaflet
 jupyter nbextension enable --sys-prefix --py ipyvolume
@@ -40,12 +39,12 @@ jupyter nbextension enable --sys-prefix --py pythreejs
 
 ## pip installation instructions
 
-If you are using the anaconda python distribution, please use the conda installation instructions above.
+If you are not using the anaconda python distribution, please use the instructions below.
 
 ```
 pip install astropy ccdproc ginga
 
-pip install --pre ipywidgets bqplot ipyleaflet ipyvolume pythreejs
+pip install ipywidgets bqplot ipyleaflet ipyvolume pythreejs
 jupyter nbextension enable --sys-prefix --py widgetsnbextension
 jupyter nbextension enable --sys-prefix --py bqplot
 jupyter nbextension enable --sys-prefix --py ipyleaflet
