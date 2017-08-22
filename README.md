@@ -15,7 +15,7 @@ There are download instructions below for installation using pip, which should w
 The steps below will get you a working environment.
 
 ```
-conda create -n widgets-tutorial notebook numpy python=3.6 scikit-image scipy
+conda create -c conda-forge -n widgets-tutorial notebook=5.0 numpy=1.13.1 python=3.6 scikit-image=0.13.0 scipy=0.19.1
 
 # Mac/Linux:
 source activate widgets-tutorial
@@ -26,13 +26,7 @@ activate widgets-tutorial
 # Create a kernel for this environment
 ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
 
-conda install -c conda-forge traittypes ipywidgets
-
-pip install --pre bqplot ipyleaflet ipyvolume pythreejs
-jupyter nbextension enable --sys-prefix --py bqplot
-jupyter nbextension enable --sys-prefix --py ipyleaflet
-jupyter nbextension enable --sys-prefix --py ipyvolume
-jupyter nbextension enable --sys-prefix --py pythreejs
+conda install -c conda-forge traittypes ipywidgets=7.0.0
 ```
 
 ## pip installation instructions
@@ -41,12 +35,7 @@ If you are not using the anaconda python distribution, please use the instructio
 
 ```
 pip install ipywidgets
-pip install --pre bqplot ipyleaflet ipyvolume pythreejs
 jupyter nbextension enable --sys-prefix --py widgetsnbextension
-jupyter nbextension enable --sys-prefix --py bqplot
-jupyter nbextension enable --sys-prefix --py ipyleaflet
-jupyter nbextension enable --sys-prefix --py ipyvolume
-jupyter nbextension enable --sys-prefix --py pythreejs
 ```
 
 ## Testing your installation
