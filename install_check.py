@@ -8,8 +8,6 @@ requirements = [
     'ipyleaflet',
     'ipyvolume',
     'pythreejs',
-    'ccdproc',
-    'ginga'
 ]
 
 import_result = {p: False for p in requirements}
@@ -25,7 +23,7 @@ for package in requirements:
 
 success = all(import_result.values())
 
-version_check_packages = {'ipywidgets': '7.0.0a11',
+version_check_packages = {'ipywidgets': '7.0.0',
                           'bqplot': '0.10',
                           'ipyleaflet': '0.4',
                           'ipyvolume': '0.4'}
@@ -58,7 +56,6 @@ def version_checker(package_name, version, nbextension=None):
 
 
 # Check as many packages as we can...
-
 
 try:
     import ipywidgets
