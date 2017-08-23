@@ -2,6 +2,8 @@
 
 ## Tutorial, JupyterCon 2017
 
+# https://github.com/jupyter-widgets/tutorial
+
 # Installation
 
 The code in the tutorial has been written using Python 3; though most of it may also work with Python 2.7.
