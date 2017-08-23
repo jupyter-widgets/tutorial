@@ -17,7 +17,7 @@ There are download instructions below for installation using pip, which should w
 The steps below will get you a working environment.
 
 ```
-conda create -n widgets-tutorial notebook=5.0 numpy python=3.6 scikit-image scipy traittypes
+conda create -n widgets-tutorial notebook=5.0 numpy python=3.6 scikit-image scipy
 
 # Mac/Linux:
 source activate widgets-tutorial
@@ -26,7 +26,7 @@ source activate widgets-tutorial
 activate widgets-tutorial
 
 # Install widgets from conda-forge, which has ipywidgets 7.0
-conda install -c conda-forge ipywidgets=7.0
+conda install -c conda-forge ipywidgets=7.0 traittypes
 
 # Create a kernel for this environment
 ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
