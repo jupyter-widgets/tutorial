@@ -45,6 +45,13 @@ jupyter nbextension enable --sys-prefix --py widgetsnbextension
 
 To get the tutorial materials, clone this repository.
 
+## Using binder
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-widgets/tutorial/master)
+
+Follow [mybinder.org](https://mybinder.org/v2/gh/jupyter-widgets/tutorial/master) to run the tutorial online.
+
+
 ## Running into trouble?
 
 Please let us know! You can open an issue on this repository by clicking "Issues" under the repo name on GitHub, then the "New Issue" button in the upper right.
