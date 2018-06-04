@@ -1,6 +1,6 @@
 # The Jupyter Widget Ecosystem
 
-## Tutorial, JupyterCon 2017
+## Tutorial, SciPy 2018
 
 # https://github.com/jupyter-widgets/tutorial
 
