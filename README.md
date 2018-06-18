@@ -17,17 +17,13 @@ There are download instructions below for installation using pip, which should w
 The steps below will get you a working environment.
 
 ```
-conda create -n widgets-tutorial notebook numpy python=3.6 scikit-image scipy
+conda create -n widgets-tutorial -c conda-forge python=3.6 notebook=5.5 numpy scikit-image scipy
 
-# Mac/Linux:
-source activate widgets-tutorial
-
-# Windows:
-activate widgets-tutorial
+conda activate widgets-tutorial
 
 # Install widgets from conda-forge, which automatically enables notebook
 # extensions, if necessary
-conda install -c conda-forge traitlets requests bqplot ipywidgets ipyvolume matplotlib pandas ipyleaflet
+conda install -c conda-forge traitlets requests bqplot ipywidgets ipyvolume matplotlib pandas=0.23 ipyleaflet
 
 # Create a kernel for this environment
 ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
