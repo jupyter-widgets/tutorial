@@ -70,6 +70,14 @@ pip install jupyterlab
 # the conda instructions.
 ```
 
+## Check your installation
+
+To check your installation, please download the script [install_check.py](https://raw.githubusercontent.com/jupyter-widgets/tutorial/master/install_check.py) and run it:
+
+```
+python install_check.py
+```
+
 ## Tutorial materials
 
 To get the tutorial materials, clone this repository.
