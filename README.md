@@ -17,6 +17,7 @@ Almost all of the examples will work in either the regular Jupyter notebook or i
 There are download instructions below for installation using pip, which should work with any Python distribution.
 
 ## anaconda/miniconda installation instructions
+### Last update: 18 Jun 2018, 2300CDT
 
 The steps below will get you a working environment.
 
@@ -80,7 +81,7 @@ python install_check.py
 
 ## Tutorial materials
 
-To get the tutorial materials, clone this repository.
+To get the tutorial materials, clone this repository. *We anticipate making changes to the tutorial content through the end of June, 2018.*
 
 ## Using binder
 
