@@ -10,6 +10,10 @@ The code in the tutorial has been written using Python 3; though most of it may 
 
 We **strongly recommend** using the Anaconda Python distribution. You can install either the full [anaconda distribution](https://www.continuum.io/downloads) (very extensive, but large) or [miniconda](https://conda.io/miniconda.html) (much smaller, only essential packages).
 
+Almost all of the examples will work in either the regular Jupyter notebook or in JupyterLab; a couple of esoteric corner cases may not work in JupyterLab. The instructions below explain the additional installation steps needed for JupyerLab.
+
+*If you are familiar with Jupyter notebooks but have never used JupyterLab, you should either spend some time practicing with JupyterLab before this tutorial or use a plain notebook.*
+
 There are download instructions below for installation using pip, which should work with any Python distribution.
 
 ## anaconda/miniconda installation instructions
@@ -27,6 +31,26 @@ conda install -c conda-forge traitlets requests bqplot ipywidgets ipyvolume matp
 
 # Create a kernel for this environment
 ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
+
+# The remaining steps are necessary only if using JupyterLab:
+
+# Install JupyterLab
+conda install -c conda-forge jupyterlab
+
+# NOTE: Enabling all of the extension will take several minutes
+
+# Enable ipywidgets in JupyterLab
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+
+# Enable bqplot in JupyterLab
+jupyter labextension install bqplot
+
+# Enable ipyvolume in JupyterLab
+jupyter labextension install ipyvolume
+jupyter labextension install jupyter-threejs  # also takes care of pythreejs
+
+# Enable ipyleaflet in JupyterLab
+jupyter labextension install jupyter-leaflet
 ```
 
 ## pip installation instructions
@@ -34,8 +58,13 @@ ipython kernel install --name widgets-tutorial --display-name widgets-tutorial -
 If you are not using the anaconda python distribution, please use the instructions below.
 
 ```
-pip install ipywidgets
-jupyter nbextension enable --sys-prefix --py widgetsnbextension
+pip install notebook==5.5 ipywidgets numpy scipy scikit-image traitlets requests bqplot ipywidgets ipyvolume matplotlib pandas==0.23 ipyleaflet
+
+# If you are using JupyterLab, install with
+pip install jupyterlab
+
+# If you are using JupyerLab, also run the series of labextension install command in
+# the conda instructions.
 ```
 
 ## Tutorial materials
