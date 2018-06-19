@@ -27,7 +27,7 @@ conda activate widgets-tutorial
 
 # Install widgets from conda-forge, which automatically enables notebook
 # extensions, if necessary
-conda install -c conda-forge traitlets requests bqplot ipywidgets>=7.2 ipyvolume matplotlib pandas=0.23 ipyleaflet pythreejs ipyevents
+conda install -c conda-forge traitlets requests bqplot ipywidgets=7.2 ipyvolume matplotlib pandas=0.23 ipyleaflet pythreejs ipyevents
 
 # Install one more package from a different channel
 conda install -c wwt pywwt
@@ -61,7 +61,7 @@ jupyter labextension install jupyter-leaflet
 If you are not using the anaconda python distribution, please use the instructions below.
 
 ```
-pip install notebook==5.5 ipywidgets numpy scipy scikit-image traitlets requests bqplot ipywidgets>=7.2 ipyvolume matplotlib pandas==0.23 ipyleaflet pythreejs ipyevents pywwt
+pip install notebook==5.5 ipywidgets numpy scipy scikit-image traitlets requests bqplot ipywidgets==7.2 ipyvolume matplotlib pandas==0.23 ipyleaflet pythreejs ipyevents pywwt
 
 # If you are using JupyterLab, install with
 pip install jupyterlab
