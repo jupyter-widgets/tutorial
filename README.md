@@ -22,13 +22,12 @@ There are download instructions below for installation using pip, which should w
 The steps below will get you a working environment.
 
 ```
-conda create -n widgets-tutorial -c conda-forge python=3.6 notebook=5.5 numpy scikit-image scipy
+conda create -n widgets-tutorial -c conda-forge python=3.6 pip notebook=5.5 numpy scikit-image scipy pandas=0.23 requests
 
 conda activate widgets-tutorial
 
-# Install widgets from conda-forge, which automatically enables notebook
-# extensions, if necessary
-conda install -c conda-forge traitlets requests bqplot ipywidgets=7.2 ipyvolume matplotlib pandas=0.23 ipyleaflet pythreejs ipyevents
+# Install widgets from conda-forge
+conda install -c conda-forge ipywidgets=7.2 bqplot ipyvolume ipyleaflet pythreejs ipyevents
 
 # Install one more package from a different channel
 conda install -c wwt pywwt
@@ -39,22 +38,10 @@ ipython kernel install --name widgets-tutorial --display-name widgets-tutorial -
 # The remaining steps are necessary only if using JupyterLab:
 
 # Install JupyterLab
-conda install -c conda-forge jupyterlab
+conda install -c conda-forge jupyterlab nodejs=9.11
 
-# NOTE: Enabling all of the extension will take several minutes
-
-# Enable ipywidgets in JupyterLab
-jupyter labextension install @jupyter-widgets/jupyterlab-manager
-
-# Enable bqplot in JupyterLab
-jupyter labextension install bqplot
-
-# Enable ipyvolume in JupyterLab
-jupyter labextension install ipyvolume
-jupyter labextension install jupyter-threejs  # also takes care of pythreejs
-
-# Enable ipyleaflet in JupyterLab
-jupyter labextension install jupyter-leaflet
+# Enable JupyterLab extensions, which may take several minutes
+jupyter labextension install @jupyter-widgets/jupyterlab-manager bqplot ipyvolume jupyter-threejs jupyter-leaflet
 ```
 
 ## pip installation instructions
