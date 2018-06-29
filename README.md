@@ -23,7 +23,7 @@ The steps below will get you a working environment.
 
 ### Windows users planning to use JupyterLab
 
-The instructions below need one of two modification to work on Windows if you are planning to do the tutorial in JupyterLab. Please see the section [Windows/nodejs workarounds](#Windows/nodejs-workarounds) below the installation instructions.
+The instructions below need one of two modification to work on Windows if you are planning to do the tutorial in JupyterLab. Please see the section [Windows/nodejs workarounds](#windowsnodejs-workarounds) below the installation instructions.
 
 
 
