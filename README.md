@@ -17,10 +17,17 @@ Almost all of the examples will work in either the regular Jupyter notebook or i
 There are download instructions below for installation using pip, which should work with any Python distribution.
 
 ## anaconda/miniconda installation instructions
-### Last update: 18 Jun 2018, 2300CDT
+### Last update: 29 Jun 2018, 1800CDT
 
 The steps below will get you a working environment.
 
+### Windows users planning to use JupyterLab
+
+The instructions below need one of two modification to work on Windows if you are planning to do the tutorial in JupyterLab. Please see the section [Windows/nodejs workarounds](#Windows/nodejs-workarounds) below the installation instructions.
+
+
+
+### Installation instructions
 ```
 conda create -n widgets-tutorial -c conda-forge python=3.6 pip notebook=5.5 numpy scikit-image scipy pandas=0.23 requests
 
@@ -43,6 +50,33 @@ conda install -c conda-forge jupyterlab nodejs=9.11
 # Enable JupyterLab extensions, which may take several minutes
 jupyter labextension install @jupyter-widgets/jupyterlab-manager bqplot ipyvolume jupyter-threejs jupyter-leaflet
 ```
+
+## Windows/nodejs workarounds
+
+Both of the fixes come from [this open conda issue](https://github.com/conda/conda/issues/7203).
+
+#### Fix for Windows 10
+
+Thanks to the tutorial participant who pointed this out on slack! The fix from the issue is:
+
+> enable Win32 long paths. [On] windows10 pro, you can open Local Group Policy Editor, and open item Computer Configuration -> Administrative Templates -> System -> Filesystem -> Enable Win32 long paths and click it to make it enable.
+
+#### Fix for Windows 7
+
+This might also work for earlier versions of Windows, but has only been tested on Windows 7.
+
++  Edit the `.condarc` file in your home directory, adding this to it:
+
+```
+pkgs_dirs:
+  - c:\conda-pkgs
+```
+
++ Create a new environment this way: `conda create -p c:\widgets-tutorial`
++ Activate the environment: `conda activate c:\widgets-tutorial`
++ Replace the first line in the instructions below with:
+
+`conda install -c conda-forge python=3.6 pip notebook=5.5 numpy scikit-image scipy pandas=0.23 requests`
 
 ## pip installation instructions
 
