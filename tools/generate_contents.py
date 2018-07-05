@@ -57,7 +57,7 @@ def gen_contents(directory=None, path_prefix=None,
 
         if section == '00':
             if toc_style == 'nested_list':
-                yield f'\n{chapter}. [{title}]({nb_url})'
+                yield f'{chapter}. [{title}]({nb_url})'
             else:
                 if chapter in NO_NUMBER:
                     yield '\n### [{0}]({1})'.format(title, nb_url)
