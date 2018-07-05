@@ -17,11 +17,15 @@ def iter_notebooks(directory):
     return sorted(nb for nb in os.listdir(NOTEBOOK_DIR) if REG.match(nb))
 
 
+def is_title(cell):
+    return cell.source.startswith('# ')
+
+
 def get_notebook_title(nb_file):
     nb = nbformat.read(os.path.join(NOTEBOOK_DIR, nb_file),
                        as_version=NBVERSION)
     for cell in nb.cells:
-        if cell.source.startswith('# '):
+        if is_title(cell):
             return cell.source[1:].splitlines()[0].strip()
     else:
         # Apparently there was no heading, raise an error
