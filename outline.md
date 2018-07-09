@@ -2,7 +2,7 @@
 
 1. 0:00 Widget overview:
    1. Overview/introduction (10 min)
-   2. Add `@interact` notebook and example (10 min)
+   2. `@interact` notebook and example (10 min)
    3. Widget Basics notebook and Widget List, which includes Output widget (20 min)
    4. Exercises (20 min)
       1. interact extension
