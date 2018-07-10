@@ -18,15 +18,17 @@
    2. (Insecure) Password Generator (30 min total) **MATT**
    3. Break (10 min)
 4. start 2:40 More widget libraries **MAARTEN**
-   1. bqplot (15 min)
-   2. pythreejs (5 min)
-   3. ipyvolume (5 min)
-   4. ipyleaflet (5 min)
-   5. ipyfits, ipyaladdin, ipywwt (5 min)
-   6. start 3:15 two exercises: (10 min)
+   1. intro (5 min)
+   2. bqplot (10 min)
+   3. pythreejs (5 min)
+   4. ipyvolume (5 min)
+   5. ipyleaflet (5 min)
+   6. vaex (5 min)
+   7. ipywebrtc (5 min)
+   8. start 3:20 two exercises: (10 min)
       1. bqplot as control (fourier series)
       2. other experimentation
-   7. "stretch" break (5 min) (please don't leave room)
+      3. "stretch" break (please don't leave room)
 5. start 3:30 Coming up (10 min) **JASON**
    1. JupyterLab workflows (Sidecar, Create new view for output)
    2. Gridbox
