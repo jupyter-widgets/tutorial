@@ -1,10 +1,10 @@
 # The Jupyter Widget Ecosystem
 
-## Tutorial, SciPy 2018
+## Tutorial, SciPy 2019
 
 # https://github.com/jupyter-widgets/tutorial
 
-# Installation
+# Installation (NOT updated for 2019 yet)
 
 The code in the tutorial has been written using Python 3; though most of it may also work with Python 2.7.
 
@@ -16,7 +16,7 @@ Almost all of the examples will work in either the regular Jupyter notebook or i
 
 There are download instructions below for installation using pip, which should work with any Python distribution.
 
-## anaconda/miniconda installation instructions
+## anaconda/miniconda installation instructions (NOT updated for 2019 yet)
 ### Last update: 29 Jun 2018, 1800CDT
 
 The steps below will get you a working environment.
@@ -27,7 +27,7 @@ The instructions below need one of two modification to work on Windows if you ar
 
 
 
-### Installation instructions
+### Installation instructions (NOT updated for 2019 yet)
 ```
 conda create -n widgets-tutorial -c conda-forge python=3.6 pip notebook=5.5 numpy scikit-image scipy pandas=0.23 requests
 
@@ -51,7 +51,7 @@ conda install -c conda-forge jupyterlab nodejs=9.11
 jupyter labextension install @jupyter-widgets/jupyterlab-manager bqplot ipyvolume jupyter-threejs jupyter-leaflet
 ```
 
-## Windows/nodejs workarounds
+## Windows/nodejs workarounds (NOT updated for 2019 yet)
 
 Both of the fixes come from [this open conda issue](https://github.com/conda/conda/issues/7203).
 
@@ -78,7 +78,7 @@ pkgs_dirs:
 
 `conda install -c conda-forge python=3.6 pip notebook=5.5 numpy scikit-image scipy pandas=0.23 requests`
 
-## pip installation instructions
+## pip installation instructions (NOT updated for 2019 yet)
 
 If you are not using the anaconda python distribution, please use the instructions below.
 
@@ -92,7 +92,7 @@ pip install jupyterlab
 # the conda instructions.
 ```
 
-## Check your installation
+## Check your installation (NOT updated for 2019 yet)
 
 To check your installation, please download the script [install_check.py](https://raw.githubusercontent.com/jupyter-widgets/tutorial/master/install_check.py) and run it:
 
@@ -102,7 +102,7 @@ python install_check.py
 
 ## Tutorial materials
 
-To get the tutorial materials, clone this repository. *We anticipate making changes to the tutorial content through the end of June, 2018.*
+To get the tutorial materials, clone this repository. *We anticipate making changes to the tutorial content through the end of June, 2019.*
 
 ## Using binder
 
