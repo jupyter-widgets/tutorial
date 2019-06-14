@@ -11,3 +11,5 @@ dependencies:
   - gdal
   - krb5
   - ipyleaflet
+  - ipysheet
+  - ipytree

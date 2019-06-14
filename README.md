@@ -29,12 +29,15 @@ The instructions below need one of two modification to work on Windows if you ar
 
 ### Installation instructions (NOT updated for 2019 yet)
 ```
-conda create -n widgets-tutorial -c conda-forge python=3.6 pip notebook=5.5 numpy scikit-image scipy pandas=0.23 requests
+conda create -n widgets-tutorial -c conda-forge python=3.7 pip notebook=5.7 numpy scikit-image scipy pandas=0.23 requests
 
 conda activate widgets-tutorial
 
 # Install widgets from conda-forge
-conda install -c conda-forge ipywidgets=7.2 bqplot ipyvolume ipyleaflet pythreejs ipyevents
+conda install -c conda-forge ipywidgets=7.4 bqplot ipyvolume ipyleaflet pythreejs ipyevents ipysheet ipytree
+
+# Install voila from conda-forge
+conda install -c conda-forge "voila>=0.1.2"
 
 # Install one more package from a different channel
 conda install -c wwt pywwt
@@ -45,10 +48,10 @@ ipython kernel install --name widgets-tutorial --display-name widgets-tutorial -
 # The remaining steps are necessary only if using JupyterLab:
 
 # Install JupyterLab
-conda install -c conda-forge jupyterlab nodejs=9.11
+conda install -c conda-forge jupyterlab nodejs=11.14
 
 # Enable JupyterLab extensions, which may take several minutes
-jupyter labextension install @jupyter-widgets/jupyterlab-manager bqplot ipyvolume jupyter-threejs jupyter-leaflet
+jupyter labextension install @jupyter-widgets/jupyterlab-manager bqplot ipyvolume jupyter-threejs jupyter-leaflet ipysheet ipytree
 ```
 
 ## Windows/nodejs workarounds (NOT updated for 2019 yet)
@@ -83,7 +86,9 @@ pkgs_dirs:
 If you are not using the anaconda python distribution, please use the instructions below.
 
 ```
-pip install notebook==5.5 ipywidgets numpy scipy scikit-image traitlets requests bqplot ipywidgets==7.2 ipyvolume matplotlib pandas==0.23 ipyleaflet pythreejs ipyevents pywwt
+pip install notebook==5.7 numpy scipy scikit-image traitlets requests bqplot ipywidgets==7.4 ipyvolume matplotlib pandas==0.23 ipyleaflet pythreejs ipyevents ipysheet ipytree pywwt
+
+pip install "voila>=0.1.2"
 
 # If you are using JupyterLab, install with
 pip install jupyterlab
