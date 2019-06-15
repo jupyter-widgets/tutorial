@@ -37,7 +37,7 @@ conda activate widgets-tutorial
 conda install -c conda-forge ipywidgets=7.4 bqplot ipyvolume ipyleaflet pythreejs ipyevents ipysheet ipytree
 
 # Install voila from conda-forge
-conda install -c conda-forge "voila>=0.1.2"
+conda install -c conda-forge voila=0.1
 
 # Install one more package from a different channel
 conda install -c wwt pywwt
