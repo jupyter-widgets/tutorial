@@ -52,7 +52,8 @@ try:
     check_call(['voila', '--version'])
     print('\tVoila is correctly installed')
 except CalledProcessError:
-    print('\tVoila is not installed! Please install it by running:')
+    print('\tVoila is not installed! Please install it by running one '
+          'of the following:')
     print('        conda install -c conda-forge voila')
     print('        pip install voila')
 
