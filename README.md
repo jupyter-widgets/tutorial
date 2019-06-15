@@ -29,7 +29,7 @@ The instructions below need one of two modification to work on Windows if you ar
 
 ### Installation instructions (NOT updated for 2019 yet)
 ```
-conda create -n widgets-tutorial -c conda-forge python=3.7 pip notebook=5.7 numpy scikit-image scipy pandas=0.23 requests
+conda create -n widgets-tutorial -c conda-forge python=3.7 pip notebook=5.7 numpy scikit-image scipy pandas requests
 
 conda activate widgets-tutorial
 
