@@ -79,7 +79,7 @@ pkgs_dirs:
 + Activate the environment: `conda activate c:\widgets-tutorial`
 + Replace the first line in the instructions below with:
 
-`conda install -c conda-forge python=3.6 pip notebook=5.5 numpy scikit-image scipy pandas=0.23 requests`
+`conda install -c conda-forge python=3.7 pip notebook=5.7 numpy scikit-image scipy pandas requests`
 
 ## pip installation instructions (NOT updated for 2019 yet)
 
