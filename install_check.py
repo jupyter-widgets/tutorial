@@ -12,6 +12,7 @@ requirements = [
     'ipyleaflet',
     'ipyvolume',
     'pythreejs',
+    'ipyevents',
     'ipysheet',
     'ipytree',
     'pywwt'
