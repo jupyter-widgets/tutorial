@@ -1,4 +1,5 @@
-from __future__ import print_function
+from subprocess import check_call, CalledProcessError
+
 
 FIX_PREFIX = '----->'
 
@@ -11,6 +12,9 @@ requirements = [
     'ipyleaflet',
     'ipyvolume',
     'pythreejs',
+    'ipyevents',
+    'ipysheet',
+    'ipytree',
     'pywwt'
 ]
 
@@ -29,8 +33,8 @@ for package in requirements:
 print()
 success = all(import_result.values())
 
-version_check_packages = {'ipywidgets': '7.2',
-                          'notebook': '5.5',
+version_check_packages = {'ipywidgets': '7.4',
+                          'notebook': '5.7',
                          }
 
 
@@ -41,6 +45,17 @@ else:
           'for the tutorial "{}":'.format(tutorial_name))
     missing = [k for k, v in import_result.items() if not v]
     print('\t' + '\n\t'.join(missing))
+
+print('Checking voila version:')
+
+try:
+    check_call(['voila', '--version'])
+    print('\tVoila is correctly installed')
+except CalledProcessError:
+    print('\tVoila is not installed! Please install it by running one '
+          'of the following:')
+    print('        conda install -c conda-forge voila')
+    print('        pip install voila')
 
 print('Checking version numbers of these packages: ',
       ', '.join(version_check_packages.keys()))
