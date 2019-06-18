@@ -27,7 +27,7 @@ The installation instructions below were tested on an up-to-date version of Wind
 ### Installation instructions
 
 ```
-conda create -n widgets-tutorial -c conda-forge python=3.7 pip notebook numpy scikit-image scipy pandas requests ipywidgets=7.4 bqplot ipyvolume ipyleaflet pythreejs ipyevents ipysheet ipytree ipympl pywwt voila=0.1 jupyterlab nodejs=11.14
+conda create -n widgets-tutorial -c conda-forge python=3.7 pip notebook numpy scikit-image scipy pandas requests ipywidgets bqplot ipyvolume ipyleaflet pythreejs ipyevents ipysheet ipytree ipympl pywwt voila=0.1 jupyterlab nodejs=11.14
 
 conda activate widgets-tutorial
 
