@@ -13,3 +13,7 @@ dependencies:
   - ipyleaflet
   - ipysheet
   - ipytree
+  - voila
+  - pip:
+    - ipyvuetify
+    - voila-vuetify
