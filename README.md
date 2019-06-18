@@ -33,11 +33,8 @@ conda create -n widgets-tutorial -c conda-forge python=3.7 pip notebook=5.7 nump
 
 conda activate widgets-tutorial
 
-# Install widgets from conda-forge
-conda install -c conda-forge ipywidgets=7.4 bqplot ipyvolume ipyleaflet pythreejs ipyevents ipysheet ipytree ipympl
-
-# Install voila from conda-forge
-conda install -c conda-forge voila=0.1
+# Install widgets and voila from conda-forge
+conda install -c conda-forge ipywidgets=7.4 bqplot ipyvolume ipyleaflet pythreejs ipyevents ipysheet ipytree ipympl voila=0.1
 
 # Install one more package from a different channel
 conda install -c wwt pywwt
@@ -86,9 +83,7 @@ pkgs_dirs:
 If you are not using the anaconda python distribution, please use the instructions below.
 
 ```
-pip install notebook==5.7 numpy scipy scikit-image traitlets requests bqplot ipywidgets==7.4 ipyvolume matplotlib pandas==0.23 ipyleaflet pythreejs ipyevents ipysheet ipytree pywwt ipympl
-
-pip install "voila>=0.1.2"
+pip install notebook==5.7 numpy scipy scikit-image traitlets requests bqplot ipywidgets==7.4 ipyvolume matplotlib pandas==0.23 ipyleaflet pythreejs ipyevents ipysheet ipytree pywwt ipympl "voila>=0.1.2"
 
 # If you are using JupyterLab, install with
 pip install jupyterlab
