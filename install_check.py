@@ -15,7 +15,8 @@ requirements = [
     'ipyevents',
     'ipysheet',
     'ipytree',
-    'pywwt'
+    'pywwt',
+    'jupyterlab'
 ]
 
 import_result = {p: False for p in requirements}
@@ -33,10 +34,11 @@ for package in requirements:
 print()
 success = all(import_result.values())
 
-version_check_packages = {'ipywidgets': '7.4',
-                          'notebook': '5.7',
+# List compatible versions for each package
+version_check_packages = {'ipywidgets': ['7.4', '7.5'],
+                          'notebook': ['5.7'],
+                          'jupyterlab': ['0.35', '1.0']
                          }
-
 
 if success:
     print('\tAll required packages installed')
@@ -62,15 +64,16 @@ print('Checking version numbers of these packages: ',
 
 
 def version_checker(package_name, version, nbextension=None):
-    good_version = version.startswith(version_check_packages[package_name])
+    good_version = any(version.startswith(v) for
+                       v in version_check_packages[package_name])
     if nbextension is None:
         nbextension = package_name
     if not good_version:
+        newest = version_check_packages[package_name][-1]
         print('\n**** Please upgrade {} to version {} by running:'.format(package_name,
-                                                                          version_check_packages[package_name]))
-        print('        conda remove --force {} # if you use conda'.format(package_name))
-        print('        pip install --pre --upgrade {}'.format(package_name))
-        print('        jupyter nbextension enable --py {}'.format(nbextension))
+                                                                          newest))
+        print('        conda install {}={} # if you use conda'.format(package_name, newest))
+        print('        pip install {}=={}'.format(package_name, newest))
     else:
         print('\t{} version is good!'.format(package_name))
 
@@ -93,6 +96,14 @@ except ImportError:
 else:
     notebook_version = notebook.__version__
     version_checker('notebook', notebook_version)
+
+try:
+    import jupyterlab
+except ImportError:
+    pass
+else:
+    jupyterlab_version = jupyterlab.__version__
+    version_checker('jupyterlab', jupyterlab_version)
 
 # Check that the appropriate kernel has been created
 
