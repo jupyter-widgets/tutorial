@@ -49,7 +49,7 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager bqplot ipyvolum
 If you are not using the anaconda python distribution, please use the instructions below.
 
 ```
-pip install notebook==5.7 numpy scipy scikit-image traitlets requests bqplot ipywidgets ipyvolume matplotlib pandas==0.23 ipyleaflet pythreejs ipyevents ipysheet ipytree pywwt ipympl "voila>=0.1.2" jupyterlab ipyvuetify voila-vuetify
+pip install notebook==5.7 numpy scipy scikit-image traitlets requests bqplot ipywidgets ipyvolume matplotlib pandas ipyleaflet pythreejs ipyevents ipysheet ipytree pywwt ipympl "voila>=0.1.2" jupyterlab ipyvuetify voila-vuetify
 
 # If you are using JupyerLab, also run the series of labextension install command in
 # the conda instructions.
