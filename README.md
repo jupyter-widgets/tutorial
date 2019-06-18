@@ -51,7 +51,7 @@ ipython kernel install --name widgets-tutorial --display-name widgets-tutorial -
 conda install -c conda-forge jupyterlab nodejs=11.14
 
 # Enable JupyterLab extensions, which may take several minutes
-jupyter labextension install @jupyter-widgets/jupyterlab-manager bqplot ipyvolume jupyter-threejs jupyter-leaflet ipysheet ipytree jupyter-matplotlib
+jupyter labextension install @jupyter-widgets/jupyterlab-manager bqplot ipyvolume jupyter-threejs jupyter-leaflet ipysheet ipytree jupyter-matplotlib jupyter-vuetify
 ```
 
 ## Windows/nodejs workarounds (NOT updated for 2019 yet)
