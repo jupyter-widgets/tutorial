@@ -34,7 +34,7 @@ conda create -n widgets-tutorial -c conda-forge python=3.7 pip notebook=5.7 nump
 conda activate widgets-tutorial
 
 # Install widgets and voila from conda-forge
-conda install -c conda-forge ipywidgets=7.4 bqplot ipyvolume ipyleaflet pythreejs ipyevents ipysheet ipytree ipympl voila=0.1
+conda install -c conda-forge ipywidgets=7.4 bqplot ipyvolume ipyleaflet pythreejs ipyevents ipywebrtc ipysheet ipytree ipympl voila=0.1
 
 # Install one more package from a different channel
 conda install -c wwt pywwt
@@ -48,7 +48,7 @@ ipython kernel install --name widgets-tutorial --display-name widgets-tutorial -
 conda install -c conda-forge jupyterlab nodejs=11.14
 
 # Enable JupyterLab extensions, which may take several minutes
-jupyter labextension install @jupyter-widgets/jupyterlab-manager bqplot ipyvolume jupyter-threejs jupyter-leaflet ipysheet ipytree jupyter-matplotlib
+jupyter labextension install @jupyter-widgets/jupyterlab-manager bqplot ipyvolume jupyter-threejs jupyter-leaflet jupyter-webrtc ipysheet ipytree jupyter-matplotlib
 ```
 
 ## Windows/nodejs workarounds (NOT updated for 2019 yet)
@@ -83,7 +83,7 @@ pkgs_dirs:
 If you are not using the anaconda python distribution, please use the instructions below.
 
 ```
-pip install notebook==5.7 numpy scipy scikit-image traitlets requests bqplot ipywidgets==7.4 ipyvolume matplotlib pandas==0.23 ipyleaflet pythreejs ipyevents ipysheet ipytree pywwt ipympl "voila>=0.1.2"
+pip install notebook==5.7 numpy scipy scikit-image traitlets requests bqplot ipywidgets==7.4 ipyvolume matplotlib pandas==0.23 ipyleaflet pythreejs ipyevents ipywebrtc ipysheet ipytree pywwt ipympl "voila>=0.1.2"
 
 # If you are using JupyterLab, install with
 pip install jupyterlab
