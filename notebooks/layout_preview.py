@@ -12,8 +12,12 @@ button_styles = ['primary',
 'warning',
 'danger']
 
-items = [widgets.Button(layout=item_layout, description=str(i), button_style=button_styles[i]) for i in range(5)]
 
+def make_items(n):
+    items = [widgets.Button(layout=item_layout, description=str(i), button_style=button_styles[i % 5]) for i in range(n)]
+    return items
+
+items = make_items(5)
 
 # ### Create box to hold the layout demo widgets
 #
@@ -598,9 +602,21 @@ widgetSizeVbox  = widgets.VBox(vboxwidgetSizeList)
 
 # In[ ]:
 
+number_of_buttons = widgets.BoundedIntText(min=1, max=100, step=1, value=5, 
+                                           description='Number of buttons',
+                                           style={'description_width': 'initial'})
+
+
+def on_number_of_buttons_change(change):
+    if change['type'] == 'change' and change['name'] == 'value':
+        items = make_items(change.new)
+        widgetGroup.children = items
+
+number_of_buttons.observe(on_number_of_buttons_change)
+
 
 hbox  = widgets.HBox([vbox_style_options, widgetSizeVbox, ])
-layout  = widgets.VBox([pythonCode, hbox, widgetGroupAndTitle, ])
+layout  = widgets.VBox([number_of_buttons, pythonCode, hbox, widgetGroupAndTitle, ])
 
 layout
 
