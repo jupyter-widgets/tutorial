@@ -143,6 +143,8 @@ def list_overview_widget(groups,
 
         try:
             short_description = wid.__doc__.split('\n')[0]
+            if not short_description:
+                short_description = wid.__doc__.split('\n')[1]
         except AttributeError:
             short_description = ''
 
