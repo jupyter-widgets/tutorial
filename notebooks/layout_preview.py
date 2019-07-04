@@ -1,9 +1,8 @@
-
-
 __all__ = ['layout']
 
+import numpy as np
 import ipywidgets as widgets
-
+from traitlets import TraitError
 
 item_layout = widgets.Layout(height='80px', min_width='30px', min_height='50px', width ='60px',flex_wrap='wrap')
 button_styles = ['primary',
@@ -11,13 +10,19 @@ button_styles = ['primary',
 'info',
 'warning',
 'danger']
-
+item_layout_options = dict(min_width='30px', min_height='20px', width ='60px',flex_wrap='wrap')
 
 def make_items(n):
-    items = [widgets.Button(layout=item_layout, description=str(i), button_style=button_styles[i % 5]) for i in range(n)]
+    items = [widgets.Button(layout=widgets.Layout(**item_layout_options), description=str(i), button_style=button_styles[i % 5]) for i in range(n)]
+    # Randomize heights so it is a little clearer what some of the layout
+    # options do.
+    for item in items:
+        item.layout.min_height = '20px'
+        item.layout.height = '{}px'.format(np.random.choice([20, 25, 50, 67, 80]))
     return items
 
-items = make_items(5)
+initial_number_of_buttons = 18
+items = make_items(initial_number_of_buttons)
 
 # ### Create box to hold the layout demo widgets
 #
@@ -25,17 +30,51 @@ items = make_items(5)
 
 # In[ ]:
 
+default_options = dict(
+    border='3px solid gray',
+    width='700px',
+    min_width='50px',
+    max_width='1000px',
+    min_height='50px',
+    max_height='1000px',
+    height='300px',
+    flex_flow='row nowrap',
+    display='flex',
+    justify_content='flex-start',
+    align_items='stretch',
+    align_content='stretch'
+)
 
-box_layout = widgets.Layout(overflow_x='scroll',
-                    border='3px solid black',
-                    width='700px',
-                    min_width='50px',
-                    max_width='1000px',
-                    min_height='50px',
-                    max_height='1000px',
-                    height='300px',
-                    flex_direction='row',
-                    display='flex')
+box_layout = widgets.Layout(**default_options)
+
+
+def _set_overflow_from_x_y(layout, ox, oy):
+    """
+    Hide the ugly logic for packing/unpacking overflow
+    from the rest of the code.
+    """
+    layout._overflow = '{} {}'.format(ox, oy)
+    try:
+        layout.overflow = layout._overflow
+    except TraitError:
+        # Oh well, not using 7.5 yet I guess...
+        layout.overflow_x = ox
+        layout.overflow_y = oy
+
+_set_overflow_from_x_y(box_layout, 'scroll', 'scroll')
+
+
+def _get_overflow_x_y():
+    try:
+        x, y = widgetGroup.layout.overflow.split(' ')
+    except AttributeError:
+        # We invented a hidden overflow property above in case
+        # the 7.5 style overflow doesn't work...
+        x = widgetGroup.layout.overflow_x
+        y = widgetGroup.layout.overflow_y
+
+    return x, y
+
 
 widgetGroup = widgets.Box(children=items, layout=box_layout)
 
@@ -71,8 +110,19 @@ pythonCode.layout.height = '80px'
 # Set a uniform description width to make alignment easier
 style = {'description_width': '100px'}
 
+# Define a layout for groups of properties in a shortcut
+shortcut_group_layout = widgets.Layout(border='2px dotted gray',
+                                       width='fit-content')
+
 # Define one of two lists that will hold controls for changing the layout
 vboxList = []
+
+
+overflow_shortcut = widgets.Text(description='overflow',
+                                 disabled=True)
+overflow_shortcut.value = '{} {}'.format(*_get_overflow_x_y())
+
+overflow_kids = []
 
 # Widget to present overflow style options for x
 overflow_x = widgets.Dropdown(
@@ -84,13 +134,15 @@ overflow_x = widgets.Dropdown(
 )
 
 # Add the
-vboxList.append(overflow_x)
+#vboxList.append(overflow_x)
 
 # Set up observer to watch for changes in selected overflow style and apply
 # selected style to widgetGroup.
 def on_overflow_xchange(change):
     if change['type'] == 'change' and change['name'] == 'value':
-        widgetGroup.layout.overflow_x = change.new
+        old_x, old_y = _get_overflow_x_y()
+        _set_overflow_from_x_y(widgetGroup.layout, change.new, old_y)
+        overflow_shortcut.value = '{} {}'.format(*_get_overflow_x_y())
 
         # Note how easy it is to get the Python code to generate the layout!
         pythonCode.value = str(widgetGroup.layout)
@@ -107,87 +159,134 @@ overflow_y = widgets.Dropdown(
     disabled=False,
     style=style,
 )
-vboxList.append(overflow_y)
 
 
 def on_overflow_y_change(change):
     if change['type'] == 'change' and change['name'] == 'value':
-        widgetGroup.layout.overflow_y = change.new
+        old_x, old_y = _get_overflow_x_y()
+        _set_overflow_from_x_y(widgetGroup.layout, old_x, change.new)
+        overflow_shortcut.value = '{} {}'.format(*_get_overflow_x_y())
         pythonCode.value = str(widgetGroup.layout)
+
 
 overflow_y.observe(on_overflow_y_change)
 
+overflow_box = widgets.VBox(children=[overflow_shortcut,
+                                      overflow_x,
+                                      overflow_y],
+                            layout=shortcut_group_layout)
+
+
+def reset_overflow():
+    """
+    Set overflow_x/y from overflow.
+    """
+    overflow_shortcut.value = '{} {}'.format(*_get_overflow_x_y())
+    overflow_x.value, overflow_y.value = _get_overflow_x_y()
+
+
+vboxList.append(overflow_box)
 
 # ### Add some choices for the border around our layout demo
 
 # In[ ]:
 
+border_box = widgets.VBox(layout=shortcut_group_layout)
 
-border = widgets.Dropdown(
-    options=['3px solid black', '1px dashed black','2px solid black','3px solid blue', ],
-    value = widgetGroup.layout.border,
-    description='border:',
-    disabled=False,
-    style=style,
-)
+border_shortcut = widgets.Text(description="border",
+                               disabled=True,
+                               value=widgetGroup.layout.border)
 
-vboxList.append(border)
 
-def on_border_change(change):
+def _get_border_pieces():
+    return widgetGroup.layout.border.split(' ')
+
+
+bwid, bstyle, bcolor = _get_border_pieces()
+
+border_width = widgets.Text(description="width:",
+                            value=bwid,
+                            style=style)
+
+
+def _update_border():
+    widgetGroup.layout.border = ' '.join([border_width.value,
+                                          border_style.value,
+                                          border_color.value])
+    border_shortcut.value = widgetGroup.layout.border
+
+
+def on_border_width_change(change):
     if change['type'] == 'change' and change['name'] == 'value':
-        widgetGroup.layout.border = change.new
+        _update_border()
         pythonCode.value = str(widgetGroup.layout)
 
-border.observe(on_border_change)
+border_width.observe(on_border_width_change)
+
+border_style = widgets.Dropdown(
+    options=['none', 'hidden', 'dotted', 'dashed', 'solid', 'double', 'groove', 'ridge', 'inset', 'outset'],
+    value=bstyle,
+    description='style:',
+    style=style
+)
+
+
+def on_border_style_change(change):
+    if change['type'] == 'change' and change['name'] == 'value':
+        _update_border()
+        pythonCode.value = str(widgetGroup.layout)
+
+
+border_style.observe(on_border_style_change)
+
+border_color = widgets.Text(description="color:",
+                            value=bcolor,
+                            style=style)
+
+
+def on_border_color_change(change):
+    if change['type'] == 'change' and change['name'] == 'value':
+        _update_border()
+        pythonCode.value = str(widgetGroup.layout)
+
+
+border_color.observe(on_border_color_change)
+
+
+# border = widgets.Dropdown(
+#     options=['3px solid gray', '1px dashed black','2px solid black','3px solid blue', ],
+#     value = widgetGroup.layout.border,
+#     description='border:',
+#     disabled=False,
+#     style=style,
+# )
+
+border_box.children = [
+    border_shortcut,
+    border_width,
+    border_style,
+    border_color
+]
+vboxList.append(border_box)
+
+
+def reset_border():
+    border_shortcut.value = widgetGroup.layout.border
+    border_width.value, border_style.value, border_color.value = \
+        _get_border_pieces()
+
+
+# def on_border_change(change):
+#     if change['type'] == 'change' and change['name'] == 'value':
+#         widgetGroup.layout.border = change.new
+#         pythonCode.value = str(widgetGroup.layout)
+
+# border.observe(on_border_change)
 
 
 # ## Add dropdowns for several CSS layout options
 
 # In[ ]:
-
-
-# flex-flow opetions
-
-flex_flow = widgets.Dropdown(
-    options=[
-        'column-reverse',
-        'column',
-        'row',
-        'row-reverse',
-    ],
-    value='row',
-    description='flex-flow:',
-    disabled=False,
-    style=style,
-)
-vboxList.append(flex_flow)
-def on_flex_flow_change(change):
-    if change['type'] == 'change' and change['name'] == 'value':
-        widgetGroup.layout.flex_flow = change.new
-        pythonCode.value = str(widgetGroup.layout)
-
-flex_flow.observe(on_flex_flow_change)
-
-# flex-direction options
-flex_direction = widgets.Dropdown(
-    options=[
-        'column-reverse',
-        'column',
-        'row',
-        'row-reverse',
-    ],
-    value='row',
-    description='flex-direction:',
-    disabled=False,
-    style=style,
-)
-vboxList.append(flex_direction)
-def on_flex_direction_change(change):
-    if change['type'] == 'change' and change['name'] == 'value':
-        widgetGroup.layout.flex_direction = change.new
-        pythonCode.value = str(widgetGroup.layout)
-
-flex_direction.observe(on_flex_direction_change)
 
 # display options
 
@@ -198,13 +297,47 @@ display = widgets.Dropdown(
     disabled=False,
     style=style,
 )
-vboxList.append(display)
+# vboxList.append(display)
 def on_display_change(change):
     if change['type'] == 'change' and change['name'] == 'value':
         widgetGroup.layout.display = change.new
         pythonCode.value = str(widgetGroup.layout)
 
 display.observe(on_display_change)
+
+flex_flow = widgets.VBox(layout=shortcut_group_layout)
+flex_flow_list = []
+
+flex_flow_shortcut = widgets.Text(description='flex_flow',
+                                  value=widgetGroup.layout.flex_flow,
+                                  disabled=True)
+flex_flow_list.append(flex_flow_shortcut)
+# flex-flow options
+
+flex_flow_dir = widgets.Dropdown(
+    options=[
+        'column-reverse',
+        'column',
+        'row',
+        'row-reverse',
+    ],
+    value='row',
+    description='direction:',
+    disabled=False,
+    style=style,
+)
+flex_flow_list.append(flex_flow_dir)
+def on_flex_flow_dir_change(change):
+    if change['type'] == 'change' and change['name'] == 'value':
+        flex_flow = widgetGroup.layout.flex_flow
+        direction, wrap = flex_flow.split(' ')
+        direction = change.new
+        widgetGroup.layout.flex_flow = direction + ' ' + wrap
+        flex_flow_shortcut.value = widgetGroup.layout.flex_flow
+        pythonCode.value = str(widgetGroup.layout)
+
+flex_flow_dir.observe(on_flex_flow_dir_change)
+
 
 # flex-wrap options
 
@@ -215,19 +348,32 @@ flex_wrap = widgets.Dropdown(
         'wrap-reverse',
     ],
     value='nowrap',
-    description='flex-wrap:',
+    description='wrap:',
     disabled=False,
     style=style,
 )
-vboxList.append(flex_wrap)
+flex_flow_list.append(flex_wrap)
 def on_flex_wrap_change(change):
     if change['type'] == 'change' and change['name'] == 'value':
-        widgetGroup.layout.flex_wrap = change.new
+        flex_flow = widgetGroup.layout.flex_flow
+        if flex_flow is not None:
+            flex_flow = flex_flow.split(' ')
+        else:
+            flex_flow = ['']
+        widgetGroup.layout.flex_flow = flex_flow[0] + ' ' + change.new
+        flex_flow_shortcut.value = widgetGroup.layout.flex_flow
         pythonCode.value = str(widgetGroup.layout)
 
 flex_wrap.observe(on_flex_wrap_change)
 
+flex_flow.children = flex_flow_list
+
+vboxList.append(flex_flow)
 # justify-content options
+
+main_axis_box = widgets.VBox(layout=shortcut_group_layout)
+
+main_axis_label = widgets.Label(value="Main axis")
 
 justify_content = widgets.Dropdown(
     options=[
@@ -237,13 +383,12 @@ justify_content = widgets.Dropdown(
         'space-between',
         'space-around',
     ],
-    value='flex-start',
+    value=widgetGroup.layout.justify_content,
     description='justify_content:',
     disabled=False,
     style=style,
 )
 
-vboxList.append(justify_content)
 def on_justify_content_change(change):
     if change['type'] == 'change' and change['name'] == 'value':
         widgetGroup.layout.justify_content = change.new
@@ -251,6 +396,17 @@ def on_justify_content_change(change):
 
 justify_content.observe(on_justify_content_change)
 
+main_axis_box.children = [
+    main_axis_label,
+    justify_content
+]
+
+vboxList.append(main_axis_box)
+
+
+cross_axis_box = widgets.VBox(layout=shortcut_group_layout)
+
+cross_axis_label = widgets.Label(value='Cross axis')
 # align-items options
 
 align_items = widgets.Dropdown(
@@ -261,12 +417,12 @@ align_items = widgets.Dropdown(
         'baseline',
         'stretch',
     ],
-    value='stretch',
+    value=widgetGroup.layout.align_items,
     description='align_items:',
     disabled=False,
     style=style,
 )
-vboxList.append(align_items)
+
 def on_align_items_change(change):
     if change['type'] == 'change' and change['name'] == 'value':
         widgetGroup.layout.align_items = change.new
@@ -289,12 +445,12 @@ align_content = widgets.Dropdown(
         'inherit',
         'initial',
         'unset'],
-    value='stretch',
+    value=widgetGroup.layout.align_content,
     description='align_content:',
     disabled=False,
     style=style,
 )
-vboxList.append(align_content)
+
 def on_align_content_change(change):
     if change['type'] == 'change' and change['name'] == 'value':
         widgetGroup.layout.align_content = change.new
@@ -302,14 +458,27 @@ def on_align_content_change(change):
 
 align_content.observe(on_align_content_change)
 
+cross_axis_box.children = [
+    cross_axis_label,
+    align_items,
+    align_content
+]
+
+vboxList.append(cross_axis_box)
 
 # ### Set up `VBox` for holding these controls
 
 # In[ ]:
 
 
-vbox_style_options  = widgets.VBox(vboxList)
-
+# vbox_style_options  = widgets.VBox(vboxList)
+grid_layout = widgets.Layout(grid_template_rows="repeat(2, auto)",
+                             grid_auto_flow="column dense",
+                             grid_auto_colums="repeat(2, 1fr)",
+                             grid_gap="10px",
+                             width="100%")
+vbox_style_options = widgets.GridBox(vboxList,
+                                     layout=grid_layout)
 
 # ## Set up controls for changing sizes of layout demo
 
@@ -602,7 +771,8 @@ widgetSizeVbox  = widgets.VBox(vboxwidgetSizeList)
 
 # In[ ]:
 
-number_of_buttons = widgets.BoundedIntText(min=1, max=100, step=1, value=5, 
+number_of_buttons = widgets.BoundedIntText(min=1, max=100, step=1,
+                                           value=initial_number_of_buttons,
                                            description='Number of buttons',
                                            style={'description_width': 'initial'})
 
@@ -615,8 +785,31 @@ def on_number_of_buttons_change(change):
 number_of_buttons.observe(on_number_of_buttons_change)
 
 
-hbox  = widgets.HBox([vbox_style_options, widgetSizeVbox, ])
-layout  = widgets.VBox([number_of_buttons, pythonCode, hbox, widgetGroupAndTitle, ])
+tabs = widgets.Tab()
+tabs.children = [vbox_style_options, widgetSizeVbox, pythonCode]
+tabs.set_title(0, 'Layout options')
+tabs.set_title(1, 'Size options')
+tabs.set_title(2, 'Python code')
 
+reset_button = widgets.Button(description='Reset')
+
+
+def on_reset_button(_):
+    widgetGroup.layout = widgets.Layout(**default_options)
+    pythonCode.value = str(widgetGroup.layout)
+    _set_overflow_from_x_y(widgetGroup.layout, 'scroll', 'scroll')
+    reset_overflow()
+    reset_border()
+    justify_content.value = widgetGroup.layout.justify_content
+    align_content.value = widgetGroup.layout.align_content
+    align_items.value = widgetGroup.layout.align_items
+    number_of_buttons.value = initial_number_of_buttons
+
+
+reset_button.on_click(on_reset_button)
+
+hbox  = widgets.HBox([number_of_buttons, reset_button])
+layout = widgets.VBox([hbox, tabs, widgetGroupAndTitle, ])
+pythonCode.value = str(widgetGroup.layout)
 layout
 
