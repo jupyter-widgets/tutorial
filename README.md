@@ -44,7 +44,7 @@ ipython kernel install --name widgets-tutorial --display-name widgets-tutorial -
 jupyter labextension install @jupyter-widgets/jupyterlab-manager bqplot ipyvolume jupyter-threejs jupyter-leaflet ipysheet ipytree jupyter-matplotlib jupyter-vuetify
 ```
 
-## pip installation instructions (NOT updated for 2019 yet)
+## pip installation instructions
 
 If you are not using the anaconda python distribution, please use the instructions below.
 
