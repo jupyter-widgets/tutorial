@@ -31,9 +31,6 @@ conda create -n widgets-tutorial -c conda-forge python=3.7 pip notebook numpy sc
 
 conda activate widgets-tutorial
 
-# Install widgets and voila from conda-forge
-conda install -c conda-forge ipywidgets=7.4 bqplot ipyvolume ipyleaflet pythreejs ipyevents ipysheet ipytree ipympl voila=0.1
-
 # Install ipyvuetify and voila-vuetify from pip (not on conda-forge yet)
 pip install ipyvuetify voila-vuetify
 
