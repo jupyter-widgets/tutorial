@@ -62,7 +62,9 @@ def organized_widgets(organize_by='ui'):
                   }
 
     if organize_by == 'ui':
-        containers = ['Box', 'VBox', 'HBox', 'GridBox', 'Accordion', 'Tab']
+        containers = ['Box', 'VBox', 'HBox', 'GridBox',
+                      'Accordion', 'Tab', 'AppLayout', 'GridspecLayout',
+                      'TwoByTwoLayout']
         groups = dict(
             sliders={k: v for k, v in widget_dict.items() if 'Slider' in k},
             buttons={k: v for k, v in widget_dict.items() if 'Button' in k},
@@ -136,6 +138,8 @@ def list_overview_widget(groups,
             extra_args = dict(options=[1, 2, 3])
         elif 'progress' in widget.__name__.lower():
             extra_args = dict(value=50)
+        elif 'gridspeclayout' in widget.__name__.lower():
+            extra_args = dict(n_rows=3, n_columns=3)
         else:
             extra_args = {}
 
