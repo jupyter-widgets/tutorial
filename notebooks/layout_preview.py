@@ -1,3 +1,5 @@
+# Thanks to [Doug Redden (@DougRzz)](https://github.com/DougRzz) for contributing the code this file was based on.
+
 __all__ = ['layout']
 
 import numpy as np
@@ -26,7 +28,7 @@ items = make_items(initial_number_of_buttons)
 
 # ### Create box to hold the layout demo widgets
 #
-# The widget deisplayed below will be embedded in a larger widget later in the notebook. That larger widget lets you interactively change the layout of this widget.
+# The widget displayed below will be embedded in a larger widget later in the notebook. That larger widget lets you interactively change the layout of this widget.
 
 # In[ ]:
 
