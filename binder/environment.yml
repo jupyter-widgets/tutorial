@@ -21,3 +21,4 @@ dependencies:
     - ipyvuetify
     - voila-vuetify
     - netcdf4
+    - sidecar
