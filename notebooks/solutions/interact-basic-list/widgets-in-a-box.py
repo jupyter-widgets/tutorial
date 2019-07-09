@@ -1,6 +1,6 @@
-application = widgets.Textarea(description='Fill this box')
-b = widgets.Button(description='Click me')
-v = widgets.Valid(description='The text is')
+import ipywidgets as widgets
+a = widgets.IntText(description='Value A')
+b = widgets.IntSlider(description='Value B')
 
-vbox = widgets.VBox(children=[application, b, v])
+vbox = widgets.VBox(children=[a, b])
 vbox

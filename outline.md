@@ -4,11 +4,8 @@
    1. Overview/introduction (10 min)
    2. `@interact` notebook and exercise (10 min)
    3. Widget Basics notebook (10 min)
+   4. Widget List and exercise (15 min)
    4. Output widget (5 min)
-   4. Widget List (5 min)
-   4. Exercises (20 min)
-      1. interact extension
-      2. widget basics extension
    5. Break (10 min)
 2. start 1:10 Widget styling: **MATT**
    1. Talk (15 min)
