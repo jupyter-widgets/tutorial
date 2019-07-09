@@ -7,16 +7,16 @@
    4. Widget List and exercise (15 min)
    4. Output widget (5 min)
    5. Break (10 min)
-2. start 1:10 Widget styling: **MATT**
+2. start 1:00 Widget styling: **MATT**
    1. Talk (15 min)
       1. Add some basic css
    2. Notebooks (15 min)
    3. "stretch" break (5 min) (please don't leave room)
-3. start 1:45 Widget events
-   1. Events: observe, link, traitlets (15 min) **JASON**
+3. start 1:35 Widget events
+   1. Events: observe, link, traitlets (15 min) **MATT**
    2. Exercise (10 min)
    2. Break (10 min)
-4. start 2:20 More widget libraries **MAARTEN, MARTIN**
+4. start 2:10 More widget libraries **MAARTEN, MARTIN**
    1. intro (5 min)
    7. ipympl
    2. bqplot (10 min)
