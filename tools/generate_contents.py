@@ -55,6 +55,8 @@ def gen_contents(directory=None, path_prefix=None,
 
         title = get_notebook_title(nb)
 
+        # No spaces allowed in URLs...
+        nb_url = nb_url.replace(' ', '%20')
         if section == '00':
             if toc_style == 'nested_list':
                 yield f'{chapter}. [{title}]({nb_url})'
