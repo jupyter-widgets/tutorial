@@ -2,7 +2,7 @@
 
 1. 0:00 Widget overview **JASON**
    1. Overview/introduction (10 min)
-   2. `@interact` notebook and example (10 min)
+   2. `@interact` notebook and exercise (10 min)
    3. Widget Basics notebook (10 min)
    4. Output widget (5 min)
    4. Widget List (5 min)
