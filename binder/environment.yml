@@ -13,7 +13,9 @@ dependencies:
   - ipyleaflet
   - ipysheet
   - ipytree
+  - ipyeents
   - voila
   - pip:
     - ipyvuetify
     - voila-vuetify
+    - netcdf4
