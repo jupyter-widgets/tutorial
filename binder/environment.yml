@@ -5,6 +5,7 @@ dependencies:
   - numpy
   - scikit-image
   - ipywidgets=7.5
+  - jupyterlab=1.0
   - scipy
   - bqplot
   - pythreejs
