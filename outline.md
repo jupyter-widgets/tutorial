@@ -18,20 +18,17 @@
    2. Break (10 min)
 4. start 2:10 More widget libraries **MAARTEN, MARTIN**
    1. intro (5 min)
-   7. ipympl
-   2. bqplot (10 min)
-   3. pythreejs (5 min)
-   4. ipyvolume (5 min)
-   5. ipyleaflet (5 min)
-   6. vaex (5 min)
-   7. ipywebrtc (5 min)
-   7. ipycanvas
-   7. ipytree
-   7. ipysheet
-   7. ipyvuetify
-   8. start 3:20 two exercises: (10 min)
-      1. bqplot as control (fourier series)
-      2. other experimentation
-      3. "stretch" break (please don't leave room)
-6. Voilà: widgets outside the notebook **MAARTEN, MARTIN**
+   1. ipyleaflet and exercise (3+4 min)
+   2. pythreejs (3 min)
+   3. ipympl (2 min)
+   4. ipytree (2 min)
+   5. ipysheet (4 min)
+   6. ipycanvas (3 min)
+   7. bqplot (7 min)
+   8. ipyvolume (4 min)
+   9. ipywebrtc (3 min)
+   9. vaex (3 min)
+   9. ipyvuetify and exercise (10 min)
+   3. "stretch" break (please don't leave room)
+6. start 3:15 Voilà: widgets outside the notebook **MAARTEN, MARTIN**
 7. starts 3:45 Flexible/Q&A time
