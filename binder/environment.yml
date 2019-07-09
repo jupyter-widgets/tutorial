@@ -4,7 +4,7 @@ channels:
 dependencies:
   - numpy
   - scikit-image
-  - ipywidgets=7.4
+  - ipywidgets=7.5
   - scipy
   - bqplot
   - pythreejs
