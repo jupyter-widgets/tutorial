@@ -3,6 +3,7 @@ import inspect
 from collections import defaultdict
 
 import ipywidgets as widgets
+from IPython.display import HTML
 
 
 def extract_module_name(obj, full=False):
@@ -153,12 +154,9 @@ def list_overview_widget(groups,
             short_description = ''
 
         url = f'{help_url_base}#{name}'
-        if help_url_base == '':
-            help_link = f'<h3><a href="{url}" rel="nofollow" target="_self" style="color:gray;">{name}</a></h3><p>{short_description}</p>'
-        else:
-            magic_stuff = 'data-commandlinker-command="rendermime:handle-local-link" data-commandlinker-args="{&quot;path&quot;:&quot;04.00-widget-list.ipynb&quot;,&quot;id&quot;:&quot;#IntRangeSlider&quot;}"'
-            help_link = f'<h3><a href="{url}" rel="nofollow" target="_blank" style="color:gray;" {magic_stuff}>{name}</a></h3><p>{short_description}</p>'
-        title = widgets.HTML(value=help_link)
+        help_link = f'<h3><a href="{url}" rel="nofollow" target="_self" style="color:gray;">{name}</a></h3><p>{short_description}</p>'
+        title = widgets.Output()
+        title.append_display_data(HTML(help_link))
         title.layout.padding = '10px'
         b.layout.overflow_x = 'hidden'
         b.children = [title, wid]
