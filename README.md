@@ -27,18 +27,15 @@ The installation instructions below were tested on an up-to-date version of Wind
 ### Installation instructions
 
 ```
-conda create -n widgets-tutorial -c conda-forge python=3.7 pip notebook numpy scikit-image scipy pandas requests ipywidgets bqplot ipyvolume ipyleaflet pythreejs ipyevents ipysheet ipytree ipympl pywwt voila=0.1 jupyterlab nodejs=11.14
+conda create -n widgets-tutorial -c conda-forge python=3.8 pip notebook numpy scikit-image scipy pandas requests ipywidgets bqplot ipyvolume=0.5 ipyleaflet pythreejs ipycanvas ipyevents ipysheet ipytree ipympl pywwt voila=0.1 ipyvuetify voila-vuetify jupyterlab=1 nodejs=13
 
 conda activate widgets-tutorial
-
-# Install ipyvuetify and voila-vuetify from pip (not on conda-forge yet)
-pip install ipyvuetify voila-vuetify
 
 # Create a kernel for this environment
 ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
 
 # Enable JupyterLab extensions, which may take several minutes
-jupyter labextension install @jupyter-widgets/jupyterlab-manager bqplot ipyvolume jupyter-threejs jupyter-leaflet ipysheet ipytree jupyter-matplotlib jupyter-vuetify
+jupyter labextension install @jupyter-widgets/jupyterlab-manager bqplot ipyvolume@0.5 jupyter-threejs jupyter-leaflet ipysheet ipytree ipycanvas jupyter-matplotlib jupyter-vuetify
 ```
 
 ## pip installation instructions
@@ -46,7 +43,7 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager bqplot ipyvolum
 If you are not using the anaconda python distribution, please use the instructions below.
 
 ```
-pip install notebook==5.7 numpy scipy scikit-image traitlets requests bqplot ipywidgets ipyvolume matplotlib pandas ipyleaflet pythreejs ipyevents ipysheet ipytree pywwt ipympl "voila>=0.1.2" jupyterlab ipyvuetify voila-vuetify
+pip install notebook==5.7 numpy scipy scikit-image traitlets requests bqplot ipywidgets ipyvolume==0.5.2 matplotlib pandas ipyleaflet pythreejs ipyevents ipysheet ipytree pywwt ipympl "voila>=0.1.2" jupyterlab==1.2.15 ipyvuetify voila-vuetify
 
 # If you are using JupyerLab, also run the series of labextension install command in
 # the conda instructions.
