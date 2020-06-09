@@ -36,7 +36,7 @@ conda activate widgets-tutorial
 ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
 
 # Enable JupyterLab extensions, which may take several minutes
-jupyter labextension install @jupyter-widgets/jupyterlab-manager @jupyter-widgets/jupyterlab-sidecar @jupyter-widgets/jupyterlab-sidecar bqplot jupyter-threejs jupyter-leaflet ipysheet ipytree ipycanvas jupyter-matplotlib jupyter-vuetify
+jupyter labextension install @jupyter-widgets/jupyterlab-manager @jupyter-widgets/jupyterlab-sidecar bqplot jupyter-threejs jupyter-leaflet ipysheet ipytree ipycanvas jupyter-matplotlib jupyter-vuetify
 ```
 
 ## pip installation instructions
@@ -52,7 +52,7 @@ pip install notebook numpy scipy scikit-image traitlets requests bqplot ipywidge
 ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
 
 # Enable JupyterLab extensions, which may take several minutes
-jupyter labextension install @jupyter-widgets/jupyterlab-manager @jupyter-widgets/jupyterlab-sidecar @jupyter-widgets/jupyterlab-sidecar bqplot jupyter-threejs jupyter-leaflet ipysheet ipytree ipycanvas jupyter-matplotlib jupyter-vuetify
+jupyter labextension install @jupyter-widgets/jupyterlab-manager @jupyter-widgets/jupyterlab-sidecar bqplot jupyter-threejs jupyter-leaflet ipysheet ipytree ipycanvas jupyter-matplotlib jupyter-vuetify
 ```
 
 ## Check your installation
