@@ -154,6 +154,6 @@ else:
         print(FIX_PREFIX, 'These lab extensions are missing: ',
               ', '.join(missing_extensions))
         print(FIX_PREFIX,' Run this to install them: jupyter labextension install ',
-              ', '.join(missing_extensions))
+              ' '.join(missing_extensions))
     else:
         print('\tAll extensions are installed!')
