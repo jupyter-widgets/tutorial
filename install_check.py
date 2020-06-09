@@ -10,7 +10,7 @@ requirements = [
     'ipywidgets',
     'bqplot',
     'ipyleaflet',
-    'ipyvolume',
+    # 'ipyvolume',
     'pythreejs',
     'ipyevents',
     'ipysheet',
@@ -35,9 +35,9 @@ print()
 success = all(import_result.values())
 
 # List compatible versions for each package
-version_check_packages = {'ipywidgets': ['7.4', '7.5'],
-                          'notebook': ['5.7'],
-                          'jupyterlab': ['0.35', '1.0']
+version_check_packages = {'ipywidgets': ['7.5'],
+                          'notebook': ['6'],
+                          'jupyterlab': ['2'],
                          }
 
 if success:
