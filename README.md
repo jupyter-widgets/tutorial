@@ -70,7 +70,7 @@ python install_check.py
 
 ## Tutorial materials
 
-To get the tutorial materials, clone this repository. *We anticipate making changes to the tutorial content through the end of June, 2019.*
+To get the tutorial materials, clone this repository. *We anticipate making changes to the tutorial content through the end of June, 2020.*
 
 ## Using binder
 
