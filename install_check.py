@@ -119,3 +119,41 @@ if required_kernel not in known_kernels:
           'ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix')
 else:
     print('\tCustom kernel is correctly installed')
+
+# Check that lab extensions are installed
+
+print('Checking whether all Jupyter lab extensions are installed')
+
+lab_extensions = [
+    '@jupyter-widgets/jupyterlab-manager',
+    '@jupyter-widgets/jupyterlab-sidecar',
+    'bqplot',
+    'jupyter-threejs',
+    'jupyter-leaflet',
+    # 'ipyvolume',
+    'ipyevents',
+    'ipysheet',
+    'ipytree',
+    'ipycanvas',
+    'jupyter-matplotlib',
+    'jupyter-vuetify',
+]
+
+try:
+    from jupyterlab.commands import check_extension
+except ImportError:
+    print(FIX_PREFIX, 'Please install jupyterlab before checking extensions.')
+else:
+    missing_extensions = []
+
+    for extension in lab_extensions:
+        if not check_extension(extension):
+            missing_extensions.append(extension)
+
+    if missing_extensions:
+        print(FIX_PREFIX, 'These lab extensions are missing: ',
+              ', '.join(missing_extensions))
+        print(FIX_PREFIX,' Run this to install them: jupyter labextension install ',
+              ', '.join(missing_extensions))
+    else:
+        print('\tAll extensions are installed!')
