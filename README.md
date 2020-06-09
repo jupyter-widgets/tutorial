@@ -45,9 +45,14 @@ If you are not using the anaconda python distribution, please use the instructio
 
 ```
 pip install notebook numpy scipy scikit-image traitlets requests bqplot ipywidgets matplotlib pandas ipyleaflet pythreejs ipyevents ipysheet ipytree pywwt ipympl "voila>=0.1.2" jupyterlab ipyvuetify voila-vuetify sidecar
+```
 
-# INSTALL NODEJS: See https://nodejs.org/en/download/ or https://nodejs.org/en/download/package-manager/ for download and installation instructions.
 
+### INSTALL NODEJS
+
+See [https://nodejs.org/en/download/](https://nodejs.org/en/download/) or [https://nodejs.org/en/download/package-manager/](https://nodejs.org/en/download/package-manager/) for download and installation instructions.
+
+```
 # Create a kernel for this environment
 ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
 
