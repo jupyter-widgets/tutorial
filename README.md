@@ -24,10 +24,11 @@ The steps below will get you a working environment.
 ### Windows users
 
 The installation instructions below were tested on an up-to-date version of Windows 10 Professional. If you encounter any issues on Windows please open an issue or contact us through slack.
-### Installation instructions
+
+## Conda installation instructions
 
 ```
-conda create -n widgets-tutorial -c conda-forge python=3.8 pip notebook numpy scikit-image scipy pandas requests ipywidgets bqplot ipyvolume=0.5 ipyleaflet pythreejs ipycanvas ipyevents ipysheet ipytree ipympl pywwt voila=0.1 ipyvuetify voila-vuetify jupyterlab=1 nodejs=13
+conda create -n widgets-tutorial -c conda-forge python=3.8 pip notebook numpy scikit-image scipy pandas requests ipywidgets bqplot ipyleaflet pythreejs ipycanvas ipyevents ipysheet ipytree ipympl pywwt sidecar voila=0.1 ipyvuetify voila-vuetify jupyterlab=2 nodejs=13
 
 conda activate widgets-tutorial
 
@@ -35,7 +36,7 @@ conda activate widgets-tutorial
 ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
 
 # Enable JupyterLab extensions, which may take several minutes
-jupyter labextension install @jupyter-widgets/jupyterlab-manager bqplot ipyvolume@0.5 jupyter-threejs jupyter-leaflet ipysheet ipytree ipycanvas jupyter-matplotlib jupyter-vuetify
+jupyter labextension install @jupyter-widgets/jupyterlab-manager @jupyter-widgets/jupyterlab-sidecar bqplot jupyter-threejs jupyter-leaflet ipysheet ipytree ipycanvas jupyter-matplotlib jupyter-vuetify
 ```
 
 ## pip installation instructions
@@ -43,10 +44,20 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager bqplot ipyvolum
 If you are not using the anaconda python distribution, please use the instructions below.
 
 ```
-pip install notebook==5.7 numpy scipy scikit-image traitlets requests bqplot ipywidgets ipyvolume==0.5.2 matplotlib pandas ipyleaflet pythreejs ipyevents ipysheet ipytree pywwt ipympl "voila>=0.1.2" jupyterlab==1.2.15 ipyvuetify voila-vuetify
+pip install notebook numpy scipy scikit-image traitlets requests bqplot ipywidgets matplotlib pandas ipyleaflet pythreejs ipyevents ipysheet ipytree pywwt ipympl "voila>=0.1.2" "jupyterlab>=2" ipyvuetify voila-vuetify sidecar
+```
 
-# If you are using JupyerLab, also run the series of labextension install command in
-# the conda instructions.
+
+#### Install nodejs
+
+See [https://nodejs.org/en/download/](https://nodejs.org/en/download/) or [https://nodejs.org/en/download/package-manager/](https://nodejs.org/en/download/package-manager/) for download and installation instructions.
+
+```
+# Create a kernel for this environment
+ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
+
+# Enable JupyterLab extensions, which may take several minutes
+jupyter labextension install @jupyter-widgets/jupyterlab-manager @jupyter-widgets/jupyterlab-sidecar bqplot jupyter-threejs jupyter-leaflet ipysheet ipytree ipycanvas jupyter-matplotlib jupyter-vuetify
 ```
 
 ## Check your installation
@@ -59,7 +70,7 @@ python install_check.py
 
 ## Tutorial materials
 
-To get the tutorial materials, clone this repository. *We anticipate making changes to the tutorial content through the end of June, 2019.*
+To get the tutorial materials, clone this repository. *We anticipate making changes to the tutorial content through the end of June, 2020.*
 
 ## Using binder
 
