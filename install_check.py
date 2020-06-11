@@ -139,7 +139,7 @@ lab_extensions = [
     'bqplot',
     'jupyter-threejs',
     'jupyter-leaflet',
-    # 'ipyvolume',
+    'ipyvolume',
     'ipyevents',
     'ipysheet',
     'ipytree',
