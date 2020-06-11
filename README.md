@@ -28,7 +28,7 @@ The installation instructions below were tested on an up-to-date version of Wind
 ## Conda installation instructions
 
 ```
-conda create -n widgets-tutorial -c conda-forge python=3.8 pip notebook numpy scikit-image scipy pandas requests ipywidgets bqplot ipyleaflet pythreejs ipycanvas ipyevents ipysheet ipytree ipympl pywwt sidecar voila=0.1 ipyvuetify voila-vuetify jupyterlab=2 nodejs=13 ipyvolume
+conda create -n widgets-tutorial -c conda-forge python=3.8 pip notebook numpy scikit-image scipy pandas requests ipywidgets bqplot ipyleaflet pythreejs ipycanvas ipyevents ipysheet ipytree ipympl pywwt sidecar voila=0.1 ipyvuetify voila-vuetify jupyterlab=2 nodejs=13 ipyvolume=0.6.0a6
 
 conda activate widgets-tutorial
 
@@ -44,7 +44,7 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager @jupyter-widget
 If you are not using the anaconda python distribution, please use the instructions below.
 
 ```
-pip install notebook numpy scipy scikit-image traitlets requests bqplot ipywidgets matplotlib pandas ipyleaflet pythreejs ipyevents ipysheet ipytree pywwt ipympl "voila>=0.1.2" "jupyterlab>=2" ipyvuetify voila-vuetify sidecar ipyvolume
+pip install notebook numpy scipy scikit-image traitlets requests bqplot ipywidgets matplotlib pandas ipyleaflet pythreejs ipyevents ipysheet ipytree pywwt ipympl "voila>=0.1.2" "jupyterlab>=2" ipyvuetify voila-vuetify sidecar ipyvolume==0.6.0-a.6
 ```
 
 
