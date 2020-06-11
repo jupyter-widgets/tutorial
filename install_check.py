@@ -10,7 +10,7 @@ requirements = [
     'ipywidgets',
     'bqplot',
     'ipyleaflet',
-    # 'ipyvolume',
+    'ipyvolume',
     'pythreejs',
     'ipyevents',
     'ipysheet',
@@ -38,6 +38,7 @@ success = all(import_result.values())
 version_check_packages = {'ipywidgets': ['7.5'],
                           'notebook': ['6'],
                           'jupyterlab': ['2'],
+                          'ipyvolume': ['0.6.0-alpha.6'],
                          }
 
 if success:
@@ -105,6 +106,14 @@ else:
     jupyterlab_version = jupyterlab.__version__
     version_checker('jupyterlab', jupyterlab_version)
 
+try:
+    import ipyvolume
+except ImportError:
+    pass
+else:
+    ipyvolume_version = ipyvolume.__version__
+    version_checker('ipyvolume', ipyvolume_version)
+
 # Check that the appropriate kernel has been created
 
 required_kernel = 'widgets-tutorial'
@@ -130,7 +139,7 @@ lab_extensions = [
     'bqplot',
     'jupyter-threejs',
     'jupyter-leaflet',
-    # 'ipyvolume',
+    'ipyvolume',
     'ipyevents',
     'ipysheet',
     'ipytree',
