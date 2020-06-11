@@ -1,12 +1,12 @@
 # The Jupyter Widget Ecosystem
 
-## Tutorial, SciPy 2019
+## Tutorial, SciPy 2020
 
 # https://github.com/jupyter-widgets/tutorial
 
 # Installation
 
-The code in the tutorial has been written using Python 3; most of it may also work with Python 2.7.
+The code in the tutorial has been written using Python 3; many of the dependencies may not be available for Python 2.7.
 
 We **strongly recommend** using the Anaconda Python distribution. You can install either the full [anaconda distribution](https://www.continuum.io/downloads) (very extensive, but large) or [miniconda](https://conda.io/miniconda.html) (much smaller, only essential packages).
 
@@ -17,7 +17,7 @@ Almost all of the examples will work in either the regular Jupyter notebook or i
 There are download instructions below for installation using pip, which should work with any Python distribution.
 
 ## anaconda/miniconda installation instructions
-### Last update: 18 Jun 2019, 1500CDT
+### Last update: 11 Jun 2020, 1000CDT
 
 The steps below will get you a working environment.
 
@@ -25,7 +25,7 @@ The steps below will get you a working environment.
 
 The installation instructions below were tested on an up-to-date version of Windows 10 Professional. If you encounter any issues on Windows please open an issue or contact us through slack.
 
-## Conda installation instructions
+### Conda installation instructions
 
 ```
 conda create -n widgets-tutorial -c conda-forge python=3.8 pip notebook numpy scikit-image scipy pandas requests ipywidgets bqplot ipyleaflet pythreejs ipycanvas ipyevents ipysheet ipytree ipympl pywwt sidecar voila=0.1 ipyvuetify voila-vuetify jupyterlab=2 nodejs=13 ipyvolume=0.6.0a6
@@ -76,7 +76,9 @@ To get the tutorial materials, clone this repository. *We anticipate making chan
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-widgets/tutorial/master)
 
-Follow [mybinder.org](https://mybinder.org/v2/gh/jupyter-widgets/tutorial/master) to run the tutorial online.
+Many of the materials work without modification on mybinder.org without needing to install anything on your computer. However, this is *not* the recommended way to do the tutorial.
+
+Go to [mybinder.org](https://mybinder.org/v2/gh/jupyter-widgets/tutorial/master) to run the tutorial online.
 
 
 ## Running into trouble?
