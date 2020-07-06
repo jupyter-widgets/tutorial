@@ -14,7 +14,11 @@ Almost all of the examples will work in either the regular Jupyter notebook or i
 
 *We will spend a few minutes at the beginning of the tutorial pointing out some of the features of JupyterLab from the perspective of people already familiar with Jupyter notebooks.*
 
-There are download instructions below for installation using pip, which should work with any Python distribution.
+There are also download instructions below for installation using pip, which should work with any Python distribution.
+
+## Download this repository
+
+You can do this with either `git clone https://github.com/jupyter-widgets/tutorial.git` at the command line or by downloading this repostiory as a [Zip file](https://github.com/jupyter-widgets/tutorial/archive/master.zip). 
 
 ## conda installation instructions
 
@@ -71,7 +75,9 @@ python install_check.py
 
 ## Tutorial materials
 
-To get the tutorial materials, clone this repository. *We anticipate making changes to the tutorial content through the end of June, 2020.*
+To get the tutorial materials, clone this repository. *We anticipate making changes to the tutorial content through the end of July 8, 2020.*
+
+To update your copy of the tutorial materials, navigate in a terminal to folder these materials are in then run `git pull`. An alternative is to download the repository again as a zip file.
 
 ## Using binder
 
