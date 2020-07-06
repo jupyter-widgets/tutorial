@@ -14,49 +14,54 @@ Almost all of the examples will work in either the regular Jupyter notebook or i
 
 *We will spend a few minutes at the beginning of the tutorial pointing out some of the features of JupyterLab from the perspective of people already familiar with Jupyter notebooks.*
 
-There are download instructions below for installation using pip, which should work with any Python distribution.
+There are also download instructions below for installation using pip, which should work with any Python distribution.
 
-## anaconda/miniconda installation instructions
-### Last update: 11 Jun 2020, 1000CDT
+## Download this repository
+
+You can do this with either `git clone https://github.com/jupyter-widgets/tutorial.git` at the command line or by downloading this repostiory as a [Zip file](https://github.com/jupyter-widgets/tutorial/archive/master.zip). 
+
+## conda installation instructions
 
 The steps below will get you a working environment.
 
-### Windows users
-
-The installation instructions below were tested on an up-to-date version of Windows 10 Professional. If you encounter any issues on Windows please open an issue or contact us through slack.
-
-### Conda installation instructions
-
-```
-conda create -n widgets-tutorial -c conda-forge python=3.8 pip notebook numpy scikit-image scipy pandas requests ipywidgets bqplot ipyleaflet pythreejs ipycanvas ipyevents ipysheet ipytree ipympl pywwt sidecar voila=0.1 ipyvuetify voila-vuetify jupyterlab=2 nodejs=13 ipyvolume=0.6.0a6
+```bash
+conda env create -f environment.yml
 
 conda activate widgets-tutorial
 
 # Create a kernel for this environment
 ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
-
-# Enable JupyterLab extensions, which may take several minutes
-jupyter labextension install @jupyter-widgets/jupyterlab-manager @jupyter-widgets/jupyterlab-sidecar bqplot jupyter-threejs jupyter-leaflet ipysheet ipytree ipycanvas jupyter-matplotlib jupyter-vuetify ipyvolume
 ```
+
+### Windows users
+The installation instructions were tested on an up-to-date version of Windows 10 Professional. If you encounter any issues on Windows please open an issue or contact us through slack.
 
 ## pip installation instructions
 
 If you are not using the anaconda python distribution, please use the instructions below.
 
-```
-pip install notebook numpy scipy scikit-image traitlets requests bqplot ipywidgets matplotlib pandas ipyleaflet pythreejs ipyevents ipysheet ipytree pywwt ipympl "voila>=0.1.2" "jupyterlab>=2" ipyvuetify voila-vuetify sidecar ipyvolume==0.6.0-a.6
-```
+```bash
+pip install -r requirements.txt
 
-
-#### Install nodejs
-
-See [https://nodejs.org/en/download/](https://nodejs.org/en/download/) or [https://nodejs.org/en/download/package-manager/](https://nodejs.org/en/download/package-manager/) for download and installation instructions.
-
-```
 # Create a kernel for this environment
 ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
+```
 
-# Enable JupyterLab extensions, which may take several minutes
+## Install JupyterLab extensions
+
+In order to install the JupyterLab extensions, you need `nodejs` to be installed. It can be installed using `conda`:
+
+```bash
+conda install -c conda-forge nodejs=13
+```
+
+If you do not use `conda`, see [https://nodejs.org/en/download/](https://nodejs.org/en/download/) or [https://nodejs.org/en/download/package-manager/](https://nodejs.org/en/download/package-manager/) for download and installation instructions.
+
+
+Now you can install the JupyterLab extensions:
+
+```bash
+# This may take several minutes
 jupyter labextension install @jupyter-widgets/jupyterlab-manager @jupyter-widgets/jupyterlab-sidecar bqplot jupyter-threejs jupyter-leaflet ipysheet ipytree ipycanvas jupyter-matplotlib jupyter-vuetify ipyvolume
 ```
 
@@ -64,13 +69,15 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager @jupyter-widget
 
 To check your installation, please download the script [install_check.py](https://raw.githubusercontent.com/jupyter-widgets/tutorial/master/install_check.py) and run it:
 
-```
+```bash
 python install_check.py
 ```
 
 ## Tutorial materials
 
-To get the tutorial materials, clone this repository. *We anticipate making changes to the tutorial content through the end of June, 2020.*
+To get the tutorial materials, clone this repository. *We anticipate making changes to the tutorial content through the end of July 8, 2020.*
+
+To update your copy of the tutorial materials, navigate in a terminal to folder these materials are in then run `git pull`. An alternative is to download the repository again as a zip file.
 
 ## Using binder
 

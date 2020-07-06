@@ -1,0 +1,28 @@
+name: widgets-tutorial
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pip
+  - notebook
+  - numpy
+  - scikit-image
+  - scipy
+  - pandas
+  - requests
+  - ipywidgets
+  - bqplot
+  - ipyleaflet
+  - pythreejs
+  - ipycanvas
+  - ipyevents
+  - ipysheet
+  - ipytree
+  - ipympl
+  - pywwt
+  - sidecar
+  - voila=0.1
+  - ipyvuetify
+  - voila-vuetify
+  - jupyterlab=2
+  - ipyvolume=0.6.0a6
