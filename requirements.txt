@@ -8,7 +8,7 @@ bqplot
 ipywidgets
 matplotlib
 pandas
-ipyleaflet
+ipyleaflet==0.12.6
 pythreejs
 ipyevents
 ipysheet

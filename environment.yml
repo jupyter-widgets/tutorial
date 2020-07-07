@@ -12,7 +12,7 @@ dependencies:
   - requests
   - ipywidgets
   - bqplot
-  - ipyleaflet
+  - ipyleaflet=0.12.6
   - pythreejs
   - ipycanvas
   - ipyevents

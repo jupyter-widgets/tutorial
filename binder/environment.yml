@@ -12,7 +12,7 @@ dependencies:
   - ipyvolume
   - gdal
   - krb5
-  - ipyleaflet
+  - ipyleaflet=0.12.6
   - ipysheet
   - ipytree
   - ipyevents
