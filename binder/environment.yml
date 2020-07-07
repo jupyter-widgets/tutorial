@@ -1,24 +1,29 @@
 channels:
   - conda-forge
-  - defaults
 dependencies:
+  - python=3.8
+  - pip
+  - notebook
   - numpy
   - scikit-image
-  - ipywidgets=7.5
-  - jupyterlab=1.0
   - scipy
+  - pandas
+  - requests
+  - ipywidgets
   - bqplot
-  - pythreejs
-  - ipyvolume
-  - gdal
-  - krb5
   - ipyleaflet=0.12.6
+  - pythreejs
+  - ipycanvas
+  - ipyevents
   - ipysheet
   - ipytree
-  - ipyevents
-  - voila
+  - ipympl
+  - pywwt
+  - sidecar
+  - voila=0.1
+  - ipyvuetify
+  - voila-vuetify
+  - jupyterlab=2
+  - ipyvolume=0.6.0a6
   - pip:
-    - ipyvuetify
-    - voila-vuetify
     - netcdf4
-    - sidecar
