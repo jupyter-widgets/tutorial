@@ -18,7 +18,7 @@ There are also download instructions below for installation using pip, which sho
 
 ## Download this repository
 
-You can do this with either `git clone https://github.com/jupyter-widgets/tutorial.git` at the command line or by downloading this repostiory as a [Zip file](https://github.com/jupyter-widgets/tutorial/archive/master.zip). 
+You can do this with either `git clone https://github.com/jupyter-widgets/tutorial.git` at the command line or by downloading this repostiory as a [Zip file](https://github.com/jupyter-widgets/tutorial/archive/master.zip).
 
 ## conda installation instructions
 
@@ -81,7 +81,7 @@ To update your copy of the tutorial materials, navigate in a terminal to folder 
 
 ## Using binder
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-widgets/tutorial/master)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-widgets/tutorial/master?urlpath=%2Flab)
 
 Many of the materials work without modification on mybinder.org without needing to install anything on your computer. However, this is *not* the recommended way to do the tutorial.
 
