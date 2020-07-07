@@ -62,7 +62,7 @@ Now you can install the JupyterLab extensions:
 
 ```bash
 # This may take several minutes
-jupyter labextension install @jupyter-widgets/jupyterlab-manager @jupyter-widgets/jupyterlab-sidecar bqplot jupyter-threejs jupyter-leaflet ipysheet ipytree ipycanvas jupyter-matplotlib jupyter-vuetify ipyvolume
+jupyter labextension install @jupyter-widgets/jupyterlab-manager @jupyter-widgets/jupyterlab-sidecar bqplot jupyter-threejs jupyter-leaflet@0.12.6 ipysheet ipytree ipycanvas jupyter-matplotlib jupyter-vuetify ipyvolume
 ```
 
 ## Check your installation
