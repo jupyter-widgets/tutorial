@@ -88,6 +88,10 @@ Many of the materials work without modification on mybinder.org without needing 
 Go to [mybinder.org](https://mybinder.org/v2/gh/jupyter-widgets/tutorial/master) to run the tutorial online.
 
 
+## Any ipywidgets or custom widgets library question?
+
+Please join us on the Gitter channel: https://gitter.im/jupyter-widgets/Lobby
+
 ## Running into trouble?
 
 Please let us know! You can open an issue on this repository by clicking "Issues" under the repo name on GitHub, then the "New Issue" button in the upper right.
