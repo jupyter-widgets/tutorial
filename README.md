@@ -81,7 +81,7 @@ To update your copy of the tutorial materials, navigate in a terminal to folder 
 
 ## Using binder
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/jupyter-widgets/tutorial/master?urlpath=%2Flab)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jupyter-widgets/tutorial/master?urlpath=%2Flab)
 
 Many of the materials work without modification on mybinder.org without needing to install anything on your computer. However, this is *not* the recommended way to do the tutorial.
 
