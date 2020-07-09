@@ -1,6 +1,6 @@
 import ipywidgets as widgets
-a = widgets.IntText(description='Value A')
-b = widgets.IntSlider(description='Value B')
+a = widgets.Play(description='Value A', min=1, max=10, value=5)
+b = widgets.IntText(description='Value B')
 
-vbox = widgets.VBox(children=[a, b])
+vbox = widgets.HBox(children=[a, b])
 vbox

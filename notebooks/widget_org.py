@@ -88,6 +88,57 @@ def organized_widgets(organize_by='ui'):
     return groups
 
 
+def fill_container(widget, name):
+    """
+    Many of the containers really need special set up; simply adding children does
+    not do the trick. Hide those messy cases in here.
+    """
+    button_lay = widgets.Layout(width="auto", height="auto")
+    if name == "gridspeclayout":
+        for i in range(widget.n_rows):
+            for j in range(widget.n_columns):
+                widget[i, j] = widgets.Button(description='{}, {}'.format(i, j))
+    elif name == "gridbox":
+        widget.layout = widgets.Layout(grid_template_columns="repeat(3, 33%)")
+        widget.children = [widgets.Button(description=str(i),
+                                          layout=button_lay) for i in range(6)]
+    elif name == "twobytwolayout":
+        pass
+        widget.top_left = widgets.Button(description="Top left")
+        widget.top_right = widgets.Button(description="Top right")
+        widget.bottom_left = widgets.Button(description="Bottom left")
+        widget.bottom_right = widgets.Button(description="Bottom right")
+    elif name == "applayout":
+        # So replacing the layouts below with button_lay breaks the AppLayout
+        # widget. No clue why.
+        header        = widgets.Button(description="Header",
+                                       layout=widgets.Layout(width="auto", height="auto"))
+        left_sidebar  = widgets.Button(description="Left Sidebar",
+                                       layout=widgets.Layout(width="auto", height="auto"))
+        center        = widgets.Button(description="Center",
+                                       layout=widgets.Layout(width="auto", height="auto"))
+        right_sidebar = widgets.Button(description="Right Sidebar",
+                                       layout=widgets.Layout(width="auto", height="auto"))
+        footer        = widgets.Button(description="Footer",
+                                       layout=widgets.Layout(width="auto", height="auto"))
+        widget.header = header
+        widget.left_sidebar = left_sidebar
+        widget.center = center
+        widget.right_sidebar = right_sidebar
+        widget.footer = footer
+    else:
+        widget.children = [widgets.Button(description=str(i)) for i in range(3)]
+
+    # Set tab or accordion names
+    if name == "accordion" or name == "tab":
+        for i in range(len(widget.children)):
+            widget.set_title(i, '{} {}'.format(name, i))
+
+    # Start with all the accordions closed
+    if name == "accordion":
+        widget.selected_index = None
+
+
 def list_overview_widget(groups,
                          help_url_base='',
                          columns=3,
@@ -134,7 +185,7 @@ def list_overview_widget(groups,
                                 border='2px solid gray')
         b = widgets.GridBox(layout=layout)
         module = extract_module_name(widget, full=True)
-        #print('    ', widget.__name__, module)
+
         if 'selection' in module:
             extra_args = dict(options=[1, 2, 3])
         elif 'progress' in widget.__name__.lower():
@@ -152,6 +203,10 @@ def list_overview_widget(groups,
                 short_description = wid.__doc__.split('\n')[1]
         except AttributeError:
             short_description = ''
+
+        if group == 'containers':
+            # These look better with things in them but need some custom code
+            fill_container(wid, widget.__name__.lower())
 
         url = f'{help_url_base}#{name}'
         help_link = f'<h3><a href="{url}" rel="nofollow" target="_self" style="color:gray;">{name}</a></h3><p>{short_description}</p>'
