@@ -49,11 +49,8 @@ ipython kernel install --name widgets-tutorial --display-name widgets-tutorial -
 
 ## Install JupyterLab extensions
 
-In order to install the JupyterLab extensions, you need `nodejs` to be installed. It can be installed using `conda`:
+In order to install the JupyterLab extensions, you need `nodejs` to be installed. If you use `conda` it should have been already installed for you when you created your environment.
 
-```bash
-conda install -c conda-forge nodejs=13
-```
 
 If you do not use `conda`, see [https://nodejs.org/en/download/](https://nodejs.org/en/download/) or [https://nodejs.org/en/download/package-manager/](https://nodejs.org/en/download/package-manager/) for download and installation instructions.
 
