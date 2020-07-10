@@ -22,8 +22,8 @@
    1. intro (5 min)
    2. ipyleaflet and exercise (10 min)
    3. pythreejs (10 min)
-   4. bqplot (10 min)
-   5. ipyvolume (10 min) (Jupyter Notebook only?)
+   4. bqplot and exercise (10 min)
+   5. ipyvolume (10 min)
    6. "stretch" break (5 min)
 6. start 3:10 Voilà: widgets outside the notebook **Martin** (15-20 minutes)
 7. starts 3:45 Flexible/Q&A time
