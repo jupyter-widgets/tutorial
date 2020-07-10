@@ -27,3 +27,4 @@
    6. "stretch" break (5 min)
 6. start 3:10 Voilà: widgets outside the notebook **Martin** (15-20 minutes)
 7. starts 3:45 Flexible/Q&A time
+
