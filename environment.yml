@@ -28,3 +28,5 @@ dependencies:
   - ipyvolume=0.6.0a6
   - nodejs=13
   - xarray
+  - pip:
+    - netcdf4

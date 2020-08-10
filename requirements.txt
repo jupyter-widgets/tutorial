@@ -22,3 +22,4 @@ voila-vuetify
 sidecar
 ipyvolume==0.6.0-a.6
 xarray
+netcdf4
