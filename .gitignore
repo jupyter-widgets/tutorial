@@ -5,3 +5,5 @@ notebooks/__pycache__
 .cache
 .pytest_cache
 __pycache__
+# data file downloaded in notebooks/07.01-ipyleaflet.ipynb
+wind-global.nc
