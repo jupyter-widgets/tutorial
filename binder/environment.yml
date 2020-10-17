@@ -25,5 +25,6 @@ dependencies:
   - voila-vuetify
   - jupyterlab=2
   - ipyvolume=0.6.0a6
+  - xarray
   - pip:
     - netcdf4
