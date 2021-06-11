@@ -2,7 +2,7 @@
 
 1. start at 0:00 Intro (5 min) **Matt**
 2. start at 0:05 Jupyter lab overview (10 min) **Matt**
-3. start at 0:15 Widget overview **Younness**
+3. start at 0:15 Widget overview **Youness**
    1. Overview/introduction (5 min)
    2. `@interact` notebook and exercise (10 min)
    3. Widget Basics notebook (10 min)
