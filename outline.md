@@ -28,3 +28,19 @@
 6. start 3:10 Voilà: widgets outside the notebook **Martin** (15-20 minutes)
 7. starts 3:45 Flexible/Q&A time
 
+## Software versions
+
+Core:
+
++ jupyerlab 3
++ ipywidgets 7.6+
+
+To update for jlab 3:
+
+- ipysheets (maybe don't show)
+- ipyevents
+
+New this year:
+
+- ipycytoscape
+- ipydatagrid
