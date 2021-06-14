@@ -1,3 +1,5 @@
+import sys
+import logging
 from subprocess import check_call, CalledProcessError
 
 
@@ -35,10 +37,8 @@ print()
 success = all(import_result.values())
 
 # List compatible versions for each package
-version_check_packages = {'ipywidgets': ['7.5'],
-                          'notebook': ['6'],
-                          'jupyterlab': ['2'],
-                          'ipyvolume': ['0.6.0-alpha.6'],
+version_check_packages = {'ipywidgets': ['7.6'],
+                          'jupyterlab': ['3'],
                          }
 
 if success:
@@ -91,28 +91,12 @@ else:
     version_checker('ipywidgets', ipywidgets_version)
 
 try:
-    import notebook
-except ImportError:
-    pass
-else:
-    notebook_version = notebook.__version__
-    version_checker('notebook', notebook_version)
-
-try:
     import jupyterlab
 except ImportError:
     pass
 else:
     jupyterlab_version = jupyterlab.__version__
     version_checker('jupyterlab', jupyterlab_version)
-
-try:
-    import ipyvolume
-except ImportError:
-    pass
-else:
-    ipyvolume_version = ipyvolume.__version__
-    version_checker('ipyvolume', ipyvolume_version)
 
 # Check that the appropriate kernel has been created
 
@@ -148,21 +132,31 @@ lab_extensions = [
     'jupyter-vuetify',
 ]
 
+
 try:
-    from jupyterlab.commands import check_extension
+    from jupyterlab.commands import check_extension, AppOptions
+    from jupyterlab_server.config import get_federated_extensions
 except ImportError:
     print(FIX_PREFIX, 'Please install jupyterlab before checking extensions.')
 else:
     missing_extensions = []
 
+    # Fetch federated extensions
+    federated_extensions = get_federated_extensions([sys.base_prefix + '/share/jupyter/labextensions']).keys()
+
+    # JupyterLab be quiet
+    logger = logging.Logger('quiet')
+    logger.setLevel(logging.CRITICAL)
+    app_options = AppOptions(logger=logger)
+
     for extension in lab_extensions:
-        if not check_extension(extension):
+        if not check_extension(extension, app_options=app_options) and extension not in federated_extensions:
             missing_extensions.append(extension)
 
     if missing_extensions:
         print(FIX_PREFIX, 'These lab extensions are missing: ',
               ', '.join(missing_extensions))
-        print(FIX_PREFIX,' Run this to install them: jupyter labextension install ',
-              ' '.join(missing_extensions))
+        print(FIX_PREFIX,' Please try to install the following packages with conda or pip: ',
+              ', '.join(missing_extensions))
     else:
         print('\tAll extensions are installed!')

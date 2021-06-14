@@ -4,7 +4,6 @@ channels:
 dependencies:
   - python=3.8
   - pip
-  - notebook
   - numpy
   - scikit-image
   - scipy
@@ -12,18 +11,18 @@ dependencies:
   - requests
   - ipywidgets
   - bqplot
-  - ipyleaflet=0.12.6
+  - ipyleaflet
   - pythreejs
   - ipycanvas
-  - ipyevents
-  - ipysheet
   - ipytree
   - ipympl
-  - pywwt
+  - ipygany
+  - ipydatagrid
+  - ipycytoscape
+  # - pywwt
   - sidecar
-  - voila=0.1
+  - voila
   - ipyvuetify
   - voila-vuetify
-  - jupyterlab=2
-  - ipyvolume=0.6.0a6
-  - nodejs=13
+  - jupyterlab=3
+  - ipyvolume

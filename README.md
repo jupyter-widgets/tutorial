@@ -47,21 +47,6 @@ pip install -r requirements.txt
 ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
 ```
 
-## Install JupyterLab extensions
-
-In order to install the JupyterLab extensions, you need `nodejs` to be installed. If you use `conda` it should have been already installed for you when you created your environment.
-
-
-If you do not use `conda`, see [https://nodejs.org/en/download/](https://nodejs.org/en/download/) or [https://nodejs.org/en/download/package-manager/](https://nodejs.org/en/download/package-manager/) for download and installation instructions.
-
-
-Now you can install the JupyterLab extensions:
-
-```bash
-# This may take several minutes
-jupyter labextension install @jupyter-widgets/jupyterlab-manager @jupyter-widgets/jupyterlab-sidecar bqplot jupyter-threejs jupyter-leaflet@0.12.6 ipysheet ipytree ipycanvas jupyter-matplotlib jupyter-vuetify ipyvolume
-```
-
 ## Check your installation
 
 To check your installation, please download the script [install_check.py](https://raw.githubusercontent.com/jupyter-widgets/tutorial/master/install_check.py) and run it:

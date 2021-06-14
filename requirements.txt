@@ -1,4 +1,3 @@
-notebook
 numpy
 scipy
 scikit-image
@@ -8,16 +7,16 @@ bqplot
 ipywidgets
 matplotlib
 pandas
-ipyleaflet==0.12.6
+ipyleaflet
 pythreejs
-ipyevents
-ipysheet
+# ipyevents
+# ipysheet
 ipytree
-pywwt
+# pywwt
 ipympl
-voila>=0.1.2
-jupyterlab>=2
+voila
+jupyterlab=3
 ipyvuetify
 voila-vuetify
 sidecar
-ipyvolume==0.6.0-a.6
+ipyvolume
