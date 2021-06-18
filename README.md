@@ -8,7 +8,7 @@
 
 The code in the tutorial has been written using Python 3; many of the dependencies may not be available for Python 2.7.
 
-We **strongly recommend** using the Anaconda Python distribution. You can install either the full [anaconda distribution](https://www.continuum.io/downloads) (very extensive, but large) or [miniconda](https://conda.io/miniconda.html) (much smaller, only essential packages).
+We **strongly recommend** using the conda Python distribution. You can install either [miniconda](https://conda.io/miniconda.html) (much smaller, only essential packages) or the full [anaconda distribution](https://www.continuum.io/downloads) (very extensive, but very, very large).
 
 Almost all of the examples will work in either the regular Jupyter notebook or in JupyterLab. The instructions below assume you will be using JupyterLab.
 
@@ -27,7 +27,7 @@ The steps below will get you a working environment.
 ```bash
 conda env create -f environment.yml
 
-conda activate widgets-tutorial
+conda activate widgets-tutorial-2021
 
 # Create a kernel for this environment
 ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
