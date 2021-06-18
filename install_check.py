@@ -18,6 +18,7 @@ requirements = [
     'ipytree',
     'ipydatagrid',
     'ipycytoscape',
+    'ipygany',
     'jupyterlab'
 ]
 
@@ -127,6 +128,7 @@ lab_extensions = [
     'ipytree',
     'ipycanvas',
     'ipydatagrid',
+    'ipygany',
     'jupyter-cytoscape',  # for ipycytoscape
     'jupyter-matplotlib',
     'jupyter-vuetify',
