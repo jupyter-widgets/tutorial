@@ -22,7 +22,7 @@ You can do this with either `git clone https://github.com/jupyter-widgets/tutori
 
 ## conda installation instructions
 
-The steps below will get you a working environment.
+The steps below will get you a  working environment.
 
 ```bash
 conda env create -f environment.yml
