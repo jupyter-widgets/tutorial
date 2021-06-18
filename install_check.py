@@ -4,7 +4,7 @@ from subprocess import check_call, CalledProcessError
 
 
 SUCCESS_PREFIX = '🎉'
-FIX_PREFIX = '⚠️ ----->'
+FIX_PREFIX = '⚠️⚠️⚠️ ----->'
 
 tutorial_name = 'Jupyter widget ecosystem'
 
