@@ -14,10 +14,9 @@ requirements = [
     'ipyleaflet',
     'ipyvolume',
     'pythreejs',
-    'ipyevents',
-    'ipysheet',
     'ipytree',
-    'pywwt',
+    'ipydatagrid',
+    'ipycytoscape',
     'jupyterlab'
 ]
 
@@ -124,10 +123,10 @@ lab_extensions = [
     'jupyter-threejs',
     'jupyter-leaflet',
     'ipyvolume',
-    'ipyevents',
-    'ipysheet',
     'ipytree',
     'ipycanvas',
+    'ipydatagrid',
+    'jupyter-cytoscape',  # for ipycytoscape
     'jupyter-matplotlib',
     'jupyter-vuetify',
 ]
