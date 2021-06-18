@@ -3,7 +3,8 @@ import logging
 from subprocess import check_call, CalledProcessError
 
 
-FIX_PREFIX = '----->'
+SUCCESS_PREFIX = '🎉'
+FIX_PREFIX = '⚠️ ----->'
 
 tutorial_name = 'Jupyter widget ecosystem'
 
@@ -41,7 +42,7 @@ version_check_packages = {'ipywidgets': ['7.6'],
                          }
 
 if success:
-    print('\tAll required packages installed')
+    print(f'\t{SUCCESS_PREFIX} All required packages installed')
 else:
     print(FIX_PREFIX, 'Please install these missing packages '
           'for the tutorial "{}":'.format(tutorial_name))
@@ -52,9 +53,9 @@ print('Checking voila version:')
 
 try:
     check_call(['voila', '--version'])
-    print('\tVoila is correctly installed')
+    print(f'\t{SUCCESS_PREFIX} Voila is correctly installed')
 except CalledProcessError:
-    print('\tVoila is not installed! Please install it by running one '
+    print(f'\t {FIX_PREFIX} Voila is not installed! Please install it by running one '
           'of the following:')
     print('        conda install -c conda-forge voila')
     print('        pip install voila')
@@ -75,7 +76,7 @@ def version_checker(package_name, version, nbextension=None):
         print('        conda install {}={} # if you use conda'.format(package_name, newest))
         print('        pip install {}=={}'.format(package_name, newest))
     else:
-        print('\t{} version is good!'.format(package_name))
+        print(f'\t{SUCCESS_PREFIX} {package_name} version is good!')
 
 
 # Check as many packages as we can...
@@ -110,7 +111,7 @@ if required_kernel not in known_kernels:
     print(FIX_PREFIX, 'Please create custom kernel with: ',
           'ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix')
 else:
-    print('\tCustom kernel is correctly installed')
+    print(f'\t{SUCCESS_PREFIX} Custom kernel is correctly installed')
 
 # Check that lab extensions are installed
 
@@ -158,4 +159,4 @@ else:
         print(FIX_PREFIX,' Please try to install the following packages with conda or pip: ',
               ', '.join(missing_extensions))
     else:
-        print('\tAll extensions are installed!')
+        print(f'\t{SUCCESS_PREFIX} All extensions are installed!')
