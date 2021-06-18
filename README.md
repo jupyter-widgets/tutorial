@@ -8,7 +8,7 @@
 
 The code in the tutorial has been written using Python 3; many of the dependencies may not be available for Python 2.7.
 
-We **strongly recommend** using the Anaconda Python distribution. You can install either the full [anaconda distribution](https://www.continuum.io/downloads) (very extensive, but large) or [miniconda](https://conda.io/miniconda.html) (much smaller, only essential packages).
+We **strongly recommend** using the conda Python distribution. You can install either [miniconda](https://conda.io/miniconda.html) (much smaller, only essential packages) or the full [anaconda distribution](https://www.continuum.io/downloads) (very extensive, but very, very large).
 
 Almost all of the examples will work in either the regular Jupyter notebook or in JupyterLab. The instructions below assume you will be using JupyterLab.
 
@@ -22,12 +22,12 @@ You can do this with either `git clone https://github.com/jupyter-widgets/tutori
 
 ## conda installation instructions
 
-The steps below will get you a working environment.
+The steps below will get you a  working environment.
 
 ```bash
 conda env create -f environment.yml
 
-conda activate widgets-tutorial
+conda activate widgets-tutorial-2021
 
 # Create a kernel for this environment
 ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
@@ -45,21 +45,6 @@ pip install -r requirements.txt
 
 # Create a kernel for this environment
 ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
-```
-
-## Install JupyterLab extensions
-
-In order to install the JupyterLab extensions, you need `nodejs` to be installed. If you use `conda` it should have been already installed for you when you created your environment.
-
-
-If you do not use `conda`, see [https://nodejs.org/en/download/](https://nodejs.org/en/download/) or [https://nodejs.org/en/download/package-manager/](https://nodejs.org/en/download/package-manager/) for download and installation instructions.
-
-
-Now you can install the JupyterLab extensions:
-
-```bash
-# This may take several minutes
-jupyter labextension install @jupyter-widgets/jupyterlab-manager @jupyter-widgets/jupyterlab-sidecar bqplot jupyter-threejs jupyter-leaflet@0.12.6 ipysheet ipytree ipycanvas jupyter-matplotlib jupyter-vuetify ipyvolume
 ```
 
 ## Check your installation

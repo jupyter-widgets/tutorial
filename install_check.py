@@ -1,7 +1,10 @@
+import sys
+import logging
 from subprocess import check_call, CalledProcessError
 
 
-FIX_PREFIX = '----->'
+SUCCESS_PREFIX = '🎉'
+FIX_PREFIX = '⚠️⚠️⚠️ ----->'
 
 tutorial_name = 'Jupyter widget ecosystem'
 
@@ -12,10 +15,10 @@ requirements = [
     'ipyleaflet',
     'ipyvolume',
     'pythreejs',
-    'ipyevents',
-    'ipysheet',
     'ipytree',
-    'pywwt',
+    'ipydatagrid',
+    'ipycytoscape',
+    'ipygany',
     'jupyterlab'
 ]
 
@@ -35,14 +38,12 @@ print()
 success = all(import_result.values())
 
 # List compatible versions for each package
-version_check_packages = {'ipywidgets': ['7.5'],
-                          'notebook': ['6'],
-                          'jupyterlab': ['2'],
-                          'ipyvolume': ['0.6.0-alpha.6'],
+version_check_packages = {'ipywidgets': ['7.6'],
+                          'jupyterlab': ['3'],
                          }
 
 if success:
-    print('\tAll required packages installed')
+    print(f'\t{SUCCESS_PREFIX} All required packages installed')
 else:
     print(FIX_PREFIX, 'Please install these missing packages '
           'for the tutorial "{}":'.format(tutorial_name))
@@ -53,9 +54,9 @@ print('Checking voila version:')
 
 try:
     check_call(['voila', '--version'])
-    print('\tVoila is correctly installed')
+    print(f'\t{SUCCESS_PREFIX} Voila is correctly installed')
 except CalledProcessError:
-    print('\tVoila is not installed! Please install it by running one '
+    print(f'\t {FIX_PREFIX} Voila is not installed! Please install it by running one '
           'of the following:')
     print('        conda install -c conda-forge voila')
     print('        pip install voila')
@@ -76,7 +77,7 @@ def version_checker(package_name, version, nbextension=None):
         print('        conda install {}={} # if you use conda'.format(package_name, newest))
         print('        pip install {}=={}'.format(package_name, newest))
     else:
-        print('\t{} version is good!'.format(package_name))
+        print(f'\t{SUCCESS_PREFIX} {package_name} version is good!')
 
 
 # Check as many packages as we can...
@@ -91,28 +92,12 @@ else:
     version_checker('ipywidgets', ipywidgets_version)
 
 try:
-    import notebook
-except ImportError:
-    pass
-else:
-    notebook_version = notebook.__version__
-    version_checker('notebook', notebook_version)
-
-try:
     import jupyterlab
 except ImportError:
     pass
 else:
     jupyterlab_version = jupyterlab.__version__
     version_checker('jupyterlab', jupyterlab_version)
-
-try:
-    import ipyvolume
-except ImportError:
-    pass
-else:
-    ipyvolume_version = ipyvolume.__version__
-    version_checker('ipyvolume', ipyvolume_version)
 
 # Check that the appropriate kernel has been created
 
@@ -127,7 +112,7 @@ if required_kernel not in known_kernels:
     print(FIX_PREFIX, 'Please create custom kernel with: ',
           'ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix')
 else:
-    print('\tCustom kernel is correctly installed')
+    print(f'\t{SUCCESS_PREFIX} Custom kernel is correctly installed')
 
 # Check that lab extensions are installed
 
@@ -140,29 +125,40 @@ lab_extensions = [
     'jupyter-threejs',
     'jupyter-leaflet',
     'ipyvolume',
-    'ipyevents',
-    'ipysheet',
     'ipytree',
     'ipycanvas',
+    'ipydatagrid',
+    'ipygany',
+    'jupyter-cytoscape',  # for ipycytoscape
     'jupyter-matplotlib',
     'jupyter-vuetify',
 ]
 
+
 try:
-    from jupyterlab.commands import check_extension
+    from jupyterlab.commands import check_extension, AppOptions
+    from jupyterlab_server.config import get_federated_extensions
 except ImportError:
     print(FIX_PREFIX, 'Please install jupyterlab before checking extensions.')
 else:
     missing_extensions = []
 
+    # Fetch federated extensions
+    federated_extensions = get_federated_extensions([sys.base_prefix + '/share/jupyter/labextensions']).keys()
+
+    # JupyterLab be quiet
+    logger = logging.Logger('quiet')
+    logger.setLevel(logging.CRITICAL)
+    app_options = AppOptions(logger=logger)
+
     for extension in lab_extensions:
-        if not check_extension(extension):
+        if not check_extension(extension, app_options=app_options) and extension not in federated_extensions:
             missing_extensions.append(extension)
 
     if missing_extensions:
         print(FIX_PREFIX, 'These lab extensions are missing: ',
               ', '.join(missing_extensions))
-        print(FIX_PREFIX,' Run this to install them: jupyter labextension install ',
-              ' '.join(missing_extensions))
+        print(FIX_PREFIX,' Please try to install the following packages with conda or pip: ',
+              ', '.join(missing_extensions))
     else:
-        print('\tAll extensions are installed!')
+        print(f'\t{SUCCESS_PREFIX} All extensions are installed!')
