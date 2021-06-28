@@ -1,5 +1,5 @@
 bqplot==0.12.29
-ipycanvas==0.9.0
+ipycanvas==0.8.2
 ipycytoscape==1.2.2
 ipydatagrid==1.0.7
 ipygany==0.5.0
