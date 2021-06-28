@@ -8,7 +8,7 @@ slider = widgets.FloatSlider(
 )
 bounded_float_text = widgets.BoundedFloatText(
     value=7.5,
-    min=0,
+    min=5,
     max=10.0,
     step=0.1,
     description='Text:',
