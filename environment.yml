@@ -19,9 +19,11 @@ dependencies:
   - pip
   - python=3.8
   - pythreejs=2.3.0
+  - pyvista=0.31.3
   - requests
   - scikit-image
   - scipy
   - sidecar=0.5.1
   - voila=0.2.10
   - voila-vuetify=0.5.2
+  - vtk=8.2.0
