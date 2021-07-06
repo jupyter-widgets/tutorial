@@ -63,11 +63,11 @@ To update your copy of the tutorial materials, navigate in a terminal to folder 
 
 ## Using binder
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jupyter-widgets/tutorial/master?urlpath=%2Flab)
+Click the badge below to run the tutorial online:
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jupyter-widgets/tutorial/master?urlpath=%2Flab%2Ftree%2Fnotebooks)
 
 Many of the materials work without modification on mybinder.org without needing to install anything on your computer. However, this is *not* the recommended way to do the tutorial.
-
-Go to [mybinder.org](https://mybinder.org/v2/gh/jupyter-widgets/tutorial/master) to run the tutorial online.
 
 
 ## Any ipywidgets or custom widgets library question?
