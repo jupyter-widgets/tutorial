@@ -1,10 +1,12 @@
 # The Jupyter Widget Ecosystem
 
-## Tutorial, SciPy 2020
+## Tutorial, SciPy 2021
 
 # https://github.com/jupyter-widgets/tutorial
 
 # Installation
+
+### Installation instructions last updated 2021-06-06
 
 The code in the tutorial has been written using Python 3; many of the dependencies may not be available for Python 2.7.
 
