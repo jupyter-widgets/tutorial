@@ -19,7 +19,9 @@ requirements = [
     'ipydatagrid',
     'ipycytoscape',
     'ipygany',
-    'jupyterlab'
+    'jupyterlab',
+    'voila',
+    'pyvista',
 ]
 
 import_result = {p: False for p in requirements}

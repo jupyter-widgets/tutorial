@@ -6,7 +6,7 @@
 
 # Installation
 
-### Installation instructions last updated 2021-06-06
+### Installation instructions last updated 2021-06-07
 
 The code in the tutorial has been written using Python 3; many of the dependencies may not be available for Python 2.7.
 

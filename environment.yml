@@ -26,4 +26,5 @@ dependencies:
   - sidecar=0.5.1
   - voila=0.2.10
   - voila-vuetify=0.5.2
+  - voila-material=0.4.0
   - vtk=8.2.0
