@@ -6,6 +6,8 @@ from pathlib import Path
 import random
 import re
 
+from execute_notebooks import print_exceptions
+
 
 def main():
     p = Path('.')
@@ -34,19 +36,7 @@ def main():
                 except FileNotFoundError as e:
                     exceptions[str(nb_path)].append(str(e))
 
-    if exceptions:
-        print('⚠️' * 20)
-        print('\n\nFailures in these notebooks:')
-        print('\n'.join(exceptions.keys()), '\n\n')
-        print('⚠️' * 20)
-        for nb, error_list in exceptions.items():
-            face = random.choice(["😮", "😱", "🤬"])
-            print(face * 20)
-            errors = "\n".join(error_list)
-            print(f'{nb}: \n{errors}')
-            print(face * 20)
-    else:
-        print('🎉🎉 Everything worked! 🎉🎉')
+    print_exceptions(exceptions)
 
 
 if __name__ == '__main__':
