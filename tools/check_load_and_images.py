@@ -14,7 +14,7 @@ def main():
     notebook_paths = p.glob('**/*.ipynb')
     patterns = dict(
         loads=re.compile(r'%load ([^\s]+\.py)'),
-        images=re.compile(r'\((images/[^\s]+(?:png|jpg|jpeg))\)')
+        images=re.compile(r'\!\[.+\]\((.*images/[^\s]+(?:png|jpg|jpeg|svg))\)')
     )
     exceptions = defaultdict(list)
 
