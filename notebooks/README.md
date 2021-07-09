@@ -1,3 +1,3 @@
-Notebooks for tutorial on Jupyter widgets at SciPy 2020.
+Notebooks for tutorial on Jupyter widgets at SciPy 2021.
 
-Start at [index.ipynb](index.ipynb).
+Start at [index.ipynb](00.00-index.ipynb).
