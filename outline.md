@@ -32,13 +32,8 @@
 
 Core:
 
-+ jupyerlab 3
++ jupyterlab 3
 + ipywidgets 7.6+
-
-To update for jlab 3:
-
-- ipysheets (maybe don't show)
-- ipyevents
 
 New this year:
 
