@@ -9,7 +9,7 @@ ipytree==0.2.1
 ipyvolume==0.6.0a8
 ipyvuetify==1.7.0
 ipywidgets==7.6
-jupyterlab==3
+jupyterlab==3.0.17
 numpy
 pandas
 pythreejs==2.3.0
