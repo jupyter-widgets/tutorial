@@ -1,8 +1,6 @@
-# The Jupyter Widget Ecosystem
+# As luas de Jupyter: widgets e outras ferramentas que o orbitam
 
-## Tutorial, SciPy 2021
-
-# https://github.com/jupyter-widgets/tutorial
+Esse workshop é uma tradução do original: [The Jupyter Widget Ecosystem](https://github.com/jupyter-widgets/tutorial)
 
 # Installation
 
@@ -20,16 +18,25 @@ There are also download instructions below for installation using pip, which sho
 
 ## Download this repository
 
-You can do this with either `git clone https://github.com/jupyter-widgets/tutorial.git` at the command line or by downloading this repostiory as a [Zip file](https://github.com/jupyter-widgets/tutorial/archive/master.zip).
+You can do this with either `git clone https://github.com/marimeireles/tutorial.git` at the command line or by downloading this repostiory as a [Zip file](https://github.com/jupyter-widgets/tutorial/archive/master.zip).
 
-## conda installation instructions
+## conda/mamba installation instructions
 
 The steps below will get you a  working environment.
 
 ```bash
 conda env create -f environment.yml
 
-conda activate widgets-tutorial-2021
+conda activate luas-de-jupyter
+
+# Create a kernel for this environment
+ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
+```
+
+```bash
+mamba env update --file environment.yml
+
+conda activate luas-de-jupyter
 
 # Create a kernel for this environment
 ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
@@ -67,7 +74,7 @@ To update your copy of the tutorial materials, navigate in a terminal to folder 
 
 Click the badge below to run the tutorial online:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jupyter-widgets/tutorial/master?urlpath=%2Flab%2Ftree%2Fnotebooks)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/marimeireles/tutorial/master?urlpath=%2Flab%2Ftree%2Fnotebooks)
 
 Many of the materials work without modification on mybinder.org without needing to install anything on your computer. However, this is *not* the recommended way to do the tutorial.
 

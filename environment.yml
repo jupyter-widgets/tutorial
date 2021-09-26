@@ -1,4 +1,4 @@
-name: widgets-tutorial-2021
+name: luas-de-jupyter
 channels:
   - conda-forge
 dependencies:
