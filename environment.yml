@@ -1,30 +1,32 @@
-name: widgets-tutorial-2021
+name: widgets-tutorial-2022
 channels:
   - conda-forge
 dependencies:
-  - bqplot=0.12.29
-  - ipycanvas=0.8.2
-  - ipycytoscape=1.2.2
-  - ipydatagrid=1.0.7
+  - bqplot=0.12.33
+  - branca=0.5.0
+  - ipycanvas=0.12.0
+  - ipycytoscape=1.3.3
+  - ipydatagrid=1.1.12
+  - ipyevents=2.0.1
   - ipygany=0.5.0
-  - ipyleaflet=0.14.0
-  - ipympl=0.7.0
+  - ipyleaflet=0.16.0
+  - ipympl=0.9.1
   - ipytree=0.2.1
   - ipyvolume=0.6.0a8
-  - ipyvuetify=1.7.0
-  - ipywidgets=7.6
-  - jupyterlab=3
+  - ipyvuetify=1.8.2
+  - ipywidgets=7.7.0
+  - jupyterlab=3.4
   - numpy
   - pandas
   - pip
-  - python=3.8
+  - python=3.9
   - pythreejs=2.3.0
-  - pyvista=0.31.3
+  - pyvista=0.34.0
   - requests
   - scikit-image
   - scipy
   - sidecar=0.5.1
-  - voila=0.2.10
+  - voila=0.2.19
   - voila-vuetify=0.5.2
   - voila-material=0.4.0
-  - vtk=8.2.0
+  - vtk=9.1.0
