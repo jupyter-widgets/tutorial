@@ -40,7 +40,7 @@ print()
 success = all(import_result.values())
 
 # List compatible versions for each package
-version_check_packages = {'ipywidgets': ['7.6'],
+version_check_packages = {'ipywidgets': ['7.7'],
                           'jupyterlab': ['3'],
                          }
 
