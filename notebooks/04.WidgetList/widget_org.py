@@ -48,13 +48,7 @@ def organized_widgets(organize_by='ui'):
                           'Valid options are: {valid_organizations}')
 
     all_wids = inspect.getmembers(widgets)
-    # for a in all_wids:
-    #     name = a[0]
-    #     arf = a[1]
-    #     if (not name.startswith('_') and
-    #                   name[0] in string.ascii_uppercase and
-    #                   issubclass(arf, widgets.DOMWidget)):
-    #         print('woot')
+ 
     widget_dict = {name: wid for name, wid in all_wids
                    if not name.startswith('_') and
                       name[0] in string.ascii_uppercase and
@@ -131,8 +125,15 @@ def fill_container(widget, name):
 
     # Set tab or accordion names
     if name == "accordion" or name == "tab":
-        for i in range(len(widget.children)):
-            widget.set_title(i, '{} {}'.format(name, i))
+        titles = [f'{name} {idx}' for idx, _ in enumerate(widget.children)]
+        try:
+            # Retrieve the titles attribute to see if it exists
+            widget.titles
+        except AttributeError:
+            for idx, title in enumerate(titles):
+                widget.set_title(idx, title)
+        else:
+            widget.titles = titles
 
     # Start with all the accordions closed
     if name == "accordion":
@@ -219,7 +220,6 @@ def list_overview_widget(groups,
         return b
 
     for group, group_widgets in groups.items():
-        # print(group)
         titles.append(group)
         col_spec = f"repeat({columns}, minmax({min_width_single_widget}px, 1fr)"
         layout = widgets.Layout(grid_template_columns=col_spec,
@@ -230,8 +230,16 @@ def list_overview_widget(groups,
 
     tabs.children = kids
 
-    for i, title in enumerate(titles):
-        nice = title.replace('_', ' ')
-        tabs.set_title(i, nice.title())
+    try:
+        # Try to access the titles attribute to see if it exists
+        tabs.titles
+    except AttributeError:
+        # We must be using ipywidgets 7, so set_titles
+        for i, title in enumerate(titles):
+            nice = title.replace('_', ' ')
+            tabs.set_title(i, nice.title())
+    else:
+        # We have ipywidgets 8
+        tabs.titles = titles
 
     return tabs
