@@ -1,14 +1,16 @@
 # The Jupyter Widget Ecosystem
 
-## Tutorial, SciPy 2021
+## Tutorial, SciPy 2022
 
 # https://github.com/jupyter-widgets/tutorial
 
 # Installation
 
-### Installation instructions last updated 2021-06-07
+**NOTE**: These installation instructions install `ipywidgets` version 7.7. We anticipate that ipywidgets 8 will be released before the tutorial. If it, and all of the packages that we use that are dependent on `ipywidgets` have releases before the tutorial we will also provide ipywidgets 8 installation instructions.
 
-The code in the tutorial has been written using Python 3; many of the dependencies may not be available for Python 2.7.
+Either way, we will include some of the new features of ipywidgets 8 in the tutorial.
+
+### Installation instructions last updated 2022-06-17
 
 We **strongly recommend** using the conda Python distribution. You can install either [miniconda](https://conda.io/miniconda.html) (much smaller, only essential packages) or the full [anaconda distribution](https://www.continuum.io/downloads) (very extensive, but very, very large).
 
@@ -24,12 +26,12 @@ You can do this with either `git clone https://github.com/jupyter-widgets/tutori
 
 ## conda installation instructions
 
-The steps below will get you a  working environment.
+The steps below will get you a working environment.
 
 ```bash
 conda env create -f environment.yml
 
-conda activate widgets-tutorial-2021
+conda activate widgets-tutorial-2022
 
 # Create a kernel for this environment
 ipython kernel install --name widgets-tutorial --display-name widgets-tutorial --sys-prefix
