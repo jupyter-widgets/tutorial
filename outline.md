@@ -20,7 +20,7 @@
 5. Start 2:10 More about how to build complex libraries  (Itay)
    - Considerations when designing more complex widget applications (15 min)
 6. Start 2:25 More widget libraries (Mariana, Itay)
-   - High level presentation of multiple interactive widgets libraries (ipcanvas, ipycytoscape, ipydatagrid, ipygany, astrowidgets etc) (55 min)
+   - High level presentation of multiple interactive widgets libraries (ipcanvas, ipycytoscape, ipydatagrid, ipygany, ipympl, etc) (55 min)
    - Break (10 min)
 7. Start 3:30 Widgets outside the context of the notebook (Mariana)
    - Voila, jupyterlite (10 min)
