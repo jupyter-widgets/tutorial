@@ -59,12 +59,6 @@ To check your installation, please download the script [install_check.py](https:
 python install_check.py
 ```
 
-## Tutorial materials
-
-To get the tutorial materials, clone this repository. *We anticipate making changes to the tutorial content through the end of July 8, 2020.*
-
-To update your copy of the tutorial materials, navigate in a terminal to folder these materials are in then run `git pull`. An alternative is to download the repository again as a zip file.
-
 ## Using binder
 
 Click the badge below to run the tutorial online:
