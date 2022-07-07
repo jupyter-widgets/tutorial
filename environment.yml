@@ -28,4 +28,5 @@ dependencies:
   - sidecar=0.5.1
   - voila=0.3.5
   - vtk=9.1.0
-  - mpl_interactions=0.22.0
+  - pip:
+    - mpl_interactions==0.22.0
