@@ -10,7 +10,7 @@ class MyApplication:
         self.dataframe = data
         self.datagrid = self.process_data(data)
         self.chart = Chart()
-        self.app_title = HTML(value=f"<h1 style='color: salmon'>{application_title}</h1>")
+        self.app_title = HTML(value=f"<h1 style='color: salmon'>{application_title}</h1><h2>Select a column to plot it</h2>")
         self.run_application()
         
     def process_data(self, dataframe):
