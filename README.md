@@ -10,7 +10,14 @@
 
 Either way, we will include some of the new features of ipywidgets 8 in the tutorial.
 
-### Installation instructions last updated 2022-06-17
+### Installation instructions last updated 2022-07-09
+
+#### Read this if you set up the tutorial environment before 2022-07-09
+
+> We have added two packages to the list of requirements on 2022-07-09. To add those packages to the environment you have already
+> created, either `conda install -c conda-forge mpl-interactions=0.22.0 orjson=3.7.7` or, if you use pip,
+> `pip install mpl-interactions==0.22.0 orjson==3.7.7`. Do not panic if you cannot update your environment; these packages are used in
+> only two or three cells.
 
 We **strongly recommend** using the conda Python distribution. You can install either [miniconda](https://conda.io/miniconda.html) (much smaller, only essential packages) or the full [anaconda distribution](https://www.continuum.io/downloads) (very extensive, but very, very large).
 
