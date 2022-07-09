@@ -16,7 +16,9 @@ dependencies:
   - ipyvuetify=1.8.2
   - ipywidgets=7.7.0
   - jupyterlab=3.4
+  - mpl-interactions=0.22.0
   - numpy
+  - orjson=3.7.7  # Added 2022 for one of the ipygany examples
   - pandas
   - pip
   - python=3.9
@@ -28,5 +30,3 @@ dependencies:
   - sidecar=0.5.1
   - voila=0.3.5
   - vtk=9.1.0
-  - pip:
-    - mpl_interactions==0.22.0
