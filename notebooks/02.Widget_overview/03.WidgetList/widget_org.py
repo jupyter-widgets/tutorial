@@ -59,7 +59,7 @@ def organized_widgets(organize_by='ui'):
     if organize_by == 'ui':
         containers = ['Box', 'VBox', 'HBox', 'GridBox',
                       'Accordion', 'Tab', 'AppLayout', 'GridspecLayout',
-                      'TwoByTwoLayout']
+                      'TwoByTwoLayout', 'Stacked']
         groups = dict(
             sliders={k: v for k, v in widget_dict.items() if 'Slider' in k},
             buttons={k: v for k, v in widget_dict.items() if 'Button' in k},
