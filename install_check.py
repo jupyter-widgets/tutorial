@@ -23,7 +23,7 @@ requirements = [
     'voila',
     'pyvista',
     'mpl_interactions',
-    'orjson',  # For one of the example in ipygany
+    'orjson',  # For one of the example in ipycanvas
 ]
 
 import_result = {p: False for p in requirements}
