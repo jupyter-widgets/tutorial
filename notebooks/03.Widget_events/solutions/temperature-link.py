@@ -1,0 +1,1 @@
+widgets.link((degree_C, "value"), (degree_F, "value"), transform=(C_to_F, F_to_C))
