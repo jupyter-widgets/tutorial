@@ -58,9 +58,11 @@ if __name__ == '__main__':
 
     for notebook in notebooks:
         nb_str = str(notebook)
+        if '.ipynb_checkpoints' in nb_str:
+            continue
         if args.kernel_name:
             change_kernel_name(nb_str, args.kernel_name,
                                display_name=args.display_name)
         else:
             kname = get_kernel_name(nb_str)
-            print('{}\t\t\t\t{}'.format(nb_str, kname))
+            print(f'{nb_str}\n\t{kname}')
