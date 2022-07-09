@@ -22,6 +22,8 @@ requirements = [
     'jupyterlab',
     'voila',
     'pyvista',
+    'mpl_interactions',
+    'orjson',  # For one of the example in ipygany
 ]
 
 import_result = {p: False for p in requirements}
