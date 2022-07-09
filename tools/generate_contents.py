@@ -1,6 +1,7 @@
 import os
 import re
 from argparse import ArgumentParser
+from pathlib import Path
 
 import nbformat
 
@@ -8,7 +9,7 @@ NOTEBOOK_DIR = os.path.join(os.path.dirname(__file__), '..', 'notebooks')
 
 NBVERSION = 4
 
-REG = re.compile(r'(\d\d)\.(\d\d)-(.*)\.ipynb')
+REG = re.compile(r'.*(\d\d)\.(\d\d)-(.*)\.ipynb')
 
 NO_NUMBER = ['00']
 
@@ -16,7 +17,11 @@ TOC_STYLES = ['header_ulist', 'nested_list']
 
 
 def iter_notebooks(directory):
-    return sorted(nb for nb in os.listdir(NOTEBOOK_DIR) if REG.match(nb))
+    p = Path(directory)
+    notebooks = p.glob('**/*.ipynb')
+    notebooks = sorted(notebooks, key=str)
+    notebooks = [nb for nb in notebooks if not '.ipynb_checkpoints' in str(nb)]
+    return notebooks
 
 
 def is_title(cell):
@@ -24,26 +29,32 @@ def is_title(cell):
 
 
 def get_notebook_title(nb_file):
-    nb = nbformat.read(os.path.join(NOTEBOOK_DIR, nb_file),
+    nb = nbformat.read(nb_file,
                        as_version=NBVERSION)
     for cell in nb.cells:
         if is_title(cell):
             return cell.source[1:].splitlines()[0].strip()
     else:
         # Apparently there was no heading, raise an error
-        raise ValueError('No title found for {}.'.format(nb_file))
+        raise ValueError(f'No title found for {nb_file}.')
 
 
 def gen_contents(directory=None, path_prefix=None,
                  auto_number=False, toc_style=None):
 
     current_chapter = -1
+    root = Path(directory)
     for nb in iter_notebooks(directory):
         if path_prefix:
-            nb_url = os.path.join(path_prefix, nb)
+            nb_url = os.path.join(path_prefix, str(nb))
         else:
-            nb_url = nb
-        chapter, section, title = REG.match(nb).groups()
+            nb_url = str(nb.relative_to(root))
+
+        matches = REG.match(str(nb))
+        if matches:
+            chapter, section, title = matches.groups()
+        else:
+            continue
 
         # Generate auto chapter and section numbers even if
         # we do not end up using them
