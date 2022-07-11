@@ -18,7 +18,7 @@ dependencies:
   - jupyterlab=3.4
   - mpl-interactions=0.22.0
   - numpy
-  - orjson=3.7.7  # Added 2022 for one of the ipygany examples
+  - orjson=3.7.7  # Added 2022 for one of the ipycanvas examples
   - pandas
   - pip
   - python=3.9
