@@ -1,5 +1,6 @@
 {
   "LiteBuildConfig": {
+    "contents": ["notebooks"],
     "XeusPythonEnv": {
       "packages": [
         "bqplot",
