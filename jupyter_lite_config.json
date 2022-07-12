@@ -18,13 +18,10 @@
         "ipywidgets",
         "mpl-interactions",
         "numpy",
-        "orjson",
         "pandas",
         "pythreejs",
         "pyvista",
         "requests",
-        "scikit-image",
-        "scipy",
         "sidecar"
       ]
     }
