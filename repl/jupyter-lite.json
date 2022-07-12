@@ -1,0 +1,11 @@
+{
+  "jupyter-config-data": {
+    "disabledExtensions": [
+      "jupyterlab-kernel-spy",
+      "@jupyterlite/javascript-kernel-extension"
+    ],
+    "settingsUrl": "../build/schemas",
+    "themesUrl": "./build/themes"
+  },
+  "jupyter-lite-schema-version": 0
+}

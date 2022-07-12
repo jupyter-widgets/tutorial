@@ -1,0 +1,37 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.728282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.783794Z",
+      "mimetype": "image/png",
+      "name": "WidgetModelView.png",
+      "path": "02.Widget_overview/02.Basics/images/WidgetModelView.png",
+      "size": 38681,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.728282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.783794Z",
+      "mimetype": null,
+      "name": "WidgetModelView.graffle",
+      "path": "02.Widget_overview/02.Basics/images/WidgetModelView.graffle",
+      "size": 12224,
+      "type": "file",
+      "writable": true
+    }
+  ],
+  "created": "2022-07-12T15:23:19.728282Z",
+  "format": "json",
+  "last_modified": "2022-07-12T15:23:19.728282Z",
+  "mimetype": null,
+  "name": "images",
+  "path": "02.Widget_overview/02.Basics/images",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

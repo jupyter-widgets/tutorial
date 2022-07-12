@@ -1,0 +1,49 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.728282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.779794Z",
+      "mimetype": "text/x-python",
+      "name": "plot-function-mpl-inter.py",
+      "path": "02.Widget_overview/01.Interact/solutions/plot-function-mpl-inter.py",
+      "size": 85,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.728282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.779794Z",
+      "mimetype": "text/x-python",
+      "name": "plot-function-interact.py",
+      "path": "02.Widget_overview/01.Interact/solutions/plot-function-interact.py",
+      "size": 218,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.728282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.779794Z",
+      "mimetype": "text/x-python",
+      "name": "reverse-text.py",
+      "path": "02.Widget_overview/01.Interact/solutions/reverse-text.py",
+      "size": 65,
+      "type": "file",
+      "writable": true
+    }
+  ],
+  "created": "2022-07-12T15:23:19.728282Z",
+  "format": "json",
+  "last_modified": "2022-07-12T15:23:19.728282Z",
+  "mimetype": null,
+  "name": "solutions",
+  "path": "02.Widget_overview/01.Interact/solutions",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

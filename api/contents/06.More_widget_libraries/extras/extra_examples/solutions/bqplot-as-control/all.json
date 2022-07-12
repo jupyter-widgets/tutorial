@@ -1,0 +1,37 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.752283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.791794Z",
+      "mimetype": "text/x-python",
+      "name": "box-widget.py",
+      "path": "06.More_widget_libraries/extras/extra_examples/solutions/bqplot-as-control/box-widget.py",
+      "size": 61,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.752283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.791794Z",
+      "mimetype": "text/x-python",
+      "name": "update_line.py",
+      "path": "06.More_widget_libraries/extras/extra_examples/solutions/bqplot-as-control/update_line.py",
+      "size": 112,
+      "type": "file",
+      "writable": true
+    }
+  ],
+  "created": "2022-07-12T15:23:19.752283Z",
+  "format": "json",
+  "last_modified": "2022-07-12T15:23:19.752283Z",
+  "mimetype": null,
+  "name": "bqplot-as-control",
+  "path": "06.More_widget_libraries/extras/extra_examples/solutions/bqplot-as-control",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

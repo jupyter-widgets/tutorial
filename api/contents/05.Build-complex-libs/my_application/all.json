@@ -1,0 +1,49 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.744282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.787794Z",
+      "mimetype": "text/x-python",
+      "name": "__init__.py",
+      "path": "05.Build-complex-libs/my_application/__init__.py",
+      "size": 67,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.744282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.787794Z",
+      "mimetype": "text/x-python",
+      "name": "application.py",
+      "path": "05.Build-complex-libs/my_application/application.py",
+      "size": 1463,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.744282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.787794Z",
+      "mimetype": "text/x-python",
+      "name": "chart.py",
+      "path": "05.Build-complex-libs/my_application/chart.py",
+      "size": 959,
+      "type": "file",
+      "writable": true
+    }
+  ],
+  "created": "2022-07-12T15:23:19.744282Z",
+  "format": "json",
+  "last_modified": "2022-07-12T15:23:19.744282Z",
+  "mimetype": null,
+  "name": "my_application",
+  "path": "05.Build-complex-libs/my_application",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

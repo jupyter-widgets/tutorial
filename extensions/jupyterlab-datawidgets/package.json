@@ -1,0 +1,60 @@
+{
+  "name": "jupyterlab-datawidgets",
+  "version": "7.1.1",
+  "description": "A JupyterLab extension providing a set of widgets to help facilitate reuse of large datasets across widgets.",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab notebook",
+    "jupyterlab-extension"
+  ],
+  "homepage": "https://github.com/vidartf/jupyter-datawidgets",
+  "bugs": {
+    "url": "https://github.com/vidartf/jupyter-datawidgets/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vidartf/jupyter-datawidgets"
+  },
+  "license": "BSD-3-Clause",
+  "author": "Project Jupyter",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "files": [
+    "build/*.js"
+  ],
+  "scripts": {
+    "build": "npm run build:lib && npm run build:labextension",
+    "build:labextension": "rimraf dist && mkdirp dist && cd dist && npm pack .. && cd .. && jupyter labextension build .",
+    "build:lib": "tsc --build",
+    "clean": "rimraf build && rimraf dist && rimraf tsconfig.tsbuildinfo"
+  },
+  "dependencies": {
+    "@jupyter-widgets/base": "^1 || ^2 || ^3 || ^4 || ^5 || ^6.0.0-rc.0",
+    "jupyter-datawidgets": "^5.5.1"
+  },
+  "devDependencies": {
+    "@jupyter-widgets/base": "^6.0.0-rc.0",
+    "@jupyterlab/builder": "^3.0.0",
+    "@lumino/application": "^1.5.0",
+    "@lumino/coreutils": "^1.3.0",
+    "@lumino/widgets": "^1.5.0",
+    "mkdirp": "^1.0.4",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.2"
+  },
+  "jupyterlab": {
+    "extension": "build/index.js",
+    "outputDir": "dist/jupyterlab-datawidgets",
+    "sharedPackages": {
+      "@jupyter-widgets/base": {
+        "bundled": false,
+        "singleton": true
+      }
+    },
+    "_build": {
+      "load": "static\\remoteEntry.6bbc802535b1199faa29.js",
+      "extension": "./extension"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "name": "jupyter-leaflet",
+  "version": "0.16.0",
+  "description": "jupyter - leaflet bridge",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension",
+    "widgets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jupyter-widgets/ipyleaflet.git"
+  },
+  "license": "MIT",
+  "author": "Project Jupyter",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack && jupyter labextension build .",
+    "clean": "rimraf dist/ && rimraf ../ipyleaflet/labextension/ && rimraf ../ipyleaflet/nbextension",
+    "prepublish": "npm run clean && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "run-p watch:src watch:labextension",
+    "watch:src": "webpack --watch",
+    "watch:labextension": "jupyter labextension watch ."
+  },
+  "dependencies": {
+    "@jupyter-widgets/base": "^2 || ^3 || ^4.0.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "leaflet": "^1.7.1",
+    "leaflet-ant-path": "^1.3.0",
+    "leaflet-defaulticon-compatibility": "^0.1.1",
+    "leaflet-draw": "^1.0.4",
+    "leaflet-fullscreen": "^1.0.2",
+    "leaflet-measure": "^3.1.0",
+    "leaflet-rotatedmarker": "^0.2.0",
+    "leaflet-search": "2.9.8",
+    "leaflet-splitmap": "^1.0.1",
+    "leaflet-transform": "^1.0.3",
+    "leaflet-velocity": "^1.2.4",
+    "leaflet.awesome-markers": "^2.0.5",
+    "leaflet.markercluster": "^1.2.0",
+    "leaflet.vectorgrid": "^1.3.0",
+    "proj4": "^2.6.0",
+    "proj4leaflet": "^1.0.1",
+    "spin.js": "^4.1.0",
+    "stream-browserify": "^3.0.0"
+  },
+  "devDependencies": {
+    "@jupyterlab/builder": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "eslint": "^7.0.0",
+    "file-loader": "^5.0.2",
+    "install": "^0.13.0",
+    "npm": "^6.14.5",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.1",
+    "style-loader": "^1.1.2",
+    "webpack": "^5",
+    "webpack-cli": "^3.3.10"
+  },
+  "jupyterlab": {
+    "extension": "src/jupyterlab-plugin",
+    "outputDir": "../ipyleaflet/labextension",
+    "webpackConfig": "webpack.lab.config.js",
+    "sharedPackages": {
+      "@jupyter-widgets/base": {
+        "bundled": false,
+        "singleton": true
+      }
+    },
+    "_build": {
+      "load": "static/remoteEntry.6375e54406c677384240.js",
+      "extension": "./extension"
+    }
+  }
+}

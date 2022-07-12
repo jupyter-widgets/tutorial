@@ -1,0 +1,85 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.744282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.787794Z",
+      "mimetype": "text/x-python",
+      "name": "password-ex3ii.py",
+      "path": "04.Widget_styling/solutions/password-ex3ii.py",
+      "size": 145,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.744282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.787794Z",
+      "mimetype": "text/x-python",
+      "name": "password-ex3i.py",
+      "path": "04.Widget_styling/solutions/password-ex3i.py",
+      "size": 538,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.744282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.787794Z",
+      "mimetype": "text/x-python",
+      "name": "password-ex4.py",
+      "path": "04.Widget_styling/solutions/password-ex4.py",
+      "size": 447,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.744282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.787794Z",
+      "mimetype": "text/x-python",
+      "name": "password-ex2.py",
+      "path": "04.Widget_styling/solutions/password-ex2.py",
+      "size": 735,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.744282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.787794Z",
+      "mimetype": "text/x-python",
+      "name": "applayout-no-sides.py",
+      "path": "04.Widget_styling/solutions/applayout-no-sides.py",
+      "size": 155,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.744282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.787794Z",
+      "mimetype": "text/x-python",
+      "name": "slider-bqplot-sliders-app.py",
+      "path": "04.Widget_styling/solutions/slider-bqplot-sliders-app.py",
+      "size": 165,
+      "type": "file",
+      "writable": true
+    }
+  ],
+  "created": "2022-07-12T15:23:19.744282Z",
+  "format": "json",
+  "last_modified": "2022-07-12T15:23:19.744282Z",
+  "mimetype": null,
+  "name": "solutions",
+  "path": "04.Widget_styling/solutions",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

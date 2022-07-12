@@ -1,0 +1,37 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.728282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:23:19.728282Z",
+      "mimetype": null,
+      "name": "images",
+      "path": "02.Widget_overview/02.Basics/images",
+      "size": null,
+      "type": "directory",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.728282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.783794Z",
+      "mimetype": null,
+      "name": "02.00-Widget_Basics.ipynb",
+      "path": "02.Widget_overview/02.Basics/02.00-Widget_Basics.ipynb",
+      "size": 9450,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2022-07-12T15:23:19.728282Z",
+  "format": "json",
+  "last_modified": "2022-07-12T15:23:19.728282Z",
+  "mimetype": null,
+  "name": "02.Basics",
+  "path": "02.Widget_overview/02.Basics",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

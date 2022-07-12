@@ -1,0 +1,85 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.740283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.783794Z",
+      "mimetype": "image/png",
+      "name": "container-exercises-special-chars.png",
+      "path": "04.Widget_styling/images/container-exercises-special-chars.png",
+      "size": 23880,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.740283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.783794Z",
+      "mimetype": "image/png",
+      "name": "container-exercises1-final-layout.png",
+      "path": "04.Widget_styling/images/container-exercises1-final-layout.png",
+      "size": 29709,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.740283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.783794Z",
+      "mimetype": "image/png",
+      "name": "container-exercises2-final-layout.png",
+      "path": "04.Widget_styling/images/container-exercises2-final-layout.png",
+      "size": 53375,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.740283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.783794Z",
+      "mimetype": "image/png",
+      "name": "flexbox.png",
+      "path": "04.Widget_styling/images/flexbox.png",
+      "size": 11811,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.740283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.787794Z",
+      "mimetype": "image/gif",
+      "name": "pass-gen-demo.gif",
+      "path": "04.Widget_styling/images/pass-gen-demo.gif",
+      "size": 253480,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.736283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.783794Z",
+      "mimetype": "image/png",
+      "name": "05-container-exercises-ex4.png",
+      "path": "04.Widget_styling/images/05-container-exercises-ex4.png",
+      "size": 52578,
+      "type": "file",
+      "writable": true
+    }
+  ],
+  "created": "2022-07-12T15:23:19.740283Z",
+  "format": "json",
+  "last_modified": "2022-07-12T15:23:19.740283Z",
+  "mimetype": null,
+  "name": "images",
+  "path": "04.Widget_styling/images",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

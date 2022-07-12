@@ -1,0 +1,130 @@
+{
+  "name": "ipydatagrid",
+  "version": "1.1.12",
+  "description": "Fast Datagrid widget for the Jupyter Notebook and JupyterLab",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension",
+    "widgets"
+  ],
+  "files": [
+    "lib/**/*.js",
+    "lib/**/*.js.map",
+    "lib/**/*.ts",
+    "dist/*.js",
+    "dist/*.js.map",
+    "dist/*.png",
+    "style/**/*.*"
+  ],
+  "homepage": "https://github.com/Bloomberg/ipydatagrid",
+  "bugs": {
+    "url": "https://github.com/Bloomberg/ipydatagrid/issues"
+  },
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Bloomberg",
+    "email": ""
+  },
+  "main": "lib/index.js",
+  "types": "./lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bloomberg/ipydatagrid"
+  },
+  "scripts": {
+    "build": "npm run build:lib && npm run build:nbextension && npm run build:labextension",
+    "build:dev": "npm run build:lib && npm run build:nbextension && npm run build:labextension:dev",
+    "build:labextension": "jupyter labextension build .",
+    "build:labextension:dev": "jupyter labextension build --development True .",
+    "build:lib": "tsc",
+    "build:nbextension": "webpack --mode=production",
+    "build:widget-examples": "cd widget-examples/basic && webpack --mode=production",
+    "build:all": "npm run build:labextension && npm run build:nbextension && npm run build:widget-examples",
+    "clean": "rimraf dist && npm run clean:lib && npm run clean:labextension && npm run clean:nbextension",
+    "clean:lib": "rimraf lib",
+    "clean:labextension": "rimraf ipydatagrid/labextension",
+    "clean:nbextension": "rimraf ipydatagrid/nbextension/index.*",
+    "lint": "eslint 'js/**/*.{js,ts}' --quiet --fix",
+    "prepack": "npm run build:labextension && npm run build:nbextension",
+    "test": "jest",
+    "watch": "npm-run-all -p watch:*",
+    "watch:lib": "tsc -w",
+    "watch:nbextension": "webpack --watch",
+    "watch:labextension": "jupyter labextension watch ."
+  },
+  "dependencies": {
+    "@jupyter-widgets/base": "^2 || ^3 || ^4",
+    "@jupyterlab/apputils": "^3.0.2",
+    "@lumino/algorithm": "^1.8.0",
+    "@lumino/commands": "^1.17.0",
+    "@lumino/coreutils": "^1.10.0",
+    "@lumino/datagrid": "^0.32.0",
+    "@lumino/default-theme": "^0.19.0",
+    "@lumino/domutils": "^1.7.0",
+    "@lumino/messaging": "^1.9.0",
+    "@lumino/virtualdom": "^1.13.0",
+    "@lumino/widgets": "^1.28.0",
+    "bqplot": "^0.4.6",
+    "d3-array": "^2.2.0",
+    "d3-color": "^1.3.0",
+    "d3-format": "^1.3.2",
+    "d3-scale": "^3.0.0",
+    "d3-time-format": "^2.1.3",
+    "moment": "^2.24.0",
+    "vega-expression": "^2.6.0",
+    "vega-functions": "^5.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.3",
+    "@babel/core": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "@jupyterlab/builder": "^3.0.1",
+    "@lumino/application": "^1.6.0",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^10.11.6",
+    "@types/webpack-env": "^1.13.6",
+    "@typescript-eslint/eslint-plugin": "^3.5.0",
+    "@typescript-eslint/parser": "^3.5.0",
+    "acorn": "^6.2.0",
+    "babel-jest": "^24.9.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "css-loader": "^3.0.0",
+    "eslint": "^7.3.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "file-loader": "^4.0.0",
+    "fs-extra": "^7.0.0",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.2.11",
+    "mkdirp": "^0.5.1",
+    "npm-run-all": "^4.1.3",
+    "prettier": "^2.0.5",
+    "rimraf": "^2.6.2",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "svg-url-loader": "~3.0.3",
+    "ts-jest": "^26.5.0",
+    "ts-loader": "^6.0.4",
+    "typescript": "~4.2.4",
+    "url-loader": "^4.1.0",
+    "webpack": "^5",
+    "webpack-cli": "^4.4.0"
+  },
+  "jupyterlab": {
+    "extension": "lib/plugin",
+    "webpackConfig": "webpack.lab.config.js",
+    "outputDir": "./ipydatagrid/labextension",
+    "sharedPackages": {
+      "@jupyter-widgets/base": {
+        "bundled": false,
+        "singleton": true
+      }
+    },
+    "_build": {
+      "load": "static/remoteEntry.ef2426d6e48c307905e5.js",
+      "extension": "./extension"
+    }
+  }
+}

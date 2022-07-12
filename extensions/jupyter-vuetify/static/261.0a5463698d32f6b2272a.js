@@ -1,0 +1,1 @@
+(self.webpackChunkjupyter_vuetify=self.webpackChunkjupyter_vuetify||[]).push([[261],{6261:(e,t,r)=>{const i=r(9553),u=r(6148),a=r(6925);e.exports={id:"jupyter-vuetify",requires:[i.IJupyterWidgetRegistry],optional:[u.IThemeManager],activate(e,t,r){a.ThemeModel.themeManager=r,t.registerWidget({name:"jupyter-vuetify",version:a.version,exports:a})},autoStart:!0}}}]);

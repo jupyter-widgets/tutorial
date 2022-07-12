@@ -1,0 +1,1 @@
+export default __webpack_public_path__ + "pypi/ipykernel-6.9.2-py3-none-any.whl";

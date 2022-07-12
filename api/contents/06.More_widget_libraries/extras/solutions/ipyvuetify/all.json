@@ -1,0 +1,25 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.756283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.791794Z",
+      "mimetype": "text/x-python",
+      "name": "radio_group.py",
+      "path": "06.More_widget_libraries/extras/solutions/ipyvuetify/radio_group.py",
+      "size": 155,
+      "type": "file",
+      "writable": true
+    }
+  ],
+  "created": "2022-07-12T15:23:19.756283Z",
+  "format": "json",
+  "last_modified": "2022-07-12T15:23:19.756283Z",
+  "mimetype": null,
+  "name": "ipyvuetify",
+  "path": "06.More_widget_libraries/extras/solutions/ipyvuetify",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

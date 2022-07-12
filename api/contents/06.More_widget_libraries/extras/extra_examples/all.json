@@ -1,0 +1,73 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.752283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.791794Z",
+      "mimetype": null,
+      "name": "vaex.ipynb",
+      "path": "06.More_widget_libraries/extras/extra_examples/vaex.ipynb",
+      "size": 1835,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.752283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:23:19.752283Z",
+      "mimetype": null,
+      "name": "solutions",
+      "path": "06.More_widget_libraries/extras/extra_examples/solutions",
+      "size": null,
+      "type": "directory",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.752283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.791794Z",
+      "mimetype": null,
+      "name": "bqplot_A_plot_as_a_control_in_a_widget.ipynb",
+      "path": "06.More_widget_libraries/extras/extra_examples/bqplot_A_plot_as_a_control_in_a_widget.ipynb",
+      "size": 8912,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.752283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.791794Z",
+      "mimetype": null,
+      "name": "flight_sim.ipynb",
+      "path": "06.More_widget_libraries/extras/extra_examples/flight_sim.ipynb",
+      "size": 18240,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.752283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.791794Z",
+      "mimetype": null,
+      "name": "bqplot_A_Penalized_regression.ipynb",
+      "path": "06.More_widget_libraries/extras/extra_examples/bqplot_A_Penalized_regression.ipynb",
+      "size": 14167,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2022-07-12T15:23:19.752283Z",
+  "format": "json",
+  "last_modified": "2022-07-12T15:23:19.752283Z",
+  "mimetype": null,
+  "name": "extra_examples",
+  "path": "06.More_widget_libraries/extras/extra_examples",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

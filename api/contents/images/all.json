@@ -1,0 +1,73 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.784283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.851794Z",
+      "mimetype": "image/gif",
+      "name": "plot-as-control.gif",
+      "path": "images/plot-as-control.gif",
+      "size": 1421526,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.784283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.839794Z",
+      "mimetype": "image/png",
+      "name": "covid-dash2.png",
+      "path": "images/covid-dash2.png",
+      "size": 390215,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.784283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.839794Z",
+      "mimetype": "image/png",
+      "name": "covid-dash1.png",
+      "path": "images/covid-dash1.png",
+      "size": 359921,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.780283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.835794Z",
+      "mimetype": "image/png",
+      "name": "Binary_Star_Sim.png",
+      "path": "images/Binary_Star_Sim.png",
+      "size": 173569,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.780283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.835794Z",
+      "mimetype": "image/png",
+      "name": "WidgetArch.png",
+      "path": "images/WidgetArch.png",
+      "size": 23058,
+      "type": "file",
+      "writable": true
+    }
+  ],
+  "created": "2022-07-12T15:23:19.784283Z",
+  "format": "json",
+  "last_modified": "2022-07-12T15:23:19.784283Z",
+  "mimetype": null,
+  "name": "images",
+  "path": "images",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

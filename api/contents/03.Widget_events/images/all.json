@@ -1,0 +1,25 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.732282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.783794Z",
+      "mimetype": "image/png",
+      "name": "bad-pass-gen-v1.png",
+      "path": "03.Widget_events/images/bad-pass-gen-v1.png",
+      "size": 14693,
+      "type": "file",
+      "writable": true
+    }
+  ],
+  "created": "2022-07-12T15:23:19.732282Z",
+  "format": "json",
+  "last_modified": "2022-07-12T15:23:19.732282Z",
+  "mimetype": null,
+  "name": "images",
+  "path": "03.Widget_events/images",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

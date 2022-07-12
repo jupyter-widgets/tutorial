@@ -1,0 +1,25 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.800283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:23:19.800283Z",
+      "mimetype": null,
+      "name": "intro",
+      "path": "solutions/intro",
+      "size": null,
+      "type": "directory",
+      "writable": true
+    }
+  ],
+  "created": "2022-07-12T15:23:19.800283Z",
+  "format": "json",
+  "last_modified": "2022-07-12T15:23:19.800283Z",
+  "mimetype": null,
+  "name": "solutions",
+  "path": "solutions",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

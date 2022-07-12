@@ -1,0 +1,25 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.772283Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.827794Z",
+      "mimetype": null,
+      "name": "08.00-ipywidgets_8.ipynb",
+      "path": "08.Ipywidgets_8/08.00-ipywidgets_8.ipynb",
+      "size": 10613,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2022-07-12T15:23:19.772283Z",
+  "format": "json",
+  "last_modified": "2022-07-12T15:23:19.772283Z",
+  "mimetype": null,
+  "name": "08.Ipywidgets_8",
+  "path": "08.Ipywidgets_8",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

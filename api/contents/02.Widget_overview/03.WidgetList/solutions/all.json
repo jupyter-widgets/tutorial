@@ -1,0 +1,49 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.728282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.783794Z",
+      "mimetype": "text/x-python",
+      "name": "bounded-float-text.py",
+      "path": "02.Widget_overview/03.WidgetList/solutions/bounded-float-text.py",
+      "size": 514,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.732282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.783794Z",
+      "mimetype": "text/x-python",
+      "name": "widgets-in-a-box.py",
+      "path": "02.Widget_overview/03.WidgetList/solutions/widgets-in-a-box.py",
+      "size": 179,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2022-07-12T15:23:19.732282Z",
+      "format": null,
+      "last_modified": "2022-07-12T15:21:55.783794Z",
+      "mimetype": "text/x-python",
+      "name": "sidecar-triple.py",
+      "path": "02.Widget_overview/03.WidgetList/solutions/sidecar-triple.py",
+      "size": 96,
+      "type": "file",
+      "writable": true
+    }
+  ],
+  "created": "2022-07-12T15:23:19.732282Z",
+  "format": "json",
+  "last_modified": "2022-07-12T15:23:19.732282Z",
+  "mimetype": null,
+  "name": "solutions",
+  "path": "02.Widget_overview/03.WidgetList/solutions",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

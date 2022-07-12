@@ -1,0 +1,1 @@
+(self.webpackChunkjupyter_vuetify=self.webpackChunkjupyter_vuetify||[]).push([[635],{3635:(e,u,t)=>{"use strict";t.r(u),t.d(u,{default:()=>s});const s=t(2215).Vue}}]);

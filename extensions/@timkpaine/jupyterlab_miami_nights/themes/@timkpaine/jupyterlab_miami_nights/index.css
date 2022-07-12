@@ -1,0 +1,1012 @@
+/*-----------------------------------------------------------------------------
+| Copyright (c) Jupyter Development Team.
+| Distributed under the terms of the Modified BSD License.
+|----------------------------------------------------------------------------*/
+
+/*
+The following CSS variables define the main, public API for styling JupyterLab.
+These variables should be used by all plugins wherever possible. In other
+words, plugins should not define custom colors, sizes, etc unless absolutely
+necessary. This enables users to change the visual theme of JupyterLab
+by changing these variables.
+
+Many variables appear in an ordered sequence (0,1,2,3). These sequences
+are designed to work well together, so for example, `--jp-border-color1` should
+be used with `--jp-layout-color1`. The numbers have the following meanings:
+
+* 0: super-primary, reserved for special emphasis
+* 1: primary, most important under normal situations
+* 2: secondary, next most important under normal situations
+* 3: tertiary, next most important under normal situations
+
+Throughout JupyterLab, we are mostly following principles from Google's
+Material Design when selecting colors. We are not, however, following
+all of MD as it is not optimized for dense, information rich UIs.
+*/
+
+:root {
+  /* Basic color scheme*/
+   --neon-night-red: #ff0079;
+   --neon-night-blue0: #51cdff;
+   --neon-night-blue1: #00acff;
+   --neon-night-yellow: #ffde63;
+   --neon-night-green0: #00ff98;
+   --neon-night-green1: #c4f68c;
+   --neon-night-cyan: #3cfffc;
+   --neon-night-peach: #ff63a6;
+   --neon-night-pink: #ff8c8c;
+   --neon-night-purple0: #ff37f2;
+   --neon-night-purple1: #a2adff;
+   --neon-night-purple2: #ff72cf;
+   --neon-night-purple3: #DF81FC;
+   --neon-night-purple4: #696092;
+   --neon-night-purple5: #c375ff;
+   --neon-night-orange: #ff9246;
+   --neon-night-fg0: #F8F8F2;
+   --neon-night-bg0: #211d35;
+   --neon-night-bg1: #2f2a46;
+   --neon-night-bg2: #3a2e6b;
+
+   --neon-night-text-shadow0: 0 0 2px #0225ff, 0 0 6px #0225ff, 0 0 6px #0225ff, 2px 2px 1px #000;
+   --neon-night-text-shadow1: 0 0 2px #c10165, 0 0 6px #c10165, 0 0 6px #c10165, 2px 2px 1px #000;
+
+   --jp-private-horizontal-tab-height: 28px;
+
+  /* Elevation
+   *#26243d
+   * We style box-shadows using Material Design's idea of elevation. These particular numbers are taken from here:
+   *
+   * https://github.com/material-components/material-components-web
+   * https://material-components-web.appspot.com/elevation.html
+   */
+  --jp-shadow-base-lightness: 0;
+  --jp-shadow-umbra-color: rgba(
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    0.2
+  );
+  --jp-shadow-penumbra-color: rgba(
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    0.14
+  );
+  --jp-shadow-ambient-color: rgba(
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    0.12
+  );
+  --jp-elevation-z0: none;
+  --jp-elevation-z1: 0px 2px 1px -1px var(--jp-shadow-umbra-color),
+    0px 1px 1px 0px var(--jp-shadow-penumbra-color),
+    0px 1px 3px 0px var(--jp-shadow-ambient-color);
+  --jp-elevation-z2: 0px 3px 1px -2px var(--jp-shadow-umbra-color),
+    0px 2px 2px 0px var(--jp-shadow-penumbra-color),
+    0px 1px 5px 0px var(--jp-shadow-ambient-color);
+  --jp-elevation-z4: 0px 2px 4px -1px var(--jp-shadow-umbra-color),
+    0px 4px 5px 0px var(--jp-shadow-penumbra-color),
+    0px 1px 10px 0px var(--jp-shadow-ambient-color);
+  --jp-elevation-z6: 0px 3px 5px -1px var(--jp-shadow-umbra-color),
+    0px 6px 10px 0px var(--jp-shadow-penumbra-color),
+    0px 1px 18px 0px var(--jp-shadow-ambient-color);
+  --jp-elevation-z8: 0px 5px 5px -3px var(--jp-shadow-umbra-color),
+    0px 8px 10px 1px var(--jp-shadow-penumbra-color),
+    0px 3px 14px 2px var(--jp-shadow-ambient-color);
+  --jp-elevation-z12: 0px 7px 8px -4px var(--jp-shadow-umbra-color),
+    0px 12px 17px 2px var(--jp-shadow-penumbra-color),
+    0px 5px 22px 4px var(--jp-shadow-ambient-color);
+  --jp-elevation-z16: 0px 8px 10px -5px var(--jp-shadow-umbra-color),
+    0px 16px 24px 2px var(--jp-shadow-penumbra-color),
+    0px 6px 30px 5px var(--jp-shadow-ambient-color);
+  --jp-elevation-z20: 0px 10px 13px -6px var(--jp-shadow-umbra-color),
+    0px 20px 31px 3px var(--jp-shadow-penumbra-color),
+    0px 8px 38px 7px var(--jp-shadow-ambient-color);
+  --jp-elevation-z24: 0px 11px 15px -7px var(--jp-shadow-umbra-color),
+    0px 24px 38px 3px var(--jp-shadow-penumbra-color),
+    0px 9px 46px 8px var(--jp-shadow-ambient-color);
+
+  /* Borders
+   *
+   * The following variables, specify the visual styling of borders in JupyterLab.
+   */
+
+  --jp-border-width: 0px;
+  --jp-border-color0: #7b5ccc50;
+  --jp-border-color1: #7b5ccc50;
+  --jp-border-color2: #7b5ccc50;
+  --jp-border-color3: #7b5ccc50;
+  --jp-border-radius: 2px;
+
+  /* UI Fonts
+   *
+   * The UI font CSS variables are used for the typography all of the JupyterLab
+   * user interface elements that are not directly user generated content.
+   *
+   * The font sizing here is done assuming that the body font size of --jp-ui-font-size1
+   * is applied to a parent element. When children elements, such as headings, are sized
+   * in em all things will be computed relative to that body size.
+   */
+
+  --jp-ui-font-scale-factor: 1.2;
+  --jp-ui-font-size0: 0.83333em;
+  --jp-ui-font-size1: 13px; /* Base font size */
+  --jp-ui-font-size2: 1.2em;
+  --jp-ui-font-size3: 1.44em;
+
+  --jp-ui-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  /*
+   * Use these font colors against the corresponding main layout colors.
+   * In a light theme, these go from dark to light.
+   */
+
+  /* Defaults use Material Design specification */
+  --jp-ui-font-color0: rgba(255, 255, 255, 1);
+  --jp-ui-font-color1: rgba(255, 255, 255, 0.87);
+  --jp-ui-font-color2: rgba(255, 255, 255, 0.54);
+  --jp-ui-font-color3: rgba(255, 255, 255, 0.38);
+
+  /*
+   * Use these against the brand/accent/warn/error colors.
+   * These will typically go from light to darker, in both a dark and light theme.
+   */
+
+  --jp-ui-inverse-font-color0: rgba(0, 0, 0, 1);
+  --jp-ui-inverse-font-color1: rgba(0, 0, 0, 0.8);
+  --jp-ui-inverse-font-color2: rgba(0, 0, 0, 0.5);
+  --jp-ui-inverse-font-color3: rgba(0, 0, 0, 0.3);
+
+  /* Content Fonts
+   *
+   * Content font variables are used for typography of user generated content.
+   *
+   * The font sizing here is done assuming that the body font size of --jp-content-font-size1
+   * is applied to a parent element. When children elements, such as headings, are sized
+   * in em all things will be computed relative to that body size.
+   */
+
+  --jp-content-line-height: 1.6;
+  --jp-content-font-scale-factor: 1.2;
+  --jp-content-font-size0: 0.83333em;
+  --jp-content-font-size1: 14px; /* Base font size */
+  --jp-content-font-size2: 1.2em;
+  --jp-content-font-size3: 1.44em;
+  --jp-content-font-size4: 1.728em;
+  --jp-content-font-size5: 2.0736em;
+
+  /* This gives a magnification of about 125% in presentation mode over normal. */
+  --jp-content-presentation-font-size1: 17px;
+
+  --jp-content-heading-line-height: 1;
+  --jp-content-heading-margin-top: 1.2em;
+  --jp-content-heading-margin-bottom: 0.8em;
+  --jp-content-heading-font-weight: 500;
+
+  /* Defaults use Material Design specification */
+  --jp-content-font-color0: rgba(255, 255, 255, 1);
+  --jp-content-font-color1: var(--neon-night-fg0);
+  --jp-content-font-color2: rgba(255, 255, 255, 0.7);
+  --jp-content-font-color3: rgba(255, 255, 255, 0.5);
+
+  --jp-content-link-color: var(--neon-night-blue0);
+
+  --jp-content-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+
+  /*
+   * Code Fonts
+   *
+   * Code font variables are used for typography of code and other monospaces content.
+   */
+
+  --jp-code-font-size: 13px;
+  --jp-code-line-height: 1.3077; /* 19px for 14px base */
+  --jp-code-padding: 5px; /* 6px for 14px base */
+  --jp-code-font-family-default: "Source Code Pro", monospace;
+  --jp-code-font-family: var(--jp-code-font-family-default);
+
+  /* This gives a magnification of about 125% in presentation mode over normal. */
+  --jp-code-presentation-font-size: 16px;
+
+  /* may need to tweak cursor width if you change font size */
+  --jp-code-cursor-width0: 1.4px;
+  --jp-code-cursor-width1: 2px;
+  --jp-code-cursor-width2: 4px;
+
+  /* Layout
+   *
+   * The following are the main layout colors use in JupyterLab. In a light
+   * theme these would go from light to dark.
+   */
+
+  --jp-layout-color0: var(--neon-night-bg0);
+  --jp-layout-color1: var(--neon-night-bg0);
+  --jp-layout-color2: var(--neon-night-bg2);
+  --jp-layout-color3: var(--neon-night-bg0);
+  --jp-layout-color4: var(--neon-night-orange);
+
+  /* Inverse Layout
+   *
+   * The following are the inverse layout colors use in JupyterLab. In a light
+   * theme these would go from dark to light.
+   */
+
+  --jp-inverse-layout-color0: white;
+  --jp-inverse-layout-color1: white;
+  --jp-inverse-layout-color2: var(--md-grey-200);
+  --jp-inverse-layout-color3: var(--md-grey-400);
+  --jp-inverse-layout-color4: var(--md-grey-600);
+
+  /* Brand/accent */
+
+  --jp-brand-color0: var(--neon-night-blue0);
+  --jp-brand-color1: var(--neon-night-bg2);
+  --jp-brand-color2: var(--md-blue-300);
+  --jp-brand-color3: var(--md-blue-100);
+  --jp-brand-color4: var(--md-blue-50);
+
+  --jp-accent-color0: var(--md-green-700);
+  --jp-accent-color1: var(--md-green-500);
+  --jp-accent-color2: var(--md-green-300);
+  --jp-accent-color3: var(--md-green-100);
+
+  /* State colors (warn, error, success, info) */
+
+  --jp-warn-color0: var(--neon-night-purple2);
+  --jp-warn-color1: var(--neon-night-red);
+  --jp-warn-color2: var(--neon-night-peach);
+  --jp-warn-color3: var(--neon-night-peach);
+
+  --jp-error-color0: var(--md-red-700);
+  --jp-error-color1: var(--md-red-500);
+  --jp-error-color2: var(--md-red-300);
+  --jp-error-color3: var(--md-red-100);
+
+  --jp-success-color0: var(--md-green-700);
+  --jp-success-color1: var(--md-green-500);
+  --jp-success-color2: var(--md-green-300);
+  --jp-success-color3: var(--md-green-100);
+
+  --jp-info-color0: var(--md-cyan-700);
+  --jp-info-color1: var(--md-cyan-500);
+  --jp-info-color2: var(--md-cyan-300);
+  --jp-info-color3: var(--md-cyan-100);
+
+  /* Cell specific styles */
+
+  --jp-cell-padding: 12px;
+
+  --jp-cell-collapser-width: 8px;
+  --jp-cell-collapser-min-height: 20px;
+  --jp-cell-collapser-not-active-hover-opacity: 0.6;
+
+  --jp-cell-editor-background: var(--neon-night-bg0);
+  --jp-cell-editor-border-color: var(--md-grey-300);
+  --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300);
+  --jp-cell-editor-active-background: var(--neon-night-bg0);
+  --jp-cell-editor-active-border-color: var(--jp-brand-color2);
+
+  --jp-cell-prompt-width: 64px;
+  --jp-cell-prompt-font-family: 'Source Code Pro', monospace;
+  --jp-cell-prompt-letter-spacing: 0px;
+  --jp-cell-prompt-opacity: 1;
+  --jp-cell-prompt-not-active-opacity: 1;
+  --jp-cell-prompt-not-active-font-color: var(--neon-night-fg0);
+  /* A custom blend of MD grey and blue 600
+   * See https://meyerweb.com/eric/tools/color-blend/#546E7A:1E88E5:5:hex */
+  --jp-cell-inprompt-font-color: var(--neon-night-cyan);
+  /* A custom blend of MD grey and orange 600
+   * https://meyerweb.com/eric/tools/color-blend/#546E7A:F4511E:5:hex */
+  --jp-cell-outprompt-font-color:  #ffc8e0;
+
+  /* Notebook specific styles */
+
+  --jp-notebook-padding: 12px;
+  --jp-notebook-select-background: #3c2f51;
+  --jp-notebook-multiselected-color: #3c2f51;
+
+  /* The scroll padding is calculated to fill enough space at the bottom of the
+  notebook to show one single-line cell (with appropriate padding) at the top
+  when the notebook is scrolled all the way to the bottom. We also subtract one
+  pixel so that no scrollbar appears if we have just one single-line cell in the
+  notebook. This padding is to enable a 'scroll past end' feature in a notebook.
+  */
+  --jp-notebook-scroll-padding: calc(
+    100% - var(--jp-code-font-size) * var(--jp-code-line-height) -
+      var(--jp-code-padding) - var(--jp-cell-padding) - 1px - 4px
+  );
+
+  /* Rendermime styles */
+
+  --jp-rendermime-error-background: rgba(244, 67, 54, 0.28);
+  --jp-rendermime-table-row-background: var(--neon-night-bg1);
+  --jp-rendermime-table-row-hover-background: var(--jp-brand-color1);
+
+  /* Dialog specific styles */
+
+  --jp-dialog-background: rgba(0, 0, 0, 0.6);
+
+  /* Console specific styles */
+
+  --jp-console-padding: 12px;
+
+  /* Toolbar specific styles */
+
+  --jp-toolbar-border-color: var(--jp-border-color2);
+  --jp-toolbar-micro-height: 0px;
+  --jp-toolbar-background: none;
+  --jp-toolbar-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
+  --jp-toolbar-header-margin: 4px 4px 0px 4px;
+  --jp-toolbar-active-background: var(--jp-layout-color0);
+
+  /* Input field styles */
+
+  --jp-input-box-shadow: inset 0px -1px 0 0px var(--jp-mirror-editor-comment-color), inset 0px 1px 0 0px var(--jp-mirror-editor-comment-color);
+  --jp-input-active-background: var(--neon-night-bg1);
+  --jp-input-hover-background: var(--neon-night-bg1);
+  --jp-input-background: var(--neon-night-bg1);
+  --jp-input-border-color: var(--jp-border-color1);
+  --jp-input-active-border-color: var(--jp-brand-color1);
+  --jp-input-active-box-shadow-color: inset 0px -1px 0 0px var(--jp-mirror-editor-comment-color), inset 0px 1px 0 0px var(--jp-mirror-editor-comment-color);
+
+  /* General editor styles */
+
+  --jp-editor-selected-background: var(--jp-layout-color2);
+  --jp-editor-selected-focused-background: #3c2f51;
+  --jp-editor-cursor-color: var(--neon-night-green0);
+
+  /* Code mirror specific styles */
+
+  --jp-mirror-editor-keyword-color: var(--neon-night-cyan);
+  --jp-mirror-editor-atom-color: var(--neon-night-yellow);
+  --jp-mirror-editor-number-color: var(--neon-night-green0);
+  --jp-mirror-editor-def-color: var(--neon-night-yellow);
+  --jp-mirror-editor-variable-color: var(--neon-night-fg0);
+  --jp-mirror-editor-variable-2-color: var(--neon-night-purple2);
+  --jp-mirror-editor-variable-3-color: var(--neon-night-orange);
+  --jp-mirror-editor-punctuation-color: var(--neon-night-purple1);
+  --jp-mirror-editor-property-color: var(--neon-night-purple1);
+  --jp-mirror-editor-operator-color: var(--neon-night-purple0);
+  --jp-mirror-editor-comment-color: var(--neon-night-purple4);
+  --jp-mirror-editor-string-color: var(--neon-night-purple5);
+  --jp-mirror-editor-string-2-color:var(--neon-night-green1);
+  --jp-mirror-editor-meta-color: var(--neon-night-purple0);
+  --jp-mirror-editor-qualifier-color: var(--neon-night-pink);
+  --jp-mirror-editor-builtin-color: var(--neon-night-yellow);
+  --jp-mirror-editor-bracket-color: var(--neon-night-green0);
+  --jp-mirror-editor-tag-color: var(--neon-night-cyan);
+  --jp-mirror-editor-attribute-color: var(--neon-night-green0);
+  --jp-mirror-editor-header-color: var(--neon-night-purple2);
+  --jp-mirror-editor-quote-color: var(--neon-night-cyan);
+  --jp-mirror-editor-link-color: var(--neon-night-blue0);
+  --jp-mirror-editor-error-color: var(--neon-night-red);
+  --jp-mirror-editor-hr-color: #999;
+
+  /* Vega extension styles */
+
+  --jp-vega-background: var(--md-grey-400);
+
+  /* Sidebar-related styles */
+
+  --jp-sidebar-min-width: 180px;
+
+  /* Search-related styles */
+
+  --jp-search-toggle-off-opacity: 0.6;
+  --jp-search-toggle-hover-opacity: 0.8;
+  --jp-search-toggle-on-opacity: 1;
+  --jp-search-selected-match-background-color: var(--neon-night-green0);
+  --jp-search-selected-match-color: black;
+  --jp-search-unselected-match-background-color: var(--neon-night-orange);
+  --jp-search-unselected-match-color: var(--jp-ui-inverse-font-color0);
+
+  /* scrollbar related styles. Supports every browser except Edge. */
+
+  /* colors based on JetBrain's Darcula theme */
+
+  --jp-scrollbar-background-color: #00000000;
+  --jp-scrollbar-thumb-color: 92, 81,117; /* need to specify thumb color as an RGB triplet */
+
+  --jp-scrollbar-endpad: 0px; /* the minimum gap between the thumb and the ends of a scrollbar */
+
+  /* hacks for setting the thumb shape. These do nothing in Firefox */
+
+  --jp-scrollbar-thumb-margin: 0px; /* the space in between the sides of the thumb and the track */
+  --jp-scrollbar-thumb-radius: 10px; /* set to a large-ish value for rounded endcaps on the thumb */
+
+    /* Icon colors that work well with light or dark backgrounds */
+    --jp-icon-contrast-color0: var(--neon-night-yellow);
+    --jp-icon-contrast-color1: var(--neon-night-green0);
+    --jp-icon-contrast-color2: var(--neon-night-purple1);
+    --jp-icon-contrast-color3: var(--neon-night-orange);
+
+    /* Widgets */
+    --jp-widgets-slider-handle-background-color: var(--neon-night-yellow);
+    --jp-widgets-slider-active-handle-color: var(--neon-night-orange);
+}
+/*-----------------------------------------------------------------------------
+| Copyright (c) Jupyter Development Team.
+| Distributed under the terms of the Modified BSD License.
+|----------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url(3b5adc929c114d1cd0fc91cd735847b6.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url(ff01975bdccf4187dc2b094650d0cf5e.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vibur';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Vibur'), url(662254c8318cbac0ef3bcda7ad0df6ee.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+
+/* Fix layout color */
+body {
+  line-height: 1.3077; /* 17px for 13px font */
+}
+
+#jupyterlab-splash.dark {
+  background-color: var(--neon-night-bg0);
+ }
+ 
+.cm-s-jupyter .CodeMirror-activeline-background,
+.cm-s-jupyter .CodeMirror-gutter, .lm-DockPanel-tabBar .lm-TabBar-tab,
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current, 
+.lm-DockPanel-tabBar .lm-TabBar-tab:hover:not(.lm-mod-current) {
+   background-color: var(--jp-layout-color0);
+ }
+
+ body, .lm-DockPanel-tabBar, #jp-main-dock-panel, .lm-Menu, .jp-Tooltip{
+   background-color: var(--jp-layout-color1);
+ }
+
+ .lm-MenuBar-item.lm-mod-active, 
+ .lm-MenuBar.lm-mod-active .lm-MenuBar-item.lm-mod-active {
+  background-color: #5d5b7b54;
+ }
+
+ #jp-main-dock-panel {
+  background: transparent;
+  padding: 4px;
+ }
+  
+ .lm-Menu, .jp-Tooltip {
+  border: 1px solid #2f2d43;
+}
+
+.f17wptjy {
+  background-color: #181818;
+ }
+
+ /* Translucent area */
+.jp-SideBar.lm-TabBar, #jp-top-panel {
+   backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+ }
+
+ .jp-SideBar .lm-TabBar-tab, .lm-MenuBar {
+   background: unset !important;
+ }
+
+
+/* Brackets */
+div.CodeMirror span.CodeMirror-matchingbracket {
+  color: var(--neon-night-green0);
+  border-bottom: 1px solid var(--neon-night-green0);
+}
+
+div.CodeMirror span.CodeMirror-nonmatchingbracket {
+  color: var(--neon-night-red);
+  border-bottom: 1px solid var(--neon-night-red);
+}
+
+/*Flat scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#5d5175;
+  border-radius: 10px;
+  min-height: 100px;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover, ::-webkit-scrollbar-thumb:horizontal:active {
+  background: linear-gradient(to right, #fafc32, #f45959, #ef1eaf);
+}
+
+::-webkit-scrollbar-thumb:vertical:hover, ::-webkit-scrollbar-thumb:vertical:active {
+  background: linear-gradient(to bottom, #fafc32, #f45959, #ef1eaf);
+}
+
+.widget-slider .ui-slider {
+  background: linear-gradient(to right, #fafc32, #f45959, #ef1eaf);
+  border-radius: 4px;
+}
+
+/*Fix cursor of horizontal  scrollbar*/
+.CodeMirror-hscrollbar {
+  cursor: auto;
+}
+
+/* Fix notebook style */
+.cm-s-jupyter span.cm-keyword {
+  font-weight: normal;
+}
+
+.cm-s-jupyter span.cm-variable-2 {
+  font-weight: bold;
+}
+
+.jp-Cell .jp-InputArea-editor {
+  padding: 2px 0;
+}
+
+.jp-OutputArea-child .jp-RenderedImage.jp-OutputArea-output{
+  text-align: center;
+}
+
+.jp-OutputArea-child .jp-OutputArea-output {
+  margin-bottom: 3px;
+  padding: var(--jp-code-padding);
+  background-color: var(--neon-night-bg1);
+  border-radius: 5px;
+}
+
+.jp-Cell, .jp-CodeConsole .jp-Cell {
+  padding: 2px 0;
+}
+
+.jp-Cell.jp-MarkdownCell{
+  margin-top: 8px;
+}
+
+.jp-CodeCell.jp-mod-outputsScrolled .jp-Cell-outputArea {
+  box-shadow: none;
+}
+
+/* Notebook prompt */
+.jp-InputPrompt {
+  color: var(--neon-night-cyan);
+  text-shadow: var(--neon-night-text-shadow0);
+  padding-top: 8px;  /* Works well with 13px code size */
+}
+
+.jp-OutputPrompt {
+  color: #ffc8e0;
+  text-shadow: var(--neon-night-text-shadow1);
+  padding-top: 6px;  /* Works well with 13px code size */
+}
+
+.jp-Notebook .jp-Cell:not(.jp-mod-active) .jp-InputPrompt, 
+.jp-Notebook .jp-Cell:not(.jp-mod-active) .jp-OutputPrompt {
+  text-shadow: none;
+}
+
+.jp-NotebookTools .jp-InputPrompt{
+  padding-top: 8px;
+}
+
+/* Notebook collapser */
+.jp-Cell .jp-Collapser:hover {
+  box-shadow: none;
+}
+
+.jp-Cell .jp-Collapser {
+  opacity: 0;
+}
+
+/* Neon off*/
+.jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser, 
+.jp-InputCollapser.jp-Cell-inputCollapser.jp-Collapser, 
+.jp-InputCollapser.jp-Cell-inputCollapser.jp-Collapser:hover{
+  background: var(--neon-night-blue1);
+}
+
+.jp-Cell.jp-mod-active .jp-OutputCollapser.jp-Cell-outputCollapser,
+.jp-OutputCollapser.jp-Cell-outputCollapser.jp-Collapser, 
+.jp-OutputCollapser.jp-Cell-outputCollapser.jp-Collapser:hover{
+  background: var(--neon-night-purple2);
+}
+
+.jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser,
+.jp-Cell.jp-mod-active .jp-OutputCollapser.jp-Cell-outputCollapser {
+  transition: box-shadow cubic-bezier(0, 0.2, 0, 0.2) 0.5s, background cubic-bezier(0, 0.2, 0, 0.2) 0.5s;
+  opacity: 1;
+}
+
+/* Neon on*/
+.jp-Cell.jp-mod-active .jp-InputCollapser.jp-Cell-inputCollapser:hover {
+  background: var(--neon-night-cyan);
+  box-shadow: 0 0 1px, 0 0 15px #0225ff, 0 0 5px 0.1px #0225ff, inset 0 0 1px 0.2px #0225ff;
+}
+
+.jp-Cell.jp-mod-active .jp-OutputCollapser.jp-Cell-outputCollapser:hover {
+  background: #ffc8e0;
+  box-shadow: 0 0 1px, 0 0 15px #c10165, 0 0 5px 0.1px #c10165, inset 0 0 1px 0.2px #c10165;
+}
+
+span.cm-keyword {
+  transition: text-shadow cubic-bezier(0, 0.2, 0, 0.2) 0.2s;
+}
+
+span.cm-keyword:hover {
+  text-shadow: var(--neon-night-text-shadow0);
+}
+
+/* Let's lit neon in the presentation mode~ */
+.jp-mod-presentationMode .jp-Notebook span.cm-keyword {
+  text-shadow: var(--neon-night-text-shadow0);
+}
+
+/* Console */
+.jp-CodeConsole-content .jp-Cell .jp-Collapser:hover {
+  opacity: 1;
+  box-shadow: none;
+}
+
+.jp-ConsolePanel::before {
+  border-bottom: none;
+  box-shadow: none;
+}
+
+/* Top, side, bottom bar */
+#jp-top-panel {
+  border-bottom: 1px solid #000;
+}
+
+.jp-SideBar .lm-TabBar-tab:not(.lm-mod-current) .jp-icon3[fill] {
+  fill: var(--jp-inverse-layout-color4);
+}
+
+.jp-SideBar .lm-TabBar-tab.lm-mod-current .jp-icon3[fill]{
+  fill: var(--jp-inverse-layout-color2);
+}
+
+
+.jp-SideBar .lm-TabBar-tab:hover:not(.lm-mod-current) .jp-icon3[fill]{
+  fill: var(--jp-inverse-layout-color2);
+}
+
+.lm-CommandPalette-itemLabel > mark{
+  color: var(--neon-night-cyan);
+}
+
+/* Line numbers */
+.CodeMirror-gutters {
+  border-right: none;
+}
+
+.CodeMirror-linenumber {
+  padding: 0 16px;
+}
+
+.jp-Notebook  .CodeMirror-linenumber{
+  padding: 0 16px 0 8px;
+}
+
+/* Notebook tab bar */
+.lm-DockPanel-tabBar {
+  background: transparent;
+}
+
+.lm-DockPanel-tabBar .lm-TabBar-tab {
+  margin-left: 2px;
+  transition: text-shadow cubic-bezier(0, 0.2, 0, 0.2) 0.2s, color cubic-bezier(0, 0.2, 0, 0.2) 0.2s, 
+  opacity 0.2s;
+}
+
+.lm-DockPanel-tabBar .lm-TabBar-tab.jp-mod-current:before {
+  top: auto;
+  bottom: calc(-1 * var(--jp-border-width));
+  height: 1.5px;
+} 
+
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-closable > .lm-TabBar-tabCloseIcon {
+  opacity: 0;
+}
+
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-closable:hover:not(.lm-mod-current) > .lm-TabBar-tabCloseIcon,
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-closable.lm-mod-current  > .lm-TabBar-tabCloseIcon {
+  opacity: 1;
+}
+
+.jp-Toolbar {
+  padding: 0;
+  z-index: 10;
+}
+
+.jp-Toolbar.jp-NotebookPanel-toolbar {
+  padding: 2px 0;
+}
+
+
+.lm-DockPanel-tabBar .lm-TabBar-tab:hover:not(.lm-mod-current), 
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current {
+  color: #ffeef6;
+  text-shadow: 0 0 2px #b33576, 0 0 6px #6b2e4e, 0 0 6px #6b2e4e, 2px 2px 1px #000;
+  opacity: 1;
+}
+
+.lm-DockPanel-tabBar .lm-TabBar-tab {
+  opacity: 0.6;
+}
+
+/* Search panel */
+.jp-DocumentSearch-overlay {
+  margin: 16px 16px 0 0;
+}
+
+.jp-DocumentSearch-overlay, .jp-DocumentSearch-overlay-row:first-of-type, 
+.bp3-input-group.filter {
+  border: 1.5px solid #eb244f;
+  box-shadow: 0 0 5px 0 #951430, 0 0 10px 0px #951430, inset 0 0 5px 1px #951430;
+}
+
+.jp-DocumentSearch-overlay-row {
+  margin-bottom: 0;
+}
+
+.jp-DocumentSearch-overlay-row:first-of-type {
+  padding: 2px;
+}
+
+.jp-DocumentSearch-input, .filter .bp3-input{
+  color: var(--neon-night-green0);
+  text-shadow: 0 0 5px #23854e, 0 0 5px #23854e, 0 0 2px #23854e;
+}
+
+.jp-DocumentSearch-index-counter {
+  font-size: 14px;
+  color: #ffa666;
+  text-shadow: 0 0 5px #854c23, 0 0 5px #854c23, 0 0 2px #854c23;
+}
+
+.jp-InputGroupAction {
+  padding: 5px;
+}
+
+/*Rendered text*/
+.jp-RenderedText pre {
+  color: #dedede;
+}
+
+.jp-RenderedText pre .ansi-red-fg,
+.jp-RenderedText pre .ansi-red-bg {
+  color: var(--neon-night-red);
+}
+
+.jp-RenderedText pre .ansi-red-intense-fg, 
+.jp-RenderedText pre .ansi-red-intense-bg {
+  color: var(--neon-night-red);
+}
+
+.jp-RenderedText pre .ansi-blue-fg, 
+.jp-RenderedText pre .ansi-blue-bg {
+  color: var(--neon-night-purple1);
+}
+
+.jp-RenderedText pre .ansi-blue-intense-fg, 
+.jp-RenderedText pre .ansi-blue-intense-bg {
+  color: var(--neon-night-blue0);
+}
+
+.jp-RenderedText pre .ansi-green-fg, 
+.jp-RenderedText pre .ansi-green-bg {
+  color: var(--neon-night-purple3);
+}
+
+.jp-RenderedText pre .ansi-green-intense-fg, 
+.jp-RenderedText pre .ansi-green-intense-bg {
+  color: var(--neon-night-purple2);
+}
+
+.jp-RenderedText pre .ansi-yellow-fg, 
+.jp-RenderedText pre .ansi-yellow-bg {
+  color: var(--neon-night-purple0);
+}
+
+.jp-RenderedText pre .ansi-yellow-intense-fg, 
+.jp-RenderedText pre .ansi-yellow-intense-bg {
+  color: var(--neon-night-orange);
+}
+
+.jp-RenderedText pre .ansi-cyan-fg, 
+.jp-RenderedText pre .ansi-cyan-fg {
+  color: var(--neon-night-yellow);
+}
+
+.jp-RenderedText pre .ansi-cyan-intense-fg, 
+.jp-RenderedText pre .ansi-cyan-intense-bg {
+  color: var(--neon-night-cyan);
+}
+
+.jp-RenderedText pre .ansi-magenta-fg, 
+.jp-RenderedText pre .ansi-magenta-fg {
+  color: var(--neon-night-pink);
+}
+
+.jp-RenderedText pre .ansi-magenta-intense-fg, 
+.jp-RenderedText pre .ansi-magenta-intense-bg {
+  color: var(--neon-night-peach);
+}
+
+.jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon:before {
+  color: var(--neon-night-green0);
+}
+
+#setting-editor .jp-SettingsRawEditor .jp-Toolbar {
+  padding: 4px;
+}
+
+#setting-editor .jp-PluginList li:hover {
+  border-color: transparent;
+}
+/* Custom*/
+
+/* Left and top tool bar*/
+.jp-SideBar.p-TabBar, #jp-top-panel {
+  background-color: rgba(34, 33, 54, 0.65);  /* last value is the transparency */
+}
+
+/* Background */
+
+/* Neon NIght Style */
+.jp-LabShell {
+  background: linear-gradient(to bottom right, rgba(0, 255, 255, 0.25), 
+   rgba(180, 0, 255, 0.25), rgba(140, 0, 255, 0.25), rgba(255, 0, 100, 0.25));
+}
+
+.lm-DockPanel-tabBar .lm-TabBar-tab.jp-mod-current:before {
+  background: linear-gradient(to right,
+  #00000000, #3765e7, #a044ca, #ca44a9, #00000000)
+}
+
+
+ /* Neon Sunset Style */
+ /* .jp-LabShell {
+  background: linear-gradient(to bottom right, rgb(118 53 222 / 0.5),
+  rgb(222 53 124 / 55%), rgb(244 218 36 / 0.6));
+}
+
+.lm-DockPanel-tabBar .lm-TabBar-tab.jp-mod-current:before{
+  background: linear-gradient(to right,
+  #00000000, #7334cb, #f36f8f, #ac7453, #00000000);
+} */
+
+
+/* or use an image as the background */
+/* .jp-LabShell {
+  background: url('images/background.jpg') center/cover no-repeat;
+}
+
+.lm-DockPanel-tabBar .lm-TabBar-tab.jp-mod-current:before {
+  background: linear-gradient(to right,
+  #00000000, #3765e7, #a044ca, #ca44a9, #00000000)
+} */
+
+
+/* Fonts*/
+/* Code font */
+:root {
+  /* Code font */
+  --jp-code-font-family: Monaco, 'Source Code Pro', monospace;
+/* Prompt number of cell */
+  --jp-cell-prompt-font-family:  'Vibur';
+}
+
+/* Opened files tab bar */
+.lm-DockPanel-tabBar .lm-TabBar-tab {
+  font-family: 'Neon Bugler';
+  font-size: 14px;
+}
+
+/* Search tool */
+.jp-DocumentSearch-overlay *,  .filter .bp3-input {
+  font-family: 'Neon Bugler';
+  font-size: 15px;
+}
+
+/* glow text */
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-builtin,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-def,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-error,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-keyword,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-link,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-number,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-property,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-string,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-variable,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-variable-2,
+body[data-jp-theme-name="JupyterLab Miami Nights"] span.cm-variable-3,
+body[data-jp-theme-name="JupyterLab Miami Nights"] button[title="Switch kernel"] {
+    text-shadow: 0 0 2px #000, 0 0 10px;
+}
+
+/* side bar gradient */
+body[data-jp-theme-name="JupyterLab Miami Nights"] .jp-SideBar .lm-TabBar-tab.lm-mod-current {
+    background: linear-gradient(to bottom, #fff951 25%, #fc28a8) !important;
+}
+
+/* tab gradient */
+body[data-jp-theme-name="JupyterLab Miami Nights"] .lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current {
+    background: linear-gradient(to right, #fc28a8, #03edf9) !important;
+}
+
+/* tab title font */
+.lm-DockPanel-tabBar .lm-TabBar-tab {
+    font-family: var(--jp-ui-font-family) !important;
+    font-size: 14px;
+}
+  
+/* tab title font */
+.jp-DocumentSearch-overlay *,  .filter .bp3-input {
+    font-family: var(--jp-ui-font-family) !important;
+    font-size: 15px;
+}
+
+/* tab title no shadow */
+.lm-DockPanel-tabBar .lm-TabBar-tab:hover:not(.lm-mod-current), 
+.lm-DockPanel-tabBar .lm-TabBar-tab.lm-mod-current {
+  color: var(--jp-ui-font-color0) !important;
+  text-shadow: unset !important;
+}
+
+/* tab x box */
+div.lm-TabBar-tabCloseIcon > svg > g.jp-icon-selectable-inverse {
+    fill: magenta !important;
+}
+
+/* tab x box */
+div.lm-TabBar-tabCloseIcon > svg > g.jp-icon-selectable {
+    fill: white !important;
+}
+
+div.lm-TabBar-tabCloseIcon:hover > svg > g.jp-icon-selectable {
+    fill: cyan !important;
+}
+
+div.lm-TabBar-tabCloseIcon > svg > g.jp-icon-busy {
+    fill: none !important;
+}
+
+
+/* Set the default typography for monospace elements */
+tt,
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--jp-code-font-family);
+  font-size: var(--jp-code-font-size);
+  line-height: var(--jp-code-line-height);
+}
+
+/*-----------------------------------------------------------------------------
+| Copyright (c) Jupyter Development Team.
+| Distributed under the terms of the Modified BSD License.
+|----------------------------------------------------------------------------*/

@@ -1,0 +1,1 @@
+export default __webpack_public_path__ + "pypi/widgetsnbextension-3.6.0-py3-none-any.whl";
