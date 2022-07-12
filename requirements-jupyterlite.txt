@@ -1,0 +1,2 @@
+jupyterlite==0.1.0b11
+jupyterlite-xeus-python
