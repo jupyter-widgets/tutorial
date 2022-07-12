@@ -1,0 +1,31 @@
+{
+  "LiteBuildConfig": {
+    "XeusPythonEnv": {
+      "packages": [
+        "bqplot",
+        "branca",
+        "ipycanvas",
+        "ipycytoscape",
+        "ipydatagrid",
+        "ipyevents",
+        "ipygany",
+        "ipyleaflet",
+        "ipympl",
+        "ipytree",
+        "ipyvolume",
+        "ipyvuetify",
+        "ipywidgets",
+        "mpl-interactions",
+        "numpy",
+        "orjson",
+        "pandas",
+        "pythreejs",
+        "pyvista",
+        "requests",
+        "scikit-image",
+        "scipy",
+        "sidecar"
+      ]
+    }
+  }
+}

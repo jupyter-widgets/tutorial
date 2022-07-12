@@ -1,10 +1,9 @@
 {
-    "jupyter-lite-schema-version": 0,
-    "jupyter-config-data": {
-      "disabledExtensions": [
-        "jupyterlab-kernel-spy",
-        "@jupyterlite/javascript-kernel-extension"
-      ]
-    }
+  "jupyter-lite-schema-version": 0,
+  "jupyter-config-data": {
+    "disabledExtensions": [
+      "jupyterlab-kernel-spy",
+      "@jupyterlite/javascript-kernel-extension"
+    ]
   }
-  
+}
