@@ -2,6 +2,8 @@
 
 ## Tutorial, SciPy 2022
 
+[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyter-widgets.github.io/tutorial)
+
 # https://github.com/jupyter-widgets/tutorial
 
 # Installation

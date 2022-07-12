@@ -1,0 +1,29 @@
+{
+  "LiteBuildConfig": {
+    "contents": ["notebooks"],
+    "XeusPythonEnv": {
+      "packages": [
+        "bqplot",
+        "branca",
+        "ipycanvas",
+        "ipycytoscape",
+        "ipydatagrid",
+        "ipyevents",
+        "ipygany",
+        "ipyleaflet",
+        "ipympl",
+        "ipytree",
+        "ipyvolume",
+        "ipyvuetify",
+        "ipywidgets",
+        "mpl-interactions",
+        "numpy",
+        "pandas",
+        "pythreejs",
+        "pyvista",
+        "requests",
+        "sidecar"
+      ]
+    }
+  }
+}
