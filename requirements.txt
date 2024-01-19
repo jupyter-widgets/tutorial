@@ -11,7 +11,7 @@ ipytree==0.2.1
 ipyvolume==0.6.0a8
 ipyvuetify==1.8.2
 ipywidgets==7.7.1
-jupyterlab==3.4
+jupyterlab==3.6.7
 mpl-interactions==0.22.0
 numpy
 orjson==3.7.7
