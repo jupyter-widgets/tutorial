@@ -1,6 +1,6 @@
 {
   "name": "@telamonian/theme-darcula",
-  "version": "3.1.1",
+  "version": "4.0.0",
   "description": "Darcula theme for JupyterLab. Modelled after the classic Intellij theme.",
   "keywords": [
     "jupyter",
@@ -42,11 +42,11 @@
     "watch:labextension": "jupyter labextension watch ."
   },
   "dependencies": {
-    "@jupyterlab/application": "^2.0.0 || ^3.0.0",
-    "@jupyterlab/apputils": "^2.0.0 || ^3.0.0"
+    "@jupyterlab/application": "^2.0.0 || ^3.0.0 || ^4.0.0",
+    "@jupyterlab/apputils": "^2.0.0 || ^3.0.0 || ^4.0.0"
   },
   "devDependencies": {
-    "@jupyterlab/builder": "^3.0.9",
+    "@jupyterlab/builder": "^3.0.0 || ^4.0.0",
     "@typescript-eslint/eslint-plugin": "^2.27.0",
     "@typescript-eslint/parser": "^2.27.0",
     "eslint": "^7.5.0",
@@ -65,7 +65,7 @@
     "themePath": "style/index.css",
     "outputDir": "theme-darcula/labextension",
     "_build": {
-      "load": "static/remoteEntry.bf6b3192a558615425cd.js",
+      "load": "static/remoteEntry.8a4c97071917cf84832f.js",
       "extension": "./extension"
     }
   }

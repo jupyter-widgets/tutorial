@@ -2,9 +2,9 @@
   "content": [
     {
       "content": null,
-      "created": "2022-07-12T15:23:19.728282Z",
+      "created": "2024-04-03T14:40:42.380558Z",
       "format": null,
-      "last_modified": "2022-07-12T15:21:55.783794Z",
+      "last_modified": "2024-04-03T14:35:49.573127Z",
       "mimetype": "image/png",
       "name": "WidgetModelView.png",
       "path": "02.Widget_overview/02.Basics/images/WidgetModelView.png",
@@ -14,9 +14,9 @@
     },
     {
       "content": null,
-      "created": "2022-07-12T15:23:19.728282Z",
+      "created": "2024-04-03T14:40:42.380558Z",
       "format": null,
-      "last_modified": "2022-07-12T15:21:55.783794Z",
+      "last_modified": "2024-04-03T14:35:49.573127Z",
       "mimetype": null,
       "name": "WidgetModelView.graffle",
       "path": "02.Widget_overview/02.Basics/images/WidgetModelView.graffle",
@@ -25,9 +25,9 @@
       "writable": true
     }
   ],
-  "created": "2022-07-12T15:23:19.728282Z",
+  "created": "2024-04-03T14:40:42.380558Z",
   "format": "json",
-  "last_modified": "2022-07-12T15:23:19.728282Z",
+  "last_modified": "2024-04-03T14:40:42.380558Z",
   "mimetype": null,
   "name": "images",
   "path": "02.Widget_overview/02.Basics/images",

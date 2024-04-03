@@ -10,7 +10,7 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.1bd01b57743def902f73.js",
+        "load": "static/remoteEntry.9f387e5e108e458f62c3.js",
         "name": "@jupyter-widgets/jupyterlab-manager"
       },
       {
@@ -29,7 +29,7 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.bf6b3192a558615425cd.js",
+        "load": "static/remoteEntry.8a4c97071917cf84832f.js",
         "name": "@telamonian/theme-darcula"
       },
       {
@@ -41,7 +41,7 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.ec13ba4c2bfbf9fe7e8a.js",
+        "load": "static/remoteEntry.e543ec32b1979d8e2fd1.js",
         "name": "@voila-dashboards/jupyterlab-preview",
         "style": "./style"
       },
@@ -114,7 +114,7 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.a111cc73e550f743ab57.js",
+        "load": "static/remoteEntry.bb9e9cf996c3e946c134.js",
         "name": "jupyter-vue"
       },
       {
@@ -132,13 +132,13 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static\\remoteEntry.6bbc802535b1199faa29.js",
+        "load": "static\\remoteEntry.19c5ede959be6b03cfad.js",
         "name": "jupyterlab-datawidgets"
       },
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.aa1060b2d1221f8e5688.js",
+        "load": "static/remoteEntry.5cbb9d2323598fbda535.js",
         "name": "jupyterlab_pygments",
         "style": "./style"
       }

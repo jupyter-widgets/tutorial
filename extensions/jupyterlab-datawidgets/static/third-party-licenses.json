@@ -14,13 +14,13 @@
     },
     {
       "name": "jupyter-dataserializers",
-      "versionInfo": "3.0.0",
+      "versionInfo": "3.0.1",
       "licenseId": "BSD-3-Clause",
       "extractedText": ""
     },
     {
       "name": "jupyter-datawidgets",
-      "versionInfo": "5.5.1",
+      "versionInfo": "5.5.2",
       "licenseId": "BSD-3-Clause",
       "extractedText": ""
     },

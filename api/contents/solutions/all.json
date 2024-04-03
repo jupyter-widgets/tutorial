@@ -2,9 +2,9 @@
   "content": [
     {
       "content": null,
-      "created": "2022-07-12T15:23:19.800283Z",
+      "created": "2024-04-03T14:40:42.448560Z",
       "format": null,
-      "last_modified": "2022-07-12T15:23:19.800283Z",
+      "last_modified": "2024-04-03T14:40:42.448560Z",
       "mimetype": null,
       "name": "intro",
       "path": "solutions/intro",
@@ -13,9 +13,9 @@
       "writable": true
     }
   ],
-  "created": "2022-07-12T15:23:19.800283Z",
+  "created": "2024-04-03T14:40:42.448560Z",
   "format": "json",
-  "last_modified": "2022-07-12T15:23:19.800283Z",
+  "last_modified": "2024-04-03T14:40:42.448560Z",
   "mimetype": null,
   "name": "solutions",
   "path": "solutions",

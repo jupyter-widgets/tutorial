@@ -1,6 +1,6 @@
 {
   "name": "@voila-dashboards/jupyterlab-preview",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "description": "A JupyterLab preview extension for Voilà",
   "keywords": [
     "jupyter",
@@ -40,7 +40,6 @@
     "clean": "jlpm run clean:lib && jlpm run clean:labextension",
     "clean:labextension": "rimraf ../../voila/labextension",
     "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
-    "prepare": "jlpm run clean && jlpm run build:prod",
     "test": "jest",
     "watch": "run-p watch:src watch:labextension",
     "watch:labextension": "jupyter labextension watch .",
@@ -73,6 +72,7 @@
   },
   "jupyterlab": {
     "extension": true,
+    "webpackConfig": "webpack.lab.config.js",
     "schemaDir": "schema",
     "outputDir": "../../voila/labextension",
     "discovery": {
@@ -87,7 +87,7 @@
       }
     },
     "_build": {
-      "load": "static/remoteEntry.ec13ba4c2bfbf9fe7e8a.js",
+      "load": "static/remoteEntry.e543ec32b1979d8e2fd1.js",
       "extension": "./extension",
       "style": "./style"
     }
