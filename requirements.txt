@@ -22,7 +22,7 @@ requests
 scikit-image
 scipy
 sidecar==0.5.1
-voila==0.3.5
+voila==0.3.8
 vtk==9.1.0
 
 jupyterlab-language-pack-fr-FR
