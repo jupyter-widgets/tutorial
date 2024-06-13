@@ -12,6 +12,9 @@ ipyvolume==0.6.0a8
 ipyvuetify==1.8.2
 ipywidgets==7.7.1
 jupyterlab==3.4
+jupyterlab-language-pack-fr-FR
+jupyterlab-language-pack-zh-CN
+jupyterlab_github
 mpl-interactions==0.22.0
 numpy
 orjson==3.7.7
@@ -24,10 +27,3 @@ scipy
 sidecar==0.5.1
 voila==0.3.8
 vtk==9.1.0
-
-jupyterlab-language-pack-fr-FR
-jupyterlab-language-pack-zh-CN
-jupyterlab_miami_nights
-jupyterlite==0.1.0b11
-theme-darcula
-jupyterlab_github
