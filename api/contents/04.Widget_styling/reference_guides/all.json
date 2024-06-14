@@ -2,9 +2,9 @@
   "content": [
     {
       "content": null,
-      "created": "2024-06-14T12:02:52.933389Z",
+      "created": "2024-06-14T12:15:38.988503Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:40.429411Z",
+      "last_modified": "2024-06-14T12:14:30.256398Z",
       "mimetype": null,
       "name": "guide-flex-box.ipynb",
       "path": "04.Widget_styling/reference_guides/guide-flex-box.ipynb",
@@ -14,9 +14,9 @@
     },
     {
       "content": null,
-      "created": "2024-06-14T12:02:52.933389Z",
+      "created": "2024-06-14T12:15:38.988503Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:40.429411Z",
+      "last_modified": "2024-06-14T12:14:30.256398Z",
       "mimetype": null,
       "name": "guide-grid-box.ipynb",
       "path": "04.Widget_styling/reference_guides/guide-grid-box.ipynb",
@@ -25,9 +25,9 @@
       "writable": true
     }
   ],
-  "created": "2024-06-14T12:02:52.933389Z",
+  "created": "2024-06-14T12:15:38.988503Z",
   "format": "json",
-  "last_modified": "2024-06-14T12:02:52.933389Z",
+  "last_modified": "2024-06-14T12:15:38.988503Z",
   "mimetype": null,
   "name": "reference_guides",
   "path": "04.Widget_styling/reference_guides",

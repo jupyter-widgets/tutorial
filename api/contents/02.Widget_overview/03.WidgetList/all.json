@@ -2,21 +2,21 @@
   "content": [
     {
       "content": null,
-      "created": "2024-06-14T12:02:52.921389Z",
+      "created": "2024-06-14T12:15:38.972502Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:40.425411Z",
+      "last_modified": "2024-06-14T12:14:30.252398Z",
       "mimetype": null,
       "name": "03.00-widget-list.ipynb",
       "path": "02.Widget_overview/03.WidgetList/03.00-widget-list.ipynb",
-      "size": 5036,
+      "size": 5039,
       "type": "notebook",
       "writable": true
     },
     {
       "content": null,
-      "created": "2024-06-14T12:02:52.921389Z",
+      "created": "2024-06-14T12:15:38.976502Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:40.425411Z",
+      "last_modified": "2024-06-14T12:14:30.252398Z",
       "mimetype": "text/x-python",
       "name": "widget_org.py",
       "path": "02.Widget_overview/03.WidgetList/widget_org.py",
@@ -26,9 +26,9 @@
     },
     {
       "content": null,
-      "created": "2024-06-14T12:02:52.921389Z",
+      "created": "2024-06-14T12:15:38.976502Z",
       "format": null,
-      "last_modified": "2024-06-14T12:02:52.921389Z",
+      "last_modified": "2024-06-14T12:15:38.976502Z",
       "mimetype": null,
       "name": "solutions",
       "path": "02.Widget_overview/03.WidgetList/solutions",
@@ -38,9 +38,9 @@
     },
     {
       "content": null,
-      "created": "2024-06-14T12:02:52.921389Z",
+      "created": "2024-06-14T12:15:38.972502Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:40.425411Z",
+      "last_modified": "2024-06-14T12:14:30.252398Z",
       "mimetype": null,
       "name": "03.01-more-on-output-widget.ipynb",
       "path": "02.Widget_overview/03.WidgetList/03.01-more-on-output-widget.ipynb",
@@ -49,9 +49,9 @@
       "writable": true
     }
   ],
-  "created": "2024-06-14T12:02:52.921389Z",
+  "created": "2024-06-14T12:15:38.976502Z",
   "format": "json",
-  "last_modified": "2024-06-14T12:02:52.921389Z",
+  "last_modified": "2024-06-14T12:15:38.976502Z",
   "mimetype": null,
   "name": "03.WidgetList",
   "path": "02.Widget_overview/03.WidgetList",

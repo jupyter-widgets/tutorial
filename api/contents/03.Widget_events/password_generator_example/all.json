@@ -2,9 +2,9 @@
   "content": [
     {
       "content": null,
-      "created": "2024-06-14T12:02:52.925390Z",
+      "created": "2024-06-14T12:15:38.976502Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:40.425411Z",
+      "last_modified": "2024-06-14T12:14:30.252398Z",
       "mimetype": "text/x-python",
       "name": "gui.py",
       "path": "03.Widget_events/password_generator_example/gui.py",
@@ -14,9 +14,9 @@
     },
     {
       "content": null,
-      "created": "2024-06-14T12:02:52.925390Z",
+      "created": "2024-06-14T12:15:38.980503Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:40.425411Z",
+      "last_modified": "2024-06-14T12:14:30.252398Z",
       "mimetype": "text/x-python",
       "name": "model.py",
       "path": "03.Widget_events/password_generator_example/model.py",
@@ -25,9 +25,9 @@
       "writable": true
     }
   ],
-  "created": "2024-06-14T12:02:52.925390Z",
+  "created": "2024-06-14T12:15:38.980503Z",
   "format": "json",
-  "last_modified": "2024-06-14T12:02:52.925390Z",
+  "last_modified": "2024-06-14T12:15:38.980503Z",
   "mimetype": null,
   "name": "password_generator_example",
   "path": "03.Widget_events/password_generator_example",
