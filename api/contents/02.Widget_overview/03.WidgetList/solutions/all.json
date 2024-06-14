@@ -2,9 +2,9 @@
   "content": [
     {
       "content": null,
-      "created": "2024-06-14T12:02:58.591890Z",
+      "created": "2024-06-14T12:02:52.921389Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:53.799918Z",
+      "last_modified": "2024-06-14T12:01:40.425411Z",
       "mimetype": "text/x-python",
       "name": "bounded-float-text.py",
       "path": "02.Widget_overview/03.WidgetList/solutions/bounded-float-text.py",
@@ -14,9 +14,9 @@
     },
     {
       "content": null,
-      "created": "2024-06-14T12:02:58.591890Z",
+      "created": "2024-06-14T12:02:52.921389Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:53.799918Z",
+      "last_modified": "2024-06-14T12:01:40.425411Z",
       "mimetype": "text/x-python",
       "name": "sidecar-triple.py",
       "path": "02.Widget_overview/03.WidgetList/solutions/sidecar-triple.py",
@@ -26,9 +26,9 @@
     },
     {
       "content": null,
-      "created": "2024-06-14T12:02:58.591890Z",
+      "created": "2024-06-14T12:02:52.921389Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:53.799918Z",
+      "last_modified": "2024-06-14T12:01:40.425411Z",
       "mimetype": "text/x-python",
       "name": "widgets-in-a-box.py",
       "path": "02.Widget_overview/03.WidgetList/solutions/widgets-in-a-box.py",
@@ -37,9 +37,9 @@
       "writable": true
     }
   ],
-  "created": "2024-06-14T12:02:58.591890Z",
+  "created": "2024-06-14T12:02:52.921389Z",
   "format": "json",
-  "last_modified": "2024-06-14T12:02:58.591890Z",
+  "last_modified": "2024-06-14T12:02:52.921389Z",
   "mimetype": null,
   "name": "solutions",
   "path": "02.Widget_overview/03.WidgetList/solutions",

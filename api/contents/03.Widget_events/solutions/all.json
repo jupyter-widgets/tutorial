@@ -2,9 +2,9 @@
   "content": [
     {
       "content": null,
-      "created": "2024-06-14T12:02:58.595890Z",
+      "created": "2024-06-14T12:02:52.925390Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:53.799918Z",
+      "last_modified": "2024-06-14T12:01:40.425411Z",
       "mimetype": "text/x-python",
       "name": "bad-pass-pass1-observe.py",
       "path": "03.Widget_events/solutions/bad-pass-pass1-observe.py",
@@ -14,9 +14,9 @@
     },
     {
       "content": null,
-      "created": "2024-06-14T12:02:58.595890Z",
+      "created": "2024-06-14T12:02:52.925390Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:53.799918Z",
+      "last_modified": "2024-06-14T12:01:40.425411Z",
       "mimetype": "text/x-python",
       "name": "temperature-link.py",
       "path": "03.Widget_events/solutions/temperature-link.py",
@@ -26,9 +26,9 @@
     },
     {
       "content": null,
-      "created": "2024-06-14T12:02:58.595890Z",
+      "created": "2024-06-14T12:02:52.925390Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:53.799918Z",
+      "last_modified": "2024-06-14T12:01:40.425411Z",
       "mimetype": "text/x-python",
       "name": "bad-pass-pass1-passgen.py",
       "path": "03.Widget_events/solutions/bad-pass-pass1-passgen.py",
@@ -38,9 +38,9 @@
     },
     {
       "content": null,
-      "created": "2024-06-14T12:02:58.595890Z",
+      "created": "2024-06-14T12:02:52.925390Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:53.799918Z",
+      "last_modified": "2024-06-14T12:01:40.425411Z",
       "mimetype": "text/x-python",
       "name": "bad-pass-pass1-widgets.py",
       "path": "03.Widget_events/solutions/bad-pass-pass1-widgets.py",
@@ -50,9 +50,9 @@
     },
     {
       "content": null,
-      "created": "2024-06-14T12:02:58.595890Z",
+      "created": "2024-06-14T12:02:52.925390Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:53.799918Z",
+      "last_modified": "2024-06-14T12:01:40.425411Z",
       "mimetype": "text/x-python",
       "name": "observe-reverse.py",
       "path": "03.Widget_events/solutions/observe-reverse.py",
@@ -61,9 +61,9 @@
       "writable": true
     }
   ],
-  "created": "2024-06-14T12:02:58.595890Z",
+  "created": "2024-06-14T12:02:52.925390Z",
   "format": "json",
-  "last_modified": "2024-06-14T12:02:58.595890Z",
+  "last_modified": "2024-06-14T12:02:52.925390Z",
   "mimetype": null,
   "name": "solutions",
   "path": "03.Widget_events/solutions",

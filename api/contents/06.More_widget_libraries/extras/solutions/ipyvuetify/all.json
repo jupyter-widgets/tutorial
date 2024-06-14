@@ -2,9 +2,9 @@
   "content": [
     {
       "content": null,
-      "created": "2024-06-14T12:02:58.615890Z",
+      "created": "2024-06-14T12:02:52.949389Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:53.807918Z",
+      "last_modified": "2024-06-14T12:01:40.433411Z",
       "mimetype": "text/x-python",
       "name": "radio_group.py",
       "path": "06.More_widget_libraries/extras/solutions/ipyvuetify/radio_group.py",
@@ -13,9 +13,9 @@
       "writable": true
     }
   ],
-  "created": "2024-06-14T12:02:58.615890Z",
+  "created": "2024-06-14T12:02:52.949389Z",
   "format": "json",
-  "last_modified": "2024-06-14T12:02:58.615890Z",
+  "last_modified": "2024-06-14T12:02:52.949389Z",
   "mimetype": null,
   "name": "ipyvuetify",
   "path": "06.More_widget_libraries/extras/solutions/ipyvuetify",

@@ -2,9 +2,9 @@
   "content": [
     {
       "content": null,
-      "created": "2024-06-14T12:02:58.611890Z",
+      "created": "2024-06-14T12:02:52.941389Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:53.807918Z",
+      "last_modified": "2024-06-14T12:01:40.433411Z",
       "mimetype": null,
       "name": "bqplot_A_Penalized_regression.ipynb",
       "path": "06.More_widget_libraries/extras/extra_examples/bqplot_A_Penalized_regression.ipynb",
@@ -14,9 +14,9 @@
     },
     {
       "content": null,
-      "created": "2024-06-14T12:02:58.611890Z",
+      "created": "2024-06-14T12:02:52.941389Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:53.807918Z",
+      "last_modified": "2024-06-14T12:01:40.433411Z",
       "mimetype": null,
       "name": "bqplot_A_plot_as_a_control_in_a_widget.ipynb",
       "path": "06.More_widget_libraries/extras/extra_examples/bqplot_A_plot_as_a_control_in_a_widget.ipynb",
@@ -26,9 +26,9 @@
     },
     {
       "content": null,
-      "created": "2024-06-14T12:02:58.611890Z",
+      "created": "2024-06-14T12:02:52.941389Z",
       "format": null,
-      "last_modified": "2024-06-14T12:02:58.611890Z",
+      "last_modified": "2024-06-14T12:02:52.941389Z",
       "mimetype": null,
       "name": "solutions",
       "path": "06.More_widget_libraries/extras/extra_examples/solutions",
@@ -38,9 +38,9 @@
     },
     {
       "content": null,
-      "created": "2024-06-14T12:02:58.611890Z",
+      "created": "2024-06-14T12:02:52.941389Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:53.807918Z",
+      "last_modified": "2024-06-14T12:01:40.433411Z",
       "mimetype": null,
       "name": "flight_sim.ipynb",
       "path": "06.More_widget_libraries/extras/extra_examples/flight_sim.ipynb",
@@ -50,9 +50,9 @@
     },
     {
       "content": null,
-      "created": "2024-06-14T12:02:58.615890Z",
+      "created": "2024-06-14T12:02:52.945390Z",
       "format": null,
-      "last_modified": "2024-06-14T12:01:53.807918Z",
+      "last_modified": "2024-06-14T12:01:40.433411Z",
       "mimetype": null,
       "name": "vaex.ipynb",
       "path": "06.More_widget_libraries/extras/extra_examples/vaex.ipynb",
@@ -61,9 +61,9 @@
       "writable": true
     }
   ],
-  "created": "2024-06-14T12:02:58.615890Z",
+  "created": "2024-06-14T12:02:52.945390Z",
   "format": "json",
-  "last_modified": "2024-06-14T12:02:58.615890Z",
+  "last_modified": "2024-06-14T12:02:52.945390Z",
   "mimetype": null,
   "name": "extra_examples",
   "path": "06.More_widget_libraries/extras/extra_examples",
