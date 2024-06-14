@@ -425,6 +425,9 @@
       "%1 and %2": [
         "%1 \u548c %2"
       ],
+      "%1 and %2 more": [
+        "%1 \u548c\u53e6\u5916 %2"
+      ],
       "%1 cell hidden": [
         "\u5df2\u9690\u85cf\u7b2c %1 \u4e2a\u5355\u5143\u683c",
         ""
@@ -435,11 +438,17 @@
       "%1 extension is not allowed anymore. Please uninstall it immediately or contact your administrator.": [
         "\u4e0d\u518d\u5141\u8bb8\u4f7f\u7528\u6269\u5c55 %1\u3002\u8bf7\u7acb\u5373\u5378\u8f7d\u5b83\u6216\u8054\u7cfb\u60a8\u7684\u7ba1\u7406\u5458\u3002"
       ],
+      "%1 is no longer valid and will be removed from the list": [
+        "%1 \u4e0d\u518d\u6709\u6548\uff0c\u5c06\u4ece\u5217\u8868\u4e2d\u79fb\u9664"
+      ],
       "%1 is permissioned as read-only. Use \"save as...\" instead.": [
         "\u53ea\u6709 %1 \u7684\u53ea\u8bfb\u6743\u9650\u3002\u8bf7\u6539\u7528\u201c\u53e6\u5b58\u4e3a...\u201d\u529f\u80fd\u3002"
       ],
       "%1 is read-only": [
         "%1 \u662f\u53ea\u8bfb\u7684"
+      ],
+      "%1 is read-only. Use \"Save as\u2026\" instead.": [
+        "%1 \u662f\u53ea\u8bfb\u7684\u3002\u8bf7\u6539\u7528\"\u53e6\u5b58\u4e3a...\"\u3002"
       ],
       "%1 log entries for %2": [
         "%2 \u7684 %1 \u4e2a\u65e5\u5fd7\u6761\u76ee"
@@ -454,8 +463,17 @@
       "%1 provider": [
         "%1 \u63d0\u4f9b\u8005"
       ],
+      "%1 workspace with %2 tabs, last modified on %3": [
+        "%1 \u5de5\u4f5c\u533a\u5305\u542b %2 \u4e2a\u9009\u9879\u5361\uff0c\u4e0a\u6b21\u4fee\u6539\u65f6\u95f4\u4e3a %3"
+      ],
+      "%1-clone": [
+        "%1-\u526f\u672c"
+      ],
       "%1/%2": [
         "%1/%2"
+      ],
+      "(Command label missing)": [
+        "(\u547d\u4ee4\u6807\u7b7e\u7f3a\u5931)"
       ],
       "A connection to the Jupyter server could not be established.\nJupyterLab will continue trying to reconnect.\nCheck your network connection or Jupyter server configuration.\n": [
         "\u65e0\u6cd5\u8fde\u63a5\u5230 Jupyter \u670d\u52a1\u5668\u3002\nJupyterLab \u5c06\u7ee7\u7eed\u5c1d\u8bd5\u91cd\u65b0\u8fde\u63a5\u3002\n\u8bf7\u68c0\u67e5\u60a8\u7684\u7f51\u7edc\u8fde\u63a5\u6216 Jupyter \u670d\u52a1\u5668\u914d\u7f6e\u3002\n"
@@ -523,11 +541,17 @@
       "Add Checkpoint": [
         "\u65b0\u589e\u68c0\u67e5\u70b9"
       ],
+      "Add Keybinding": [
+        "\u6dfb\u52a0\u6309\u952e\u7ed1\u5b9a"
+      ],
       "Add Tag": [
         "\u6dfb\u52a0\u6807\u7b7e"
       ],
       "Add another shortcut": [
         "\u6dfb\u52a0\u53e6\u4e00\u4e2a\u5feb\u6377\u952e"
+      ],
+      "Add new keybinding for existing shortcut target": [
+        "\u4e3a\u73b0\u6709\u7684\u5feb\u6377\u65b9\u5f0f\u76ee\u6807\u6dfb\u52a0\u65b0\u7684\u6309\u952e\u7ed1\u5b9a"
       ],
       "Add new shortcut": [
         "\u6dfb\u52a0\u65b0\u7684\u5feb\u6377\u952e"
@@ -556,6 +580,9 @@
       "Are you sure that you want to run arbitrary Javascript within your JupyterLab session?": [
         "\u60a8\u786e\u5b9a\u8981\u5728\u60a8\u7684 JupyterLab \u4f1a\u8bdd\u4e2d\u8fd0\u884c\u4efb\u610f\u7684 JavaScript \u5417\uff1f"
       ],
+      "Are you sure you want to clear recently closed tabs?": [
+        "\u60a8\u786e\u5b9a\u8981\u6e05\u9664\u6700\u8fd1\u5173\u95ed\u7684\u9009\u9879\u5361\u5417\uff1f"
+      ],
       "Are you sure you want to close \"%1\"?": [
         "\u60a8\u786e\u5b9a\u8981\u5173\u95ed\u300c%1\u300d\u5417\uff1f"
       ],
@@ -564,6 +591,9 @@
       ],
       "Are you sure you want to delete %1": [
         "\u60a8\u786e\u5b9a\u8981\u5220\u9664 %1 \u5417\uff1f"
+      ],
+      "Are you sure you want to delete all workspaces? Deleted workspaces cannot be recovered.": [
+        "\u60a8\u786e\u5b9a\u8981\u5220\u9664\u6240\u6709\u5de5\u4f5c\u533a\u5417\uff1f\u5df2\u5220\u9664\u7684\u5de5\u4f5c\u533a\u65e0\u6cd5\u6062\u590d\u3002"
       ],
       "Are you sure you want to exit JupyterLab?\n\nAny unsaved changes will be lost.": [
         "\u60a8\u786e\u5b9a\u8981\u9000\u51fa\u767b\u5f55\u5417\uff1f\u6240\u6709\u672a\u4fdd\u5b58\u7684\u64cd\u4f5c\u90fd\u4f1a\u4e22\u5931\u3002"
@@ -713,6 +743,9 @@
       "Cell type": [
         "\u5355\u5143\u683c\u7c7b\u578b"
       ],
+      "Cell type not changed due to pending input": [
+        "\u7531\u4e8e\u5b58\u5728\u5f85\u5904\u7406\u7684\u8f93\u5165\uff0c\u5355\u5143\u683c\u7c7b\u578b\u672a\u66f4\u6539"
+      ],
       "Change Kernel\u2026": [
         "\u66f4\u6539\u5185\u6838\u2026"
       ],
@@ -764,8 +797,38 @@
       "Change to Raw Cell Type": [
         "\u66f4\u6539\u4e3a\u7eaf\u6587\u672c\u5355\u5143\u683c\u7c7b\u578b"
       ],
+      "Choose": [
+        "\u9009\u62e9"
+      ],
+      "Choose Workspace Export Directory": [
+        "\u9009\u62e9\u5de5\u4f5c\u533a\u5bfc\u51fa\u76ee\u5f55"
+      ],
+      "Choose Workspace To Clone": [
+        "\u9009\u62e9\u8981\u514b\u9686\u7684\u5de5\u4f5c\u533a"
+      ],
+      "Choose Workspace To Delete": [
+        "\u9009\u62e9\u8981\u5220\u9664\u7684\u5de5\u4f5c\u533a"
+      ],
+      "Choose Workspace To Export": [
+        "\u9009\u62e9\u8981\u5bfc\u51fa\u7684\u5de5\u4f5c\u533a"
+      ],
+      "Choose Workspace To Open": [
+        "\u9009\u62e9\u8981\u6253\u5f00\u7684\u5de5\u4f5c\u533a"
+      ],
       "Choose a checkpoint": [
         "\u9009\u62e9\u4e00\u4e2a\u68c0\u67e5\u70b9"
+      ],
+      "Choose an existing workspace to clone.": [
+        "\u9009\u62e9\u8981\u514b\u9686\u7684\u73b0\u6709\u5de5\u4f5c\u533a\u3002"
+      ],
+      "Choose an existing workspace to delete.": [
+        "\u9009\u62e9\u8981\u5220\u9664\u7684\u73b0\u6709\u5de5\u4f5c\u533a\u3002"
+      ],
+      "Choose an existing workspace to export.": [
+        "\u9009\u62e9\u8981\u5bfc\u51fa\u7684\u73b0\u6709\u5de5\u4f5c\u533a\u3002"
+      ],
+      "Choose an existing workspace to open.": [
+        "\u9009\u62e9\u8981\u6253\u5f00\u7684\u73b0\u6709\u5de5\u4f5c\u533a\u3002"
       ],
       "Clear": [
         "\u6e05\u7a7a"
@@ -785,6 +848,9 @@
       "Clear Outputs of All Cells": [
         "\u6e05\u9664\u6240\u6709\u5355\u5143\u683c\u7684\u8f93\u51fa"
       ],
+      "Clear Recent Documents": [
+        "\u6e05\u9664\u6700\u8fd1\u6587\u6863\u8bb0\u5f55"
+      ],
       "Clear Workspace": [
         "\u6e05\u9664\u5de5\u4f5c\u533a"
       ],
@@ -793,6 +859,9 @@
       ],
       "Clear outputs for the selected cells": [
         "\u6e05\u9664\u9009\u4e2d\u5355\u5143\u683c\u7684\u8f93\u51fa"
+      ],
+      "Clear the list of recently opened items.": [
+        "\u6e05\u9664\u6700\u8fd1\u6253\u5f00\u9879\u76ee\u7684\u5217\u8868\u3002"
       ],
       "Click on a function to see documentation.": [
         "\u70b9\u51fb\u51fd\u6570\u67e5\u770b\u6587\u6863\u3002"
@@ -808,6 +877,15 @@
       ],
       "ClojureScript": [
         "ClojureScript"
+      ],
+      "Clone": [
+        "\u514b\u9686"
+      ],
+      "Clone Workspace": [
+        "\u514b\u9686\u5de5\u4f5c\u533a"
+      ],
+      "Clone Workspace\u2026": [
+        "\u514b\u9686\u5de5\u4f5c\u533a..."
       ],
       "Close": [
         "\u5173\u95ed"
@@ -830,6 +908,9 @@
       "Close Document without saving": [
         "\u4e0d\u4fdd\u5b58\uff0c\u76f4\u63a5\u5173\u95ed\u6587\u6863"
       ],
+      "Close Search Box": [
+        "\u5173\u95ed\u641c\u7d22\u6846"
+      ],
       "Close Tab": [
         "\u5173\u95ed\u6807\u7b7e\u9875"
       ],
@@ -841,6 +922,9 @@
       ],
       "Close and Shut Down Notebook": [
         "\u5173\u95ed\u5e76\u7ec8\u6b62\u7b14\u8bb0\u672c\u670d\u52a1"
+      ],
+      "Close and Shut Down Notebook\u2026": [
+        "\u5173\u95ed\u5e76\u7ec8\u6b62\u7b14\u8bb0\u672c\u670d\u52a1..."
       ],
       "Close and Shut Down\u2026": [
         "\u5173\u95ed\u5e76\u7ec8\u6b62\u2026"
@@ -883,6 +967,9 @@
       ],
       "CoffeeScript": [
         "CoffeeScript"
+      ],
+      "Collapse All": [
+        "\u5168\u90e8\u6298\u53e0"
       ],
       "Collapse All Code": [
         "\u6298\u53e0\u6240\u6709\u4ee3\u7801"
@@ -1000,17 +1087,29 @@
       "Copy variable to globals scope": [
         "\u590d\u5236\u53d8\u91cf\u5230\u5168\u5c40\u8303\u56f4"
       ],
+      "Could Not Open Recent": [
+        "\u65e0\u6cd5\u6253\u5f00\u6700\u8fd1\u7684\u9879\u76ee"
+      ],
       "Could not find path: %1": [
         "\u627e\u4e0d\u5230\u8def\u5f84 %1"
       ],
       "Could not open URL: %1": [
         "\u65e0\u6cd5\u6253\u5f00 URL\uff1a%1"
       ],
+      "Create": [
+        "\u521b\u5efa"
+      ],
       "Create Console for Editor": [
         "\u4e3a\u7f16\u8f91\u5668\u521b\u5efa\u63a7\u5236\u53f0"
       ],
       "Create New View for Cell Output": [
         "\u4e3a\u5355\u5143\u683c\u8f93\u51fa\u521b\u5efa\u65b0\u89c6\u56fe"
+      ],
+      "Create New Workspace": [
+        "\u521b\u5efa\u65b0\u7684\u5de5\u4f5c\u533a"
+      ],
+      "Create New Workspace\u2026": [
+        "\u521b\u5efa\u65b0\u7684\u5de5\u4f5c\u533a..."
       ],
       "Create a duplicate of this cell below": [
         "\u5728\u4e0b\u65b9\u521b\u5efa %1 \u5355\u5143\u683c\u7684\u526f\u672c",
@@ -1042,6 +1141,9 @@
       ],
       "Cursor blinking rate": [
         "\u5149\u6807\u95ea\u70c1\u9891\u7387"
+      ],
+      "Custom": [
+        "\u81ea\u5b9a\u4e49"
       ],
       "Custom editor styles": [
         "\u81ea\u5b9a\u4e49\u7f16\u8f91\u5668\u6837\u5f0f"
@@ -1117,6 +1219,9 @@
       "Decrease UI Font Size": [
         "\u51cf\u5c0f\u754c\u9762\u5b57\u53f7"
       ],
+      "Default": [
+        "\u9ed8\u8ba4"
+      ],
       "Default: %1": [
         "\u9ed8\u8ba4\uff1a%1"
       ],
@@ -1129,13 +1234,34 @@
       "Delete %1": [
         "\u5220\u9664 %1"
       ],
+      "Delete All": [
+        "\u5168\u90e8\u522a\u9664"
+      ],
       "Delete Cell": [
         "\u5220\u9664\u5355\u5143\u683c",
         ""
       ],
+      "Delete Keybinding": [
+        "\u5220\u9664\u6309\u952e\u7ed1\u5b9a"
+      ],
+      "Delete Workspace\u2026": [
+        "\u5220\u9664\u5de5\u4f5c\u533a..."
+      ],
+      "Delete chosen keybinding": [
+        "\u5220\u9664\u9009\u4e2d\u7684\u6309\u952e\u7ed1\u5b9a"
+      ],
+      "Delete the current line": [
+        "\u5220\u9664\u5f53\u524d\u884c"
+      ],
       "Delete this cell": [
         "\u5220\u9664\u8fd9 %1 \u4e2a\u5355\u5143\u683c",
         ""
+      ],
+      "Delete workspace": [
+        "\u5220\u9664\u5de5\u4f5c\u533a"
+      ],
+      "Deleting workspace \"%1\" will also delete its URL. A deleted workspace cannot be recovered.": [
+        "\u5220\u9664\u5de5\u4f5c\u533a \"%1\" \u5c06\u540c\u65f6\u5220\u9664\u5176 URL\u3002\u5df2\u5220\u9664\u7684\u5de5\u4f5c\u533a\u65e0\u6cd5\u6062\u590d\u3002"
       ],
       "Delimiter: ": [
         "\u5206\u9694\u7b26: "
@@ -1254,6 +1380,9 @@
       "Document is read-only": [
         "\u6587\u6863\u4e3a\u53ea\u8bfb\u72b6\u6001"
       ],
+      "Document is read-only. \"Save\" is disabled; use \"Save as\u2026\" instead": [
+        "\u6587\u6863\u662f\u53ea\u8bfb\u7684\u3002\"\u4fdd\u5b58\"\u529f\u80fd\u88ab\u7981\u7528\uff0c\u8bf7\u6539\u7528\"\u53e6\u5b58\u4e3a...\"\u3002"
+      ],
       "Download": [
         "\u4e0b\u8f7d"
       ],
@@ -1291,8 +1420,14 @@
       "Edit First": [
         "\u7f16\u8f91\u7b2c\u4e00\u4e2a"
       ],
+      "Edit Keybinding": [
+        "\u7f16\u8f91\u6309\u952e\u7ed1\u5b9a"
+      ],
       "Edit Second": [
         "\u7f16\u8f91\u7b2c\u4e8c\u4e2a"
+      ],
+      "Edit existing keybinding": [
+        "\u7f16\u8f91\u73b0\u6709\u7684\u6309\u952e\u7ed1\u5b9a"
       ],
       "Edit existing shortcut": [
         "\u7f16\u8f91\u73b0\u6709\u5feb\u6377\u952e"
@@ -1404,6 +1539,9 @@
         "\u5df2\u6267\u884c %1 \u5355\u5143\u683c",
         ""
       ],
+      "Expand All": [
+        "\u5168\u90e8\u5c55\u5f00"
+      ],
       "Expand All Code": [
         "\u5c55\u5f00\u6240\u6709\u4ee3\u7801"
       ],
@@ -1418,6 +1556,9 @@
       ],
       "Expand Selected Outputs": [
         "\u5c55\u5f00\u9009\u5b9a\u7684\u8f93\u51fa"
+      ],
+      "Export Workspace\u2026": [
+        "\u5bfc\u51fa\u5de5\u4f5c\u533a..."
       ],
       "Extend Selection Above": [
         "\u5411\u4e0a\u65b9\u6269\u5c55\u9009\u533a"
@@ -1518,6 +1659,9 @@
       "Filter files by name": [
         "\u6309\u6587\u4ef6\u540d\u8fc7\u6ee4"
       ],
+      "Filter the kernel sources": [
+        "\u7b5b\u9009\u5185\u6838\u6765\u6e90"
+      ],
       "Find": [
         "\u67e5\u627e"
       ],
@@ -1559,6 +1703,12 @@
       ],
       "For more information, see": [
         "\u66f4\u591a\u4fe1\u606f\uff0c\u8bf7\u53c2\u9605"
+      ],
+      "Forget": [
+        "\u4e0d\u8bb0\u5f55"
+      ],
+      "Forget All": [
+        "\u5168\u90e8\u4e0d\u8bb0\u5f55"
       ],
       "Forth": [
         "Forth"
@@ -1635,6 +1785,9 @@
       "Hide Contextual Help": [
         "\u9690\u85cf\u4e0a\u4e0b\u6587\u5e2e\u52a9"
       ],
+      "Hide Replace": [
+        "\u9690\u85cf\u66ff\u6362"
+      ],
       "Hide Search Filters": [
         "\u9690\u85cf\u641c\u7d22\u7b5b\u9009\u5668"
       ],
@@ -1700,6 +1853,9 @@
       ],
       "Image Viewer": [
         "\u56fe\u50cf\u67e5\u770b\u5668"
+      ],
+      "Import Workspace\u2026": [
+        "\u5bfc\u5165\u5de5\u4f5c\u533a\u2026"
       ],
       "In collaborative mode, the document is saved automatically after every change": [
         "\u5728\u534f\u4f5c\u6a21\u5f0f\u4e0b\uff0c\u6587\u6863\u5728\u6bcf\u6b21\u66f4\u6539\u540e\u90fd\u81ea\u52a8\u4fdd\u5b58"
@@ -1836,6 +1992,9 @@
       "JupyterLab Dark": [
         "JupyterLab \u6697\u8272"
       ],
+      "JupyterLab Dark High Contrast": [
+        "JupyterLab \u6697\u8272\u9ad8\u5bf9\u6bd4\u5ea6"
+      ],
       "JupyterLab FAQ": [
         "JupyterLab \u5e38\u89c1\u95ee\u9898"
       ],
@@ -1844,6 +2003,9 @@
       ],
       "JupyterLab Reference": [
         "JupyterLab \u53c2\u8003\u6587\u6863"
+      ],
+      "JupyterLab Workspace File": [
+        "JupyterLab \u5de5\u4f5c\u533a\u6587\u4ef6"
       ],
       "JupyterLab build is suggested:": [
         "\u5efa\u8bae\u91cd\u65b0\u6784\u5efa JupyterLab\uff1a"
@@ -1964,6 +2126,9 @@
       ],
       "Log level": [
         "\u65e5\u5fd7\u7ea7\u522b"
+      ],
+      "Log out of %1": [
+        "\u9000\u51fa %1"
       ],
       "Log out of JupyterLab": [
         "\u9000\u51fa JupyterLab"
@@ -2104,6 +2269,9 @@
       "Name: %1\nPath: %2\n": [
         "\u540d\u79f0: %1\n\u8def\u5f84: %2\n"
       ],
+      "Naming the workspace will create a unique URL. The name may contain letters, numbers, hyphens (-), and underscores (_).": [
+        "\u4e3a\u5de5\u4f5c\u533a\u547d\u540d\u5c06\u521b\u5efa\u552f\u4e00\u7684 URL\u3002\u540d\u79f0\u53ef\u4ee5\u5305\u542b\u5b57\u6bcd\u3001\u6570\u5b57\u3001\u8fde\u5b57\u7b26\uff08-\uff09\u548c\u4e0b\u5212\u7ebf\uff08_\uff09\u3002"
+      ],
       "Neither theme %1 nor default %2 loaded.": [
         "\u4e3b\u9898 %1 \u53ca\u9ed8\u8ba4 %2 \u5747\u672a\u52a0\u8f7d\u3002"
       ],
@@ -2227,6 +2395,9 @@
       "No log messages.": [
         "\u65e0\u65e5\u5fd7\u6d88\u606f\u3002"
       ],
+      "No matches": [
+        "\u6ca1\u6709\u5339\u914d\u9879"
+      ],
       "No metadata.": [
         "\u6ca1\u6709\u5143\u6570\u636e\u3002"
       ],
@@ -2235,6 +2406,9 @@
       ],
       "No properties to inspect.": [
         "\u6ca1\u6709\u8981\u67e5\u770b\u7684\u5c5e\u6027\u3002"
+      ],
+      "No sessions connected": [
+        "\u6ca1\u6709\u8fde\u63a5\u7684\u4f1a\u8bdd"
       ],
       "No source selected.": [
         "\u672a\u9009\u62e9\u6e90\u6587\u4ef6"
@@ -2332,6 +2506,9 @@
       "Open Path": [
         "\u6253\u5f00\u8def\u5f84"
       ],
+      "Open Recent": [
+        "\u6253\u5f00\u6700\u8fd1\u7684\u9879\u76ee"
+      ],
       "Open Run Menu": [
         "\u6253\u5f00\u8fd0\u884c\u83dc\u5355"
       ],
@@ -2352,6 +2529,15 @@
       ],
       "Open View Menu": [
         "\u6253\u5f00\u89c6\u56fe\u83dc\u5355"
+      ],
+      "Open Workspace": [
+        "\u6253\u5f00\u5de5\u4f5c\u533a"
+      ],
+      "Open Workspace\u2026": [
+        "\u6253\u5f00\u5de5\u4f5c\u533a\u2026"
+      ],
+      "Open a Recent Document (given by `recent` argument)": [
+        "\u6253\u5f00\u6700\u8fd1\u7684\u6587\u6863\uff08\u7531 `recent` \u53c2\u6570\u6307\u5b9a\uff09"
       ],
       "Open a console for the provided `path`.": [
         "\u4e3a\u63d0\u4f9b\u7684`\u8def\u5f84`\u6253\u5f00\u63a7\u5236\u53f0\u3002"
@@ -2465,6 +2651,9 @@
       "Path Not Found": [
         "\u672a\u627e\u5230\u8def\u5f84"
       ],
+      "Path to save the workspace in": [
+        "\u4fdd\u5b58\u5de5\u4f5c\u533a\u7684\u8def\u5f84"
+      ],
       "Path:": [
         "\u8def\u5f84:"
       ],
@@ -2482,6 +2671,9 @@
       ],
       "Please confirm you want to close \"%1\".": [
         "\u8bf7\u786e\u8ba4\u60a8\u60f3\u8981\u5173\u95ed\u201c%1\u201d\u3002"
+      ],
+      "Please confirm you want to shut down %1.": [
+        "\u8bf7\u786e\u8ba4\u60a8\u8981\u5173\u95ed %1\u3002"
       ],
       "Please confirm you want to shut down JupyterLab.": [
         "\u8bf7\u786e\u8ba4\u60a8\u60f3\u8981\u5173\u95ed JupyterLab\u3002"
@@ -2579,6 +2771,9 @@
       "Reason given:": [
         "\u539f\u56e0\uff1a"
       ],
+      "Recently Closed": [
+        "\u6700\u8fd1\u5173\u95ed"
+      ],
       "Reconnect to Kernel": [
         "\u91cd\u65b0\u8fde\u63a5\u81f3\u5185\u6838"
       ],
@@ -2660,6 +2855,12 @@
       "Rename File": [
         "\u91cd\u547d\u540d\u6587\u4ef6"
       ],
+      "Rename Workspace": [
+        "\u91cd\u547d\u540d\u5de5\u4f5c\u533a"
+      ],
+      "Rename Workspace\u2026": [
+        "\u91cd\u547d\u540d\u5de5\u4f5c\u533a..."
+      ],
       "Rename file": [
         "\u91cd\u547d\u540d\u6587\u4ef6"
       ],
@@ -2683,6 +2884,15 @@
       ],
       "Renderer Failure: %1": [
         "\u6e32\u67d3\u5931\u8d25\uff1a%1"
+      ],
+      "Reopen %1": [
+        "\u91cd\u65b0\u6253\u5f00 %1"
+      ],
+      "Reopen Closed Document": [
+        "\u91cd\u65b0\u6253\u5f00\u5df2\u5173\u95ed\u7684\u6587\u6863\u3002"
+      ],
+      "Reopen recently closed file or notebook.": [
+        "\u91cd\u65b0\u6253\u5f00\u6700\u8fd1\u5173\u95ed\u7684\u6587\u4ef6\u6216\u7b14\u8bb0\u672c\u3002"
       ],
       "Replace": [
         "\u66ff\u6362"
@@ -2720,6 +2930,12 @@
       "Reset Image": [
         "\u91cd\u7f6e\u56fe\u7247"
       ],
+      "Reset Workspace": [
+        "\u91cd\u7f6e\u5de5\u4f5c\u533a"
+      ],
+      "Reset Workspace\u2026": [
+        "\u91cd\u7f6e\u5de5\u4f5c\u533a..."
+      ],
       "Reset all shortcuts": [
         "\u91cd\u8bbe\u6240\u6709\u5feb\u901f\u952e"
       ],
@@ -2728,6 +2944,10 @@
       ],
       "Reset state when loading for the workspace.": [
         "\u91cd\u7f6e\u5de5\u4f5c\u533a\u52a0\u8f7d\u65f6\u7684\u72b6\u6001\u3002"
+      ],
+      "Resetting workspace %2 will close its %1 tab and return to default layout.": [
+        "\u91cd\u7f6e\u5de5\u4f5c\u533a %2 \u5c06\u5173\u95ed\u5176 %1 \u9009\u9879\u5361\u5e76\u8fd4\u56de\u9ed8\u8ba4\u5e03\u5c40\u3002",
+        ""
       ],
       "Restart": [
         "\u91cd\u65b0\u542f\u52a8"
@@ -2877,6 +3097,9 @@
         "\u8fd0\u884c\u8fd9 %1 \u4e2a\u5355\u5143\u683c\u5e76\u5411\u524d\u79fb\u52a8",
         ""
       ],
+      "Running": [
+        "\u6b63\u5728\u8fd0\u884c"
+      ],
       "Running Sessions section": [
         "\u6b63\u5728\u8fd0\u884c\u7684\u4f1a\u8bdd\u90e8\u5206"
       ],
@@ -2982,11 +3205,17 @@
       "Scope": [
         "\u8303\u56f4"
       ],
+      "Search": [
+        "\u641c\u7d22"
+      ],
       "Search Cell Outputs": [
         "\u641c\u7d22\u5355\u5143\u683c\u8f93\u51fa"
       ],
       "Search Results": [
         "\u641c\u7d22\u7ed3\u679c"
+      ],
+      "Search Tabs and Running Sessions": [
+        "\u641c\u7d22\u9009\u9879\u5361\u548c\u6b63\u5728\u8fd0\u884c\u7684\u4f1a\u8bdd"
       ],
       "Search extensions": [
         "\u641c\u7d22\u6269\u5c55\u63d2\u4ef6"
@@ -3001,6 +3230,9 @@
       ],
       "Search in Selection": [
         "\u5728\u9009\u5b9a\u5185\u5bb9\u4e2d\u641c\u7d22"
+      ],
+      "Search in the cell outputs (not available when replace options are shown).": [
+        "\u5728\u5355\u5143\u683c\u8f93\u51fa\u4e2d\u641c\u7d22\uff08\u5728\u663e\u793a\u66ff\u6362\u9009\u9879\u65f6\u4e0d\u53ef\u7528\uff09\u3002"
       ],
       "Search in the cell outputs.": [
         "\u5728\u5355\u5143\u683c\u8f93\u51fa\u4e2d\u641c\u7d22\u3002"
@@ -3019,6 +3251,9 @@
       ],
       "Searching outputs is expensive and requires to first rendered all outputs. Are you sure you want to search in the cell outputs?": [
         "\u641c\u7d22\u8f93\u51fa\u7ed3\u679c\u662f\u6bd4\u8f83\u8017\u8d39\u8d44\u6e90\u7684\uff0c\u9700\u8981\u5148\u6e32\u67d3\u6240\u6709\u8f93\u51fa\u3002\u60a8\u786e\u5b9a\u8981\u5728\u5355\u5143\u683c\u8f93\u51fa\u4e2d\u641c\u7d22\u5417\uff1f"
+      ],
+      "Searching outputs requires you to run all cells and render their outputs. Are you sure you want to search in the cell outputs?": [
+        "\u641c\u7d22\u8f93\u51fa\u9700\u8981\u8fd0\u884c\u6240\u6709\u5355\u5143\u683c\u5e76\u6e32\u67d3\u5b83\u4eec\u7684\u8f93\u51fa\u3002\u60a8\u786e\u5b9a\u8981\u5728\u5355\u5143\u683c\u8f93\u51fa\u4e2d\u8fdb\u884c\u641c\u7d22\u5417\uff1f"
       ],
       "Search\u2026": [
         "\u641c\u7d22\u2026"
@@ -3046,6 +3281,12 @@
       ],
       "Select Kernel": [
         "\u9009\u62e9\u5185\u6838"
+      ],
+      "Select Next Occurrence": [
+        "\u9009\u62e9\u4e0b\u4e00\u4e2a\u51fa\u73b0\u7684\u4f4d\u7f6e"
+      ],
+      "Select Workspace Files to Import": [
+        "\u9009\u62e9\u8981\u5bfc\u5165\u7684\u5de5\u4f5c\u533a\u6587\u4ef6"
       ],
       "Select a filter for breakpoints on exception": [
         "\u9009\u62e9\u5f02\u5e38\u65f6\u65ad\u70b9\u7684\u8fc7\u6ee4\u5668"
@@ -3179,6 +3420,9 @@
       "Show Keyboard Shortcuts": [
         "\u663e\u793a\u952e\u76d8\u5feb\u6377\u952e"
       ],
+      "Show Keyboard Shortcuts\u2026": [
+        "\u663e\u793a\u952e\u76d8\u5feb\u6377\u952e..."
+      ],
       "Show Last Modified Column": [
         "\u5207\u6362\u6700\u540e\u4fee\u6539\u5217"
       ],
@@ -3202,6 +3446,9 @@
       ],
       "Show Notifications": [
         "\u663e\u793a\u901a\u77e5"
+      ],
+      "Show Replace": [
+        "\u663e\u793a\u66ff\u6362"
       ],
       "Show Right Activity Bar": [
         "\u663e\u793a\u53f3\u4fa7\u6d3b\u52a8\u680f"
@@ -3250,6 +3497,9 @@
       ],
       "Shut Down Kernel": [
         "\u5173\u95ed\u5185\u6838"
+      ],
+      "Shut down %1": [
+        "\u5173\u95ed %1"
       ],
       "Shut down JupyterLab": [
         "\u5173\u95ed JuputerLab"
@@ -3350,6 +3600,12 @@
       "Switch kernel": [
         "\u5207\u6362\u5185\u6838"
       ],
+      "Switch to List View": [
+        "\u5207\u6362\u5230\u5217\u8868\u89c6\u56fe"
+      ],
+      "Switch to Tree View": [
+        "\u5207\u6362\u5230\u6811\u89c6\u56fe"
+      ],
       "Switch to the provided `theme`.": [
         "\u5207\u6362\u5230\u63d0\u4f9b\u7684`\u4e3b\u9898`\u3002"
       ],
@@ -3404,6 +3660,9 @@
       "Table of Contents section": [
         "\u76ee\u5f55\u90e8\u5206"
       ],
+      "Tabs and Running Sessions": [
+        "\u9009\u9879\u5361\u548c\u6b63\u5728\u8fd0\u884c\u7684\u4f1a\u8bdd"
+      ],
       "Tcl": [
         "Tcl"
       ],
@@ -3437,11 +3696,17 @@
       "Thanks for trying out JupyterLab's extension manager.\nThe JupyterLab development team is excited to have a robust\nthird-party extension community.\nHowever, we cannot vouch for every extension,\nand some may introduce security risks.\nDo you want to continue?": [
         "\u611f\u8c22\u60a8\u5c1d\u8bd5\u4e86 JupyterLab \u7684\u6269\u5c55\u7ba1\u7406\u5668\u3002JupyterLab \u5f00\u53d1\u56e2\u961f\u5f88\u9ad8\u5174\u6709\u4e00\u4e2a\u5f3a\u5927\u7684\u7b2c\u4e09\u65b9\u6269\u5c55\u793e\u533a\u3002\u7136\u800c\uff0c\u6211\u4eec\u4e0d\u80fd\u5ba1\u6838\u6bcf\u4e2a\u6269\u5c55\uff0c\u5176\u4e2d\u4e00\u4e9b\u6269\u5c55\u53ef\u80fd\u4f1a\u5e26\u6765\u5b89\u5168\u98ce\u9669\u3002\u60a8\u60f3\u8981\u7ee7\u7eed\u5417\uff1f"
       ],
+      "The \"%1\" workspace will be saved in the chosen directory as \"%1%2\".": [
+        "\u5de5\u4f5c\u533a \"%1\" \u5c06\u4ee5 \"%1%2\" \u7684\u540d\u79f0\u4fdd\u5b58\u5728\u6240\u9009\u62e9\u7684\u76ee\u5f55\u4e2d\u3002"
+      ],
       "The JupyterLab development team is excited to have a robust\nthird-party extension community. However, we do not review\nthird-party extensions, and some extensions may introduce security\nrisks or contain malicious code that runs on your machine. Moreover in order\nto work, this panel needs to fetch data from web services. Do you agree to\nactivate this feature?": [
         "JupyterLab\u5f00\u53d1\u56e2\u961f\u5f88\u9ad8\u5174\u62e5\u6709\u5f3a\u5927\u7684\u7b2c\u4e09\u65b9\u6269\u5c55\u793e\u533a\u3002\u7136\u800c\uff0c\u6211\u4eec\u4e0d\u4f1a\u5ba1\u6838\u7b2c\u4e09\u65b9\u6269\u5c55\u7a0b\u5e8f\uff0c\u67d0\u4e9b\u6269\u5c55\u53ef\u80fd\u4f1a\u5f15\u5165\u5b89\u5168\u98ce\u9669\u6216\u5305\u542b\u5728\u60a8\u7684\u8ba1\u7b97\u673a\u4e0a\u8fd0\u884c\u7684\u6076\u610f\u4ee3\u7801\u3002\u6b64\u5916\uff0c\u4e3a\u4e86\u6b63\u5e38\u5de5\u4f5c\uff0c\u8be5\u9762\u677f\u9700\u8981\u4eceWeb\u670d\u52a1\u83b7\u53d6\u6570\u636e\u3002\u60a8\u540c\u610f\u6fc0\u6d3b\u6b64\u529f\u80fd\u5417\uff1f"
       ],
       "The cell has not been executed to avoid kernel deadlock as there is another pending input! Submit your pending input and try again.": [
         "\u5f53\u524d\u542b\u6709\u672a\u88ab\u6267\u884c\u7684\u8f93\u5165\u5185\u5bb9\uff0c\u4e3a\u4e86\u9632\u6b62\u5185\u6838\u6b7b\u9501\uff0c\u6b64\u5355\u5143\u683c\u5c1a\u672a\u88ab\u6267\u884c\u3002\u6e05\u63d0\u4ea4\u60a8\u5f53\u524d\u672a\u6267\u884c\u7684\u8f93\u5165\u7136\u540e\u518d\u8bd5\u3002"
+      ],
+      "The cell type has not been changed to avoid kernel deadlock as this cell has pending input! Submit your pending input and try again.": [
+        "\u4e3a\u4e86\u907f\u514d\u5185\u6838\u6b7b\u9501\uff0c\u5355\u5143\u683c\u7c7b\u578b\u672a\u66f4\u6539\uff0c\u56e0\u4e3a\u8be5\u5355\u5143\u683c\u5b58\u5728\u5f85\u5904\u7406\u7684\u8f93\u5165\uff01\u8bf7\u63d0\u4ea4\u60a8\u7684\u5f85\u5904\u7406\u8f93\u5165\uff0c\u7136\u540e\u518d\u8bd5\u4e00\u6b21\u3002"
       ],
       "The checkpoint was last updated at: ": [
         "\u68c0\u67e5\u70b9\u6700\u540e\u4e00\u6b21\u66f4\u65b0\u4e8e: "
@@ -3548,11 +3813,26 @@
       "To enable/disable, please acknowledge the disclaimer.": [
         "\u4e3a\u4e86\u542f\u7528/\u7981\u7528\uff0c\u8bf7\u786e\u8ba4\u60a8\u5df2\u9605\u8bfb\u514d\u8d23\u58f0\u660e\u3002"
       ],
+      "To use %1 again, you will need to relaunch it.": [
+        "\u8981\u518d\u6b21\u4f7f\u7528 %1\uff0c\u60a8\u9700\u8981\u91cd\u65b0\u542f\u52a8\u5b83\u3002"
+      ],
       "To use JupyterLab again, you will need to relaunch it.": [
         "\u82e5\u8981\u518d\u6b21\u4f7f\u7528 JupyterLab\uff0c\u60a8\u9700\u8981\u91cd\u65b0\u8fd0\u884c\u5b83\u3002"
       ],
+      "Toggle Block Comment": [
+        "\u5207\u6362\u5757\u6ce8\u91ca"
+      ],
       "Toggle Collapse Notebook Heading": [
         "\u5207\u6362\u6298\u53e0\u7b14\u8bb0\u672c\u6807\u9898"
+      ],
+      "Toggle Comment": [
+        "\u5207\u6362\u6ce8\u91ca"
+      ],
+      "Toggle Element %1 in Left Sidebar": [
+        "\u5728\u5de6\u4fa7\u8fb9\u680f\u4e2d\u5207\u6362\u5143\u7d20 %1"
+      ],
+      "Toggle Element %1 in Right Sidebar": [
+        "\u5728\u53f3\u4fa7\u8fb9\u680f\u4e2d\u5207\u6362\u5143\u7d20 %1"
       ],
       "Toggle Replace": [
         "\u5207\u6362\u66ff\u6362"
@@ -3571,6 +3851,9 @@
       ],
       "Toggle virtual scrollbar (enabled with windowing mode: full)": [
         "\u5207\u6362\u865a\u62df\u6eda\u52a8\u6761\uff08\u5728\u7a97\u53e3\u6a21\u5f0f\u4e3a\u5168\u5c4f\u65f6\u542f\u7528\uff09"
+      ],
+      "Toggles block commends in languages which support it (e.g. C, JavaScript)": [
+        "\u5728\u652f\u6301\u5757\u6ce8\u91ca\u7684\u8bed\u8a00\uff08\u4f8b\u5982 C\u3001JavaScript\uff09\u4e2d\u5207\u6362\u5757\u6ce8\u91ca"
       ],
       "Toolbar customization has changed. You will need to reload JupyterLab to see the changes.": [
         "\u5de5\u5177\u680f\u81ea\u5b9a\u4e49\u5df2\u66f4\u6539\u3002\u60a8\u9700\u8981\u91cd\u65b0\u8f7d\u5165 JupyterLab \u6765\u67e5\u770b\u6539\u52a8\u3002"
@@ -3746,6 +4029,12 @@
       "Workspace loader": [
         "\u5de5\u4f5c\u533a\u52a0\u8f7d\u5668"
       ],
+      "Workspaces": [
+        "\u5de5\u4f5c\u533a"
+      ],
+      "Would you like to get notified about official Jupyter news?": [
+        "\u60a8\u662f\u5426\u5e0c\u671b\u63a5\u6536\u6709\u5173\u5b98\u65b9 Jupyter \u65b0\u95fb\u7684\u901a\u77e5\uff1f"
+      ],
       "Would you like to receive official Jupyter news?\nPlease read the privacy policy.": [
         "\u60a8\u60f3\u8981\u63a5\u6536\u5b98\u65b9\u7684Jupyter\u65b0\u95fb\u5417\uff1f\n\u8bf7\u9605\u8bfb\u9690\u79c1\u653f\u7b56\u3002"
       ],
@@ -3772,6 +4061,9 @@
       ],
       "Yes": [
         "\u662f"
+      ],
+      "You choose one or more workspace files to import. A Jupyter Workspace File has %1 extension.": [
+        "\u60a8\u9009\u62e9\u4e00\u4e2a\u6216\u591a\u4e2a\u8981\u5bfc\u5165\u7684\u5de5\u4f5c\u533a\u6587\u4ef6\u3002Jupyter \u5de5\u4f5c\u533a\u6587\u4ef6\u7684\u6269\u5c55\u540d\u4e3a %1\u3002"
       ],
       "You have shut down the Jupyter server. You can now close this tab.": [
         "\u60a8\u5df2\u5173\u95ed Jupyter \u670d\u52a1\u8fdb\u7a0b\u3002\u60a8\u73b0\u5728\u53ef\u4ee5\u5173\u95ed\u6b64\u9009\u9879\u5361\u3002"
@@ -3908,6 +4200,9 @@
       "menu\u0004Run": [
         "\u8fd0\u884c"
       ],
+      "menu\u0004Save and Export Notebook As": [
+        "\u4fdd\u5b58\u5e76\u5bfc\u51fa\u7b14\u8bb0\u672c\u4e3a"
+      ],
       "menu\u0004Save and Export Notebook As\u2026": [
         "\u4fdd\u5b58\u5e76\u5bfc\u51fa\u7b14\u8bb0\u672c\u4e3a\u2026"
       ],
@@ -3934,6 +4229,9 @@
       ],
       "menu\u0004View": [
         "\u67e5\u770b"
+      ],
+      "menu\u0004Workspaces": [
+        "\u5de5\u4f5c\u533a"
       ],
       "mscgen": [
         "mscgen"
@@ -4355,6 +4653,12 @@
       "schema\u0004Workspaces": [
         "\u5de5\u4f5c\u7a7a\u95f4"
       ],
+      "schema\u0004Workspaces Menu": [
+        "\u5de5\u4f5c\u533a\u83dc\u5355"
+      ],
+      "schema\u0004Workspaces Sidebar": [
+        "\u5de5\u4f5c\u533a\u4fa7\u8fb9\u680f"
+      ],
       "schema\u0004Workspaces settings.": [
         "\u5de5\u4f5c\u533a\u8bbe\u7f6e\u3002"
       ],
@@ -4580,6 +4884,9 @@
       "settings\u0004Filter directories": [
         "\u7b5b\u9009\u76ee\u5f55"
       ],
+      "settings\u0004Filter folders": [
+        "\u7b5b\u9009\u6587\u4ef6\u5939"
+      ],
       "settings\u0004Filter on file name with a fuzzy search": [
         "\u4f7f\u7528\u6a21\u7cca\u641c\u7d22\u8fc7\u6ee4\u6587\u4ef6\u540d"
       ],
@@ -4766,6 +5073,9 @@
       "settings\u0004Navigate to current directory": [
         "\u5bfc\u822a\u5230\u5f53\u524d\u76ee\u5f55"
       ],
+      "settings\u0004Navigate to current folder": [
+        "\u5bfc\u822a\u5230\u5f53\u524d\u6587\u4ef6\u5939"
+      ],
       "settings\u0004Never": [
         "\u4ece\u4e0d\u663e\u793a"
       ],
@@ -4808,6 +5118,9 @@
       "settings\u0004Number of cells to render outside de the viewport": [
         "\u5728\u89c6\u53e3\u5916\u6e32\u67d3\u7684\u5355\u5143\u683c\u6570\u91cf"
       ],
+      "settings\u0004Number of recently opened/closed files and directories to remember.": [
+        "\u8981\u8bb0\u4f4f\u7684\u6700\u8fd1\u6253\u5f00/\u5173\u95ed\u7684\u6587\u4ef6\u548c\u76ee\u5f55\u7684\u6570\u91cf\u3002"
+      ],
       "settings\u0004On hover": [
         "\u9f20\u6807\u60ac\u505c\u65f6\u663e\u793a"
       ],
@@ -4843,6 +5156,9 @@
       ],
       "settings\u0004Raw Cell Configuration": [
         "\u7eaf\u6587\u672c\u5355\u5143\u683c\u914d\u7f6e"
+      ],
+      "settings\u0004Recent Items Number": [
+        "\u6700\u8fd1\u6587\u6863\u9879\u6570"
       ],
       "settings\u0004Recording timing": [
         "\u8bb0\u5f55\u6267\u884c\u7528\u65f6"
@@ -5168,6 +5484,9 @@
       "settings\u0004Whether to apply the search on directories": [
         "\u662f\u5426\u5728\u76ee\u5f55\u4e0a\u8fdb\u884c\u641c\u7d22"
       ],
+      "settings\u0004Whether to apply the search on folders": [
+        "\u662f\u5426\u5728\u6587\u4ef6\u5939\u4e2d\u5e94\u7528\u641c\u7d22"
+      ],
       "settings\u0004Whether to ask for confirmation to close a document or not.": [
         "\u5173\u95ed\u4e00\u4e2a\u6587\u6863\u524d\u662f\u5426\u8fdb\u884c\u786e\u8ba4\u3002"
       ],
@@ -5176,6 +5495,9 @@
       ],
       "settings\u0004Whether to automatically navigate to a document's current directory": [
         "\u662f\u5426\u81ea\u52a8\u5bfc\u822a\u5230\u6587\u6863\u7684\u5f53\u524d\u76ee\u5f55"
+      ],
+      "settings\u0004Whether to automatically navigate to a document's current folder": [
+        "\u662f\u5426\u81ea\u52a8\u5bfc\u822a\u5230\u6587\u6863\u7684\u5f53\u524d\u6587\u4ef6\u5939"
       ],
       "settings\u0004Whether to automatically number the headings or not.": [
         "\u662f\u5426\u81ea\u52a8\u5bf9\u6807\u9898\u7f16\u53f7\u3002"
@@ -5326,6 +5648,9 @@
       ],
       "waiting for fonts": [
         "\u6b63\u5728\u7b49\u5f85\u5b57\u4f53"
+      ],
+      "workspace-name": [
+        "\u5de5\u4f5c\u533a\u540d\u79f0"
       ],
       "xu": [
         "xu"

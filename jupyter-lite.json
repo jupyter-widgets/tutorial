@@ -10,7 +10,7 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.9f387e5e108e458f62c3.js",
+        "load": "static/remoteEntry.5586bbdee77c5d90dd3c.js",
         "name": "@jupyter-widgets/jupyterlab-manager"
       },
       {
@@ -114,7 +114,7 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.bb9e9cf996c3e946c134.js",
+        "load": "static/remoteEntry.f993df579401788f32ef.js",
         "name": "jupyter-vue"
       },
       {

@@ -425,6 +425,9 @@
       "%1 and %2": [
         "%1 et %2"
       ],
+      "%1 and %2 more": [
+        "%1 et %2 en plus"
+      ],
       "%1 cell hidden": [
         "%1 cellule masqu\u00e9e",
         "%1 cellules masqu\u00e9es"
@@ -435,11 +438,17 @@
       "%1 extension is not allowed anymore. Please uninstall it immediately or contact your administrator.": [
         "L'extension %1 n'est plus autoris\u00e9e. Veuillez la d\u00e9sinstaller imm\u00e9diatement ou contacter votre administrateur."
       ],
+      "%1 is no longer valid and will be removed from the list": [
+        "%1 n'est plus valide et sera supprim\u00e9 de la liste"
+      ],
       "%1 is permissioned as read-only. Use \"save as...\" instead.": [
         "%1 est autoris\u00e9 en lecture seule. Utilisez \"Enregistrer sous...\" \u00e0 la place."
       ],
       "%1 is read-only": [
         "%1 est en lecture seule"
+      ],
+      "%1 is read-only. Use \"Save as\u2026\" instead.": [
+        "%1 est en lecture seule. Utilisez \"Enregistrer sous\u2026\" \u00e0 la place."
       ],
       "%1 log entries for %2": [
         "%1 entr\u00e9es du journal pour %2"
@@ -454,8 +463,17 @@
       "%1 provider": [
         "Fournisseur %1"
       ],
+      "%1 workspace with %2 tabs, last modified on %3": [
+        "Espace de travail %1 avec des onglets %2 , derni\u00e8re modification sur %3"
+      ],
+      "%1-clone": [
+        "%1-clone"
+      ],
       "%1/%2": [
         "%1/%2"
+      ],
+      "(Command label missing)": [
+        "(Libell\u00e9 de commande manquant)"
       ],
       "A connection to the Jupyter server could not be established.\nJupyterLab will continue trying to reconnect.\nCheck your network connection or Jupyter server configuration.\n": [
         "Une connexion au serveur Jupyter n'a pas pu \u00eatre \u00e9tablie.\nJupyterLab va continuer \u00e0 essayer de se reconnecter.\nV\u00e9rifiez votre connexion r\u00e9seau ou la configuration du serveur Jupyter.\n"
@@ -523,11 +541,17 @@
       "Add Checkpoint": [
         "Ajouter un point de contr\u00f4le"
       ],
+      "Add Keybinding": [
+        "Ajouter un raccourci clavier"
+      ],
       "Add Tag": [
         "Ajouter une \u00e9tiquette"
       ],
       "Add another shortcut": [
         "Ajouter un raccourci"
+      ],
+      "Add new keybinding for existing shortcut target": [
+        "Ajouter un nouveau raccourci clavier pour la cible"
       ],
       "Add new shortcut": [
         "Cr\u00e9er un raccourci"
@@ -556,6 +580,9 @@
       "Are you sure that you want to run arbitrary Javascript within your JupyterLab session?": [
         "\u00cates-vous s\u00fbr de vouloir ex\u00e9cuter du JavaScript dans votre session JupyterLab?"
       ],
+      "Are you sure you want to clear recently closed tabs?": [
+        "\u00cates-vous s\u00fbr de vouloir effacer les onglets r\u00e9cemment ferm\u00e9s ?"
+      ],
       "Are you sure you want to close \"%1\"?": [
         "\u00cates-vous s\u00fbr de vouloir fermer \"%1\"?"
       ],
@@ -564,6 +591,9 @@
       ],
       "Are you sure you want to delete %1": [
         "\u00cates-vous s\u00fbr de vouloir supprimer %1"
+      ],
+      "Are you sure you want to delete all workspaces? Deleted workspaces cannot be recovered.": [
+        "\u00cates-vous s\u00fbr de vouloir supprimer tous les espaces de travail? Les espaces de travail supprim\u00e9s ne peuvent pas \u00eatre r\u00e9cup\u00e9r\u00e9s."
       ],
       "Are you sure you want to exit JupyterLab?\n\nAny unsaved changes will be lost.": [
         "\u00cates-vous s\u00fbr de vouloir quitter JupyterLab?\n\nToutes les modifications non enregistr\u00e9es seront perdues."
@@ -713,6 +743,9 @@
       "Cell type": [
         "Type de cellule"
       ],
+      "Cell type not changed due to pending input": [
+        "Le type de cellule n'a pas \u00e9t\u00e9 modifi\u00e9 en raison d'une entr\u00e9e en attente"
+      ],
       "Change Kernel\u2026": [
         "Changer de noyau\u2026"
       ],
@@ -764,8 +797,38 @@
       "Change to Raw Cell Type": [
         "Changer pour le type de cellule Raw"
       ],
+      "Choose": [
+        "Choisir"
+      ],
+      "Choose Workspace Export Directory": [
+        "Choisir le r\u00e9pertoire d'exportation de l'espace de travail"
+      ],
+      "Choose Workspace To Clone": [
+        "Choisir l'espace de travail \u00e0 cloner"
+      ],
+      "Choose Workspace To Delete": [
+        "Choisir l'espace de travail \u00e0 supprimer"
+      ],
+      "Choose Workspace To Export": [
+        "Choisir l'espace de travail \u00e0 exporter"
+      ],
+      "Choose Workspace To Open": [
+        "Choisir l'espace de travail \u00e0 ouvrir"
+      ],
       "Choose a checkpoint": [
         "Choisir un point de contr\u00f4le"
+      ],
+      "Choose an existing workspace to clone.": [
+        "Choisir un espace de travail existant \u00e0 cloner."
+      ],
+      "Choose an existing workspace to delete.": [
+        "Choisir un espace de travail existant \u00e0 supprimer."
+      ],
+      "Choose an existing workspace to export.": [
+        "Choisir un espace de travail existant \u00e0 exporter."
+      ],
+      "Choose an existing workspace to open.": [
+        "Choisir un espace de travail existant \u00e0 ouvrir."
       ],
       "Clear": [
         "Supprimer"
@@ -785,6 +848,9 @@
       "Clear Outputs of All Cells": [
         "Effacer les sorties de toutes les cellules"
       ],
+      "Clear Recent Documents": [
+        "Supprimez les documents r\u00e9cents"
+      ],
       "Clear Workspace": [
         "Nettoyer l'espace de travail"
       ],
@@ -793,6 +859,9 @@
       ],
       "Clear outputs for the selected cells": [
         "Effacer les sorties des cellules s\u00e9lectionn\u00e9es"
+      ],
+      "Clear the list of recently opened items.": [
+        "Effacer la liste des \u00e9l\u00e9ments r\u00e9cemment ouverts."
       ],
       "Click on a function to see documentation.": [
         "Cliquez sur une fonction pour voir la documentation."
@@ -808,6 +877,15 @@
       ],
       "ClojureScript": [
         "ClojureScript"
+      ],
+      "Clone": [
+        "Cloner"
+      ],
+      "Clone Workspace": [
+        "Cloner l'espace de travail"
+      ],
+      "Clone Workspace\u2026": [
+        "Dupliquer l'espace de travail\u2026"
       ],
       "Close": [
         "Fermer"
@@ -830,6 +908,9 @@
       "Close Document without saving": [
         "Fermer le document sans sauvegarder"
       ],
+      "Close Search Box": [
+        "Fermer la bo\u00eete de recherche"
+      ],
       "Close Tab": [
         "Fermer l'onglet"
       ],
@@ -841,6 +922,9 @@
       ],
       "Close and Shut Down Notebook": [
         "Fermer et arr\u00eater le notebook"
+      ],
+      "Close and Shut Down Notebook\u2026": [
+        "Fermer et arr\u00eater le notebook\u2026"
       ],
       "Close and Shut Down\u2026": [
         "Fermer et Arr\u00eater\u2026"
@@ -883,6 +967,9 @@
       ],
       "CoffeeScript": [
         "CoffeeScript"
+      ],
+      "Collapse All": [
+        "Tout r\u00e9duire"
       ],
       "Collapse All Code": [
         "R\u00e9duire tout le code"
@@ -1000,17 +1087,29 @@
       "Copy variable to globals scope": [
         "Copie la variable dans les variables globales"
       ],
+      "Could Not Open Recent": [
+        "Impossible d'ouvrir l'\u00e9l\u00e9ment r\u00e9cent"
+      ],
       "Could not find path: %1": [
         "Impossible de trouver le chemin : %1"
       ],
       "Could not open URL: %1": [
         "Impossible d'ouvrir l'URL: %1"
       ],
+      "Create": [
+        "Cr\u00e9er"
+      ],
       "Create Console for Editor": [
         "Cr\u00e9er une console pour l'\u00e9diteur"
       ],
       "Create New View for Cell Output": [
         "Cr\u00e9er une nouvelle vue pour la sortie de cellule"
+      ],
+      "Create New Workspace": [
+        "Cr\u00e9er un nouvel espace de travail"
+      ],
+      "Create New Workspace\u2026": [
+        "Cr\u00e9er un nouvel espace de travail\u2026"
       ],
       "Create a duplicate of this cell below": [
         "Cr\u00e9er un doublon de cette cellule en dessous",
@@ -1042,6 +1141,9 @@
       ],
       "Cursor blinking rate": [
         "Taux de clignotement du curseur"
+      ],
+      "Custom": [
+        "Personnalis\u00e9"
       ],
       "Custom editor styles": [
         "Styles personnalis\u00e9s de l'\u00e9diteur"
@@ -1117,6 +1219,9 @@
       "Decrease UI Font Size": [
         "Diminuer la taille de police de l'interface"
       ],
+      "Default": [
+        "D\u00e9faut"
+      ],
       "Default: %1": [
         "Valeur par d\u00e9faut : %1"
       ],
@@ -1129,13 +1234,34 @@
       "Delete %1": [
         "Supprimer %1"
       ],
+      "Delete All": [
+        "Tout Supprimer"
+      ],
       "Delete Cell": [
         "Supprimer la cellule",
         "Supprimer les cellules"
       ],
+      "Delete Keybinding": [
+        "Supprimer le raccourci clavier"
+      ],
+      "Delete Workspace\u2026": [
+        "Supprimer l'espace de travail\u2026"
+      ],
+      "Delete chosen keybinding": [
+        "Supprimer le raccourci clavier s\u00e9lectionn\u00e9"
+      ],
+      "Delete the current line": [
+        "Supprimer la ligne actuelle"
+      ],
       "Delete this cell": [
         "Supprimer cette cellule",
         "Supprimer ces %1 cellules"
+      ],
+      "Delete workspace": [
+        "Supprimer l'espace de travail"
+      ],
+      "Deleting workspace \"%1\" will also delete its URL. A deleted workspace cannot be recovered.": [
+        "La suppression de l'espace de travail \u00ab%1\u00bb supprimera \u00e9galement son URL. Un espace de travail supprim\u00e9 ne peut pas \u00eatre r\u00e9cup\u00e9r\u00e9."
       ],
       "Delimiter: ": [
         "D\u00e9limiteur: "
@@ -1254,6 +1380,9 @@
       "Document is read-only": [
         "Le document est en lecture seule"
       ],
+      "Document is read-only. \"Save\" is disabled; use \"Save as\u2026\" instead": [
+        "Le document est en lecture seule. \"Sauvegarder\" est d\u00e9sactiv\u00e9; utilisez \"Enregistrer sous\u2026\" \u00e0 la place"
+      ],
       "Download": [
         "T\u00e9l\u00e9charger"
       ],
@@ -1291,8 +1420,14 @@
       "Edit First": [
         "Modifier en premier"
       ],
+      "Edit Keybinding": [
+        "Modifier le raccourci clavier"
+      ],
       "Edit Second": [
         "Modifier la seconde"
+      ],
+      "Edit existing keybinding": [
+        "Modifier le raccourci clavier actuel"
       ],
       "Edit existing shortcut": [
         "Modifier le raccourci existant"
@@ -1404,6 +1539,9 @@
         "%1 cellule ex\u00e9cut\u00e9e",
         "%1 cellules ex\u00e9cut\u00e9es"
       ],
+      "Expand All": [
+        "Tout d\u00e9velopper"
+      ],
       "Expand All Code": [
         "D\u00e9velopper tout le code"
       ],
@@ -1418,6 +1556,9 @@
       ],
       "Expand Selected Outputs": [
         "D\u00e9velopper les sorties s\u00e9lectionn\u00e9es"
+      ],
+      "Export Workspace\u2026": [
+        "Exporter l'espace de travail\u2026"
       ],
       "Extend Selection Above": [
         "\u00c9tendre la s\u00e9lection au dessus"
@@ -1518,6 +1659,9 @@
       "Filter files by name": [
         "Filtrer les fichiers par nom"
       ],
+      "Filter the kernel sources": [
+        "Filtrer les sources du noyau"
+      ],
       "Find": [
         "Rechercher"
       ],
@@ -1559,6 +1703,12 @@
       ],
       "For more information, see": [
         "Pour plus d'informations, voir"
+      ],
+      "Forget": [
+        "Supprimer"
+      ],
+      "Forget All": [
+        "Tout supprimer"
       ],
       "Forth": [
         "Forth"
@@ -1635,6 +1785,9 @@
       "Hide Contextual Help": [
         "Masquer l'aide contextuelle"
       ],
+      "Hide Replace": [
+        "Masquer Remplacer"
+      ],
       "Hide Search Filters": [
         "Masquer les filtres de recherche"
       ],
@@ -1700,6 +1853,9 @@
       ],
       "Image Viewer": [
         "Visionneuse d\u2019images"
+      ],
+      "Import Workspace\u2026": [
+        "Importer un espace de travail\u2026"
       ],
       "In collaborative mode, the document is saved automatically after every change": [
         "En mode collaboratif, le document est sauvegard\u00e9 automatiquement apr\u00e8s chaque modification"
@@ -1836,6 +1992,9 @@
       "JupyterLab Dark": [
         "JupyterLab Sombre"
       ],
+      "JupyterLab Dark High Contrast": [
+        "JupyterLab sombre \u00e0 fort contraste"
+      ],
       "JupyterLab FAQ": [
         "FAQ JupyterLab"
       ],
@@ -1844,6 +2003,9 @@
       ],
       "JupyterLab Reference": [
         "R\u00e9f\u00e9rence JupyterLab"
+      ],
+      "JupyterLab Workspace File": [
+        "Fichier d'espace de travail JupyterLab"
       ],
       "JupyterLab build is suggested:": [
         "La compilation de JupyterLab est sugg\u00e9r\u00e9e :"
@@ -1964,6 +2126,9 @@
       ],
       "Log level": [
         "Niveau du journal"
+      ],
+      "Log out of %1": [
+        "Se d\u00e9connecter de %1"
       ],
       "Log out of JupyterLab": [
         "Se d\u00e9connecter de JupyterLab"
@@ -2104,6 +2269,9 @@
       "Name: %1\nPath: %2\n": [
         "Nom : %1\nChemin : %2\n"
       ],
+      "Naming the workspace will create a unique URL. The name may contain letters, numbers, hyphens (-), and underscores (_).": [
+        "Nommer l'espace de travail cr\u00e9era une URL unique. Le nom peut contenir des lettres, des chiffres, des tirets (-) et des tirets bas (_)."
+      ],
       "Neither theme %1 nor default %2 loaded.": [
         "Ni le th\u00e8me %1 ni le th\u00e8me par d\u00e9faut %2 n'ont \u00e9t\u00e9 charg\u00e9s."
       ],
@@ -2227,6 +2395,9 @@
       "No log messages.": [
         "Aucun message de journal."
       ],
+      "No matches": [
+        "Aucune correspondance"
+      ],
       "No metadata.": [
         "Aucunes m\u00e9tadonn\u00e9es."
       ],
@@ -2235,6 +2406,9 @@
       ],
       "No properties to inspect.": [
         "Aucune propri\u00e9t\u00e9 \u00e0 inspecter."
+      ],
+      "No sessions connected": [
+        "Aucune session connect\u00e9e"
       ],
       "No source selected.": [
         "Aucune source s\u00e9lectionn\u00e9e."
@@ -2332,6 +2506,9 @@
       "Open Path": [
         "Ouvrir le Chemin"
       ],
+      "Open Recent": [
+        "Ouvrir l\u2019\u00e9l\u00e9ment r\u00e9cent"
+      ],
       "Open Run Menu": [
         "Ouvrir le menu Ex\u00e9cuter"
       ],
@@ -2352,6 +2529,15 @@
       ],
       "Open View Menu": [
         "Ouvrir le menu Affichage"
+      ],
+      "Open Workspace": [
+        "Ouvrir l'espace de travail"
+      ],
+      "Open Workspace\u2026": [
+        "Ouvrir l'espace de travail\u2026"
+      ],
+      "Open a Recent Document (given by `recent` argument)": [
+        "Ouvrir un document r\u00e9cent (donn\u00e9 par l'argument `recent`)"
       ],
       "Open a console for the provided `path`.": [
         "Ouvre une console pour le chemin (`path`) fourni."
@@ -2465,6 +2651,9 @@
       "Path Not Found": [
         "Chemin d'acc\u00e8s introuvable"
       ],
+      "Path to save the workspace in": [
+        "Chemin dans lequel enregistrer l'espace de travail"
+      ],
       "Path:": [
         "Chemin d'acc\u00e8s:"
       ],
@@ -2482,6 +2671,9 @@
       ],
       "Please confirm you want to close \"%1\".": [
         "Veuillez confirmer que vous voulez fermer \"%1\"."
+      ],
+      "Please confirm you want to shut down %1.": [
+        "Veuillez confirmer que vous voulez arr\u00eater %1."
       ],
       "Please confirm you want to shut down JupyterLab.": [
         "Veuillez confirmer que vous voulez arr\u00eater JupyterLab."
@@ -2579,6 +2771,9 @@
       "Reason given:": [
         "Raison donn\u00e9e:"
       ],
+      "Recently Closed": [
+        "R\u00e9cemment ferm\u00e9s"
+      ],
       "Reconnect to Kernel": [
         "Reconnecter au noyau"
       ],
@@ -2660,6 +2855,12 @@
       "Rename File": [
         "Renommer le fichier"
       ],
+      "Rename Workspace": [
+        "Renommer l'espace de travail"
+      ],
+      "Rename Workspace\u2026": [
+        "Renommer l'espace de travail\u2026"
+      ],
       "Rename file": [
         "Renommer le fichier"
       ],
@@ -2683,6 +2884,15 @@
       ],
       "Renderer Failure: %1": [
         "\u00c9chec du rendu : %1"
+      ],
+      "Reopen %1": [
+        "R\u00e9ouvrir %1"
+      ],
+      "Reopen Closed Document": [
+        "R\u00e9ouvrir le document ferm\u00e9"
+      ],
+      "Reopen recently closed file or notebook.": [
+        "R\u00e9ouvrir le fichier ou le notebook r\u00e9cemment ferm\u00e9."
       ],
       "Replace": [
         "Remplacer"
@@ -2720,6 +2930,12 @@
       "Reset Image": [
         "R\u00e9initialiser l'image"
       ],
+      "Reset Workspace": [
+        "R\u00e9initialiser l'espace de travail"
+      ],
+      "Reset Workspace\u2026": [
+        "R\u00e9initialiser l'espace de travail\u2026"
+      ],
       "Reset all shortcuts": [
         "R\u00e9tablir tous les raccourcis par d\u00e9faut"
       ],
@@ -2728,6 +2944,10 @@
       ],
       "Reset state when loading for the workspace.": [
         "R\u00e9initialiser l'\u00e9tat lors du chargement de l'espace de travail."
+      ],
+      "Resetting workspace %2 will close its %1 tab and return to default layout.": [
+        "La r\u00e9initialisation de l'espace de travail %2 fermera l'onglet %1 et retournera \u00e0 la disposition par d\u00e9faut.",
+        "La r\u00e9initialisation de l'espace de travail %2 fermera ses %1 onglets et reviendra \u00e0 la disposition par d\u00e9faut."
       ],
       "Restart": [
         "Red\u00e9marrer"
@@ -2877,6 +3097,9 @@
         "Ex\u00e9cuter cette cellule et avancer",
         "Ex\u00e9cuter ces %1 cellules et avancer"
       ],
+      "Running": [
+        "En cours"
+      ],
       "Running Sessions section": [
         "Section des sessions en cours d'ex\u00e9cution"
       ],
@@ -2982,11 +3205,17 @@
       "Scope": [
         "P\u00e9rim\u00e8tre d\u2019application"
       ],
+      "Search": [
+        "Rechercher"
+      ],
       "Search Cell Outputs": [
         "R\u00e9sultats de la cellule de recherche"
       ],
       "Search Results": [
         "R\u00e9sultats de la recherche"
+      ],
+      "Search Tabs and Running Sessions": [
+        "Rechercher dans les onglets et les sessions en cours"
       ],
       "Search extensions": [
         "Rechercher dans les extensions"
@@ -3001,6 +3230,9 @@
       ],
       "Search in Selection": [
         "Rechercher dans la s\u00e9lection"
+      ],
+      "Search in the cell outputs (not available when replace options are shown).": [
+        "Recherche dans les sorties de cellules (non disponible lorsque les options de remplacement sont affich\u00e9es)."
       ],
       "Search in the cell outputs.": [
         "Rechercher dans les sorties des cellules."
@@ -3019,6 +3251,9 @@
       ],
       "Searching outputs is expensive and requires to first rendered all outputs. Are you sure you want to search in the cell outputs?": [
         "La recherche dans les sorties est co\u00fbteuse et n\u00e9cessite un premier rendu de celles-ci. \u00cates-vous s\u00fbr de vouloir rechercher dans les sorties des cellules ?"
+      ],
+      "Searching outputs requires you to run all cells and render their outputs. Are you sure you want to search in the cell outputs?": [
+        "La recherche des r\u00e9sultats n\u00e9cessite que vous ex\u00e9cutiez toutes les cellules pour obtenir ceux-ci. \u00cates-vous s\u00fbr de vouloir rechercher dans les r\u00e9sultats des cellules ?"
       ],
       "Search\u2026": [
         "Rechercher\u2026"
@@ -3046,6 +3281,12 @@
       ],
       "Select Kernel": [
         "S\u00e9lectionnez le noyau"
+      ],
+      "Select Next Occurrence": [
+        "S\u00e9lectionner l'occurrence suivante"
+      ],
+      "Select Workspace Files to Import": [
+        "S\u00e9lectionner les fichiers d'espace de travail \u00e0 importer"
       ],
       "Select a filter for breakpoints on exception": [
         "S\u00e9lectionner un filtre pour les points d'arr\u00eat suite \u00e0 une exception"
@@ -3179,6 +3420,9 @@
       "Show Keyboard Shortcuts": [
         "Afficher les raccourcis clavier"
       ],
+      "Show Keyboard Shortcuts\u2026": [
+        "Afficher les raccourcis clavier\u2026"
+      ],
       "Show Last Modified Column": [
         "Afficher la derni\u00e8re colonne modifi\u00e9e"
       ],
@@ -3202,6 +3446,9 @@
       ],
       "Show Notifications": [
         "Afficher les notifications"
+      ],
+      "Show Replace": [
+        "Afficher Remplacer"
       ],
       "Show Right Activity Bar": [
         "Afficher la barre d'activit\u00e9s de droite"
@@ -3250,6 +3497,9 @@
       ],
       "Shut Down Kernel": [
         "Arr\u00eater le noyau"
+      ],
+      "Shut down %1": [
+        "Arr\u00eater %1"
       ],
       "Shut down JupyterLab": [
         "Arr\u00eater JupyterLab"
@@ -3350,6 +3600,12 @@
       "Switch kernel": [
         "Changer de noyau"
       ],
+      "Switch to List View": [
+        "Passer en vue liste"
+      ],
+      "Switch to Tree View": [
+        "Basculer en vue arborescence"
+      ],
       "Switch to the provided `theme`.": [
         "Basculer vers le th\u00e8me choisi."
       ],
@@ -3404,6 +3660,9 @@
       "Table of Contents section": [
         "Section Table des mati\u00e8res"
       ],
+      "Tabs and Running Sessions": [
+        "Onglets et sessions en cours"
+      ],
       "Tcl": [
         "Tcl"
       ],
@@ -3437,11 +3696,17 @@
       "Thanks for trying out JupyterLab's extension manager.\nThe JupyterLab development team is excited to have a robust\nthird-party extension community.\nHowever, we cannot vouch for every extension,\nand some may introduce security risks.\nDo you want to continue?": [
         "Merci d'avoir essay\u00e9 le gestionnaire d'extension de JupyterLab.\nL'\u00e9quipe de d\u00e9veloppement de JupyterLab est heureuse d'avoir une communaut\u00e9 d'extension \nrobuste.\nCependant, nous ne pouvons pas nous porter garant pour chaque extension,\net certains peuvent introduire des risques de s\u00e9curit\u00e9.\nVoulez-vous continuer ?"
       ],
+      "The \"%1\" workspace will be saved in the chosen directory as \"%1%2\".": [
+        "L'espace de travail \"%1\" sera sauvegard\u00e9 dans le r\u00e9pertoire choisi sous la forme \"%1%2\"."
+      ],
       "The JupyterLab development team is excited to have a robust\nthird-party extension community. However, we do not review\nthird-party extensions, and some extensions may introduce security\nrisks or contain malicious code that runs on your machine. Moreover in order\nto work, this panel needs to fetch data from web services. Do you agree to\nactivate this feature?": [
         "L'\u00e9quipe de d\u00e9veloppement de JupyterLab est heureuse d'avoir une solide communaut\u00e9 d'extension\nde tiers. Cependant, nous ne validons pas\nles extensions tierces et certaines extensions peuvent introduire des risques de s\u00e9curit\u00e9\nou contenir du code malveillant qui s'ex\u00e9cute sur votre machine. De plus pour\nfonctionner, ce panneau doit r\u00e9cup\u00e9rer des donn\u00e9es de services web. Acceptez-vous\nd'activer cette fonctionnalit\u00e9 ?"
       ],
       "The cell has not been executed to avoid kernel deadlock as there is another pending input! Submit your pending input and try again.": [
         "La cellule n'a pas \u00e9t\u00e9 ex\u00e9cut\u00e9e pour \u00e9viter de bloquer le noyau car une autre entr\u00e9e est en attente ! Soumettez une entr\u00e9e et r\u00e9essayez."
+      ],
+      "The cell type has not been changed to avoid kernel deadlock as this cell has pending input! Submit your pending input and try again.": [
+        "La cellule n'a pas \u00e9t\u00e9 ex\u00e9cut\u00e9e pour \u00e9viter de bloquer le noyau car une entr\u00e9e est en attente ! Soumettez une entr\u00e9e et r\u00e9essayez."
       ],
       "The checkpoint was last updated at: ": [
         "Le point de contr\u00f4le a \u00e9t\u00e9 mis \u00e0 jour pour la derni\u00e8re fois \u00e0: "
@@ -3548,11 +3813,26 @@
       "To enable/disable, please acknowledge the disclaimer.": [
         "Pour activer/d\u00e9sactiver, veuillez accepter la clause de non-responsabilit\u00e9."
       ],
+      "To use %1 again, you will need to relaunch it.": [
+        "Pour utiliser \u00e0 nouveau %1, vous devrez le relancer."
+      ],
       "To use JupyterLab again, you will need to relaunch it.": [
         "Pour utiliser \u00e0 nouveau JupyterLab, vous devrez le relancer."
       ],
+      "Toggle Block Comment": [
+        "D\u00e9-/commenter le bloc"
+      ],
       "Toggle Collapse Notebook Heading": [
         "Afficher/Masquer le titre du notebook"
+      ],
+      "Toggle Comment": [
+        "D\u00e9-/commenter"
+      ],
+      "Toggle Element %1 in Left Sidebar": [
+        "Afficher/Masquer l'\u00e9l\u00e9ment %1 dans la barre lat\u00e9rale gauche"
+      ],
+      "Toggle Element %1 in Right Sidebar": [
+        "Afficher/Masquer l'\u00e9l\u00e9ment %1 dans la barre lat\u00e9rale droite"
       ],
       "Toggle Replace": [
         "Montrer/Cacher le remplacement"
@@ -3571,6 +3851,9 @@
       ],
       "Toggle virtual scrollbar (enabled with windowing mode: full)": [
         "Activer/d\u00e9sactiver la barre de d\u00e9filement virtuelle (activ\u00e9e en mode fen\u00eatr\u00e9 : complet (`full`))"
+      ],
+      "Toggles block commends in languages which support it (e.g. C, JavaScript)": [
+        "D\u00e9-/comment\u00e9 le block pour les languages le supportant (comme C ou JavaScript)"
       ],
       "Toolbar customization has changed. You will need to reload JupyterLab to see the changes.": [
         "La personnalisation de la barre d'outils a chang\u00e9. Vous devrez recharger JupyterLab pour voir les modifications."
@@ -3746,6 +4029,12 @@
       "Workspace loader": [
         "Chargeur d'espace de travail"
       ],
+      "Workspaces": [
+        "Espaces de travail"
+      ],
+      "Would you like to get notified about official Jupyter news?": [
+        "Souhaitez-vous \u00eatre inform\u00e9 des nouvelles officielles de Jupyter ?"
+      ],
       "Would you like to receive official Jupyter news?\nPlease read the privacy policy.": [
         "Voulez-vous recevoir les actualit\u00e9s officielles de Jupyter ?\nVeuillez lire la politique de confidentialit\u00e9."
       ],
@@ -3772,6 +4061,9 @@
       ],
       "Yes": [
         "Oui"
+      ],
+      "You choose one or more workspace files to import. A Jupyter Workspace File has %1 extension.": [
+        "Vous choisissez un ou plusieurs fichiers d'espace de travail \u00e0 importer. Un fichier d'espace de travail Jupyter a l'extension %1."
       ],
       "You have shut down the Jupyter server. You can now close this tab.": [
         "Vous avez arr\u00eat\u00e9 le serveur Jupyter. Vous pouvez maintenant fermer cet onglet."
@@ -3908,6 +4200,9 @@
       "menu\u0004Run": [
         "Ex\u00e9cution"
       ],
+      "menu\u0004Save and Export Notebook As": [
+        "Enregistrer et exporter le notebook comme"
+      ],
       "menu\u0004Save and Export Notebook As\u2026": [
         "Enregistrer et exporter le notebook sous\u2026"
       ],
@@ -3934,6 +4229,9 @@
       ],
       "menu\u0004View": [
         "Affichage"
+      ],
+      "menu\u0004Workspaces": [
+        "Espaces de travail"
       ],
       "mscgen": [
         "mscgen"
@@ -4355,6 +4653,12 @@
       "schema\u0004Workspaces": [
         "Espaces de travail"
       ],
+      "schema\u0004Workspaces Menu": [
+        "Menu des espaces de travail"
+      ],
+      "schema\u0004Workspaces Sidebar": [
+        "Barre lat\u00e9rale des espaces de travail"
+      ],
       "schema\u0004Workspaces settings.": [
         "Param\u00e8tres de l'espace de travail."
       ],
@@ -4580,6 +4884,9 @@
       "settings\u0004Filter directories": [
         "Filtrer les r\u00e9pertoires"
       ],
+      "settings\u0004Filter folders": [
+        "Filtrer les dossiers"
+      ],
       "settings\u0004Filter on file name with a fuzzy search": [
         "Filtrer sur le nom du fichier avec une recherche floue"
       ],
@@ -4766,6 +5073,9 @@
       "settings\u0004Navigate to current directory": [
         "Naviguer vers le r\u00e9pertoire actuel"
       ],
+      "settings\u0004Navigate to current folder": [
+        "Naviguer vers le r\u00e9pertoire actuel"
+      ],
       "settings\u0004Never": [
         "Jamais"
       ],
@@ -4808,6 +5118,9 @@
       "settings\u0004Number of cells to render outside de the viewport": [
         "Nombre de cellules \u00e0 afficher en dehors de la fen\u00eatre d'affichage"
       ],
+      "settings\u0004Number of recently opened/closed files and directories to remember.": [
+        "Nombre de fichiers et r\u00e9pertoires r\u00e9cemment ouverts/ferm\u00e9s \u00e0 m\u00e9moriser."
+      ],
       "settings\u0004On hover": [
         "Au survol"
       ],
@@ -4843,6 +5156,9 @@
       ],
       "settings\u0004Raw Cell Configuration": [
         "Configuration des cellules brutes"
+      ],
+      "settings\u0004Recent Items Number": [
+        "Nombre d'\u00e9l\u00e9ments r\u00e9cents"
       ],
       "settings\u0004Recording timing": [
         "Horodatage de l'enregistrement"
@@ -5168,6 +5484,9 @@
       "settings\u0004Whether to apply the search on directories": [
         "Appliquer ou non la recherche sur les r\u00e9pertoires"
       ],
+      "settings\u0004Whether to apply the search on folders": [
+        "Appliquer ou non la recherche sur les r\u00e9pertoires"
+      ],
       "settings\u0004Whether to ask for confirmation to close a document or not.": [
         "Demander une confirmation pour fermer un document ou non."
       ],
@@ -5175,6 +5494,9 @@
         "Demander au serveur d'envoyer ou non des logs avec la trace d'ex\u00e9cution (pour le d\u00e9bogage). Les valeurs accept\u00e9es sont\u00a0: \"off\", \"messages\", \"verbose\". Les serveurs sont autoris\u00e9s \u00e0 ignorer cette requ\u00eate."
       ],
       "settings\u0004Whether to automatically navigate to a document's current directory": [
+        "Si vous souhaitez naviguer automatiquement vers le r\u00e9pertoire courant d'un document"
+      ],
+      "settings\u0004Whether to automatically navigate to a document's current folder": [
         "Si vous souhaitez naviguer automatiquement vers le r\u00e9pertoire courant d'un document"
       ],
       "settings\u0004Whether to automatically number the headings or not.": [
@@ -5326,6 +5648,9 @@
       ],
       "waiting for fonts": [
         "en attente de polices"
+      ],
+      "workspace-name": [
+        "workspace-name"
       ],
       "xu": [
         "xu"
@@ -6258,7 +6583,7 @@
         "Tirer depuis le r\u00e9pertoire distant"
       ],
       "Pull latest changes": [
-        "Envoyer les derni\u00e8res modifications"
+        "Tirer les derni\u00e8res modifications"
       ],
       "Pull latest code from remote repository": [
         "Tirer le dernier code du d\u00e9p\u00f4t distant"
@@ -6273,7 +6598,7 @@
         "Pousser le code vers le d\u00e9p\u00f4t distant"
       ],
       "Push committed changes": [
-        "Envoyer les modifications valid\u00e9es"
+        "Pousser les modifications valid\u00e9es"
       ],
       "Push to Remote": [
         "Pousser vers un d\u00e9p\u00f4t distant"

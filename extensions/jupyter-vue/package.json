@@ -1,6 +1,6 @@
 {
   "name": "jupyter-vue",
-  "version": "1.10.2",
+  "version": "1.11.1",
   "description": "Jupyter widgets base for Vue libraries",
   "license": "MIT",
   "author": "Mario Buikhuizen, Maarten Breddels",
@@ -70,7 +70,7 @@
       }
     },
     "_build": {
-      "load": "static/remoteEntry.bb9e9cf996c3e946c134.js",
+      "load": "static/remoteEntry.f993df579401788f32ef.js",
       "extension": "./extension"
     }
   }
